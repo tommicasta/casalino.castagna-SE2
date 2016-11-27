@@ -1,0 +1,87 @@
+##### POWER-ENJOY-PROJECT
+#####
+##### UTILITY-TREE
+#####
+#####
+
+~~~> SECURITY:
+	~~> Data Confidentiality:
+
+		~> (NORMAL) 100% of the transactions performed by the users are secured through encryption.
+		~> (NORMAL) Users querying database can retrieve only information related to them.
+		~> (NORMAL) Every data inserted into the database is secured through encryption technologies.
+		~> (STRESS) When a system breaching occurs, the disclosure of datas is prevented by
+			    encryption technologies.
+		~> (STRESS) When a malicious user sniffs the connection of other users, the disclosure of datas
+			    is prevented by encryption technologies.
+
+	~~> Data Integrity:
+		~> (NORMAL) 100% of the transactions performed by the users are protected from tampering through
+				integrity checks.
+		~> (NORMAL): 100% of the datas stored into the database are protected from tampering or corruption
+				through database technologies.
+
+	~~> Authentication:
+		~> (NORMAL): 100% of the transactions are performed only after successful authentication of the
+				involved parties.
+		~> (NORMAL): Usage of the vehicles can be allowed only after user's authentication through
+				authentication device.
+		~> (GROWTH): New authentication mechanism should be correctly deployed in < 1 month.
+		~> (STRESS): A malicious user succeed in impersonating another user. The system registers the event
+				and closes the connection with that user.
+
+	~~> Data Control:
+		~> (NORMAL): each transaction is controlled by the system.
+		~> (GROWTH): new hardware/software dedicated to data checking is correctly integrated and configured
+				in < 1 week.
+		~> (STRESS): the system receives incoming datas from a vehicle that is not expected to receives.
+				The system registers the event and close the connection with the vehicle.	
+
+~~~> PERFORMANCE:
+	~~> Throughput:
+		~> (STRESS): during peak workload, transactions regarding cars search and cars booking are
+				executed in < 1s.
+		~> (STRESS): during peak workload, general transactions are executed in < 1.5s.
+
+	~~> Data Loss:
+		~> (NORMAL): during normal workload, the system should guarantee that 99.99% of the data are not lost.
+		~> (GROWTH): new servers introduced to manage transactions are inserted in < 2 weeks.  
+		~> (STRESS): at least 95% of datas should be preserved under peak workload.
+
+	~~> Latency:
+		~> (NORMAL): the latency time for data recording into database is < 200ms.
+		~> (NORMAL): latency time of the connection between users and system should be less than 2 seconds.
+		~> (NORMAL): the data retrieving from the database is < 200ms.
+
+
+~~~~> AVAILABILITY:
+	~~> Hardware Failure:
+		~> (NORMAL): vehicle's component mulfunctioning is detected in less than 10 minutes.
+		~> (GROWTH): additional power suppliers are integrated with the system in less than 1 week.
+		~> (NORMAL): malfuctioning of a system's component is detected in less than 1.5s.
+		
+	~~> Software Failure:
+		~> (NORMAL): software failures are detected in less than 1s.
+		~> (STRESS): one main component of the system fails. The presence of multiple instances of the
+				the software component avoid service disruption.
+		~> (GROWTH): new version of software components are integrated with the current system in less than
+				1 week.
+	~~> Redundancy:
+		~> (NORMAL): critical hardware components of the system are replicated.
+		~> (GROWTH): rendundant components are inserted in less than 2 weeks.
+		~> (STRESS): one main component of the system fails. The components replication
+				avoid service disruption.
+
+
+~~~~> PORTABILITY:
+	~~> Hardware/software independency:
+		~> (NORMAL): the system is developed with high-level platform independent frameworks and languages.	
+		~> (STRESS): the hardware of the system is updated. The hardware's independecy of the system's architecture
+				avoid any compatibility problem.
+		~> (STRESS): The system is migrated to a new platform. The system's behaviour is not afflicted by the
+				environment change.
+	
+	~~> Interoperability:
+		~> (NORMAL): the system's services are shown through public interfaces.
+		~> (STRESS): a new component is inserted into the architecture. The system's interfaces provide
+				all the services that the component needs.
