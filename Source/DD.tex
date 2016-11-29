@@ -11,15 +11,7 @@
 
 	\pagenumbering{gobble}
 
-	\begin{figure}[h]
-
-		\centerline{
-			\includegraphics[width=350px]{../polimi.png}
-		}
-	
-	\end{figure}
-
-	\clearpage
+	\include{./cover/main}
 
 	\tableofcontents
 
@@ -27,53 +19,12 @@
 
 	\pagenumbering{arabic}
 
-	\section{INTRODUCTION}
-
-		\subsection{Purpose}
-
-		\subsection{Scope}
-
-		\subsection{Definitions, Acronyms, Abbreviations}
-
-		\subsection{Reference Documents}
-
-		\subsection{Document Structure}
-
-
-	\section{ARCHITECTURAL DESIGN}
-
-		\subsection{Overview}
-
-		\subsection{High level components and their interaction}
-
-		\subsection{Component view}
-
-		\subsection{Deployment view}
-
-		\subsection{Runtime view}
-
-		\subsection{Selected architectural styles and patterns}
-
-			\subsubsection{Utility Tree}
-
-		\subsection{Other design decisions}
-
-
-	\section{ALGORITHM DESIGN}
-
-	\section{USER INTERFACE DESIGN}
-
-	\section{REQUIREMENTS TRACEABILITY}
-
-	\section{EFFORT SPENT}
-
-	Lorenzo Casalino
-
-		\begin{itemize}
-			\item 26 November 2016 - 1 hour
-			\item 27 November 2016 - 3 hour and 20m
-		\end{itemize}
-
-	\section{REFERENCES}
+	\include{./introduction/main}
+	\include{./architectural-design/main}
+	\include{./algorithm-design/main}
+	\include{./user-interface-design/main}
+	\include{./requirements-traceability/main}
+	\include{./effort-spent/main}
+	\include{./references/main}
 
 \end{document}

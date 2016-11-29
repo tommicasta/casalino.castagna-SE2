@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}INTRODUCTION}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Purpose}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scope}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Definitions, Acronyms, Abbreviations}{1}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Reference Documents}{1}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Document Structure}{1}{subsection.1.5}
+\contentsline {section}{\numberline {2}ARCHITECTURAL DESIGN}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Overview}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}High level components and their interaction}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Component view}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Deployment view}{2}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Runtime view}{2}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Selected architectural styles and patterns}{2}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Utility Tree}{2}{subsubsection.2.6.1}
+\contentsline {subsection}{\numberline {2.7}Other design decisions}{2}{subsection.2.7}
+\contentsline {section}{\numberline {3}ALGORITHM DESIGN}{3}{section.3}
+\contentsline {section}{\numberline {4}USER INTERFACE DESIGN}{4}{section.4}
+\contentsline {section}{\numberline {5}REQUIREMENTS TRACEABILITY}{5}{section.5}
+\contentsline {section}{\numberline {6}EFFORT SPENT}{6}{section.6}
+\contentsline {section}{\numberline {7}REFERENCES}{7}{section.7}
