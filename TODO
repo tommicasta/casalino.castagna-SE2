@@ -1,0 +1,27 @@
+###################################################
+###################################################
+###################           #####################
+################### TODO FILE #####################
+###################           #####################
+###################################################
+###################################################
+#################     RULES    ####################
+#                  				 ##
+# Every item of the list starts with a ">"	 ##
+# Every item of the list has a urgency level$    ##
+# $specified with a letter sorrounded by    $    ##
+# $rounded parenths "(" & ")"			 ##
+# There are three level of urgency		 ##
+# (L): low					 ##
+# (M): medium					 ##
+# (H): high					 ##
+#						 ##
+###################################################
+###################################################
+###################################################
+
+
+> (L): Complete the cover page.
+> (L): Syntax check. Do we use Aspell?
+> (M): Create the images for the Overview section.
+> (M): Complete and insert the utility tree.

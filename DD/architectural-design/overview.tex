@@ -1,0 +1,23 @@
+\subsection{Overview}
+
+In the following, the general architecture of the system is discussed from two different point of view:
+
+	\begin{itemize}
+		\item Physical point of view: the discussion is focused on physical aspects, with a glance to security solutions. 
+		\item Logical point of view: more focus is dedicated to the logical design choices and the relations between the components of the system. 
+	\end{itemize} 
+
+
+	\paragraph{Physical point of view}
+		Making reference to {figure and number}, the system is physically divided into two layers:
+		\begin{itemize}
+			\item Server layer: also called demilitarized zone.
+			\item Database layer.
+		\end{itemize}
+		This kind of suddivision allows decoupling of datas from the general logic of the system, increasing the maintanance and modularity.
+		Furthermore, the suddivision allows the creation of a so-called Demilitarized Zone, creating an additional layer of security for sensible datas.
+
+		The communications between the outside and the system and between the system and the database is controlled by firewalls interleaved between them. This kind of configuration allows the control of the type of requests, decreasing the risk of successful attacks against the system. 
+
+		In principle, the cars deployed by the Car Sharing Society are trust "devices" and could communicate directly with the Server Layer, without passing through the first firewall. By the way, are known different ways, both in accademic field and in the real world, to sniff and tamper communications between devices or hack directly vehicles. Hence, since the cars cannot be trusted, they have to be considered as other external devices. 
+	\paragraph{Logical point of view}
