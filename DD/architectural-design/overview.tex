@@ -1,23 +1,25 @@
 \subsection{Overview}
 
-In the following, the general architecture of the system is discussed from two different point of view:
+In the following, the logical architecture of the system is briefly discussed, introducing the high level design choices made.
+With "logical architecture" here we mean how the system is logically structure, without implying any physical design choice (i.e: physical distinct allocation of web server and application server).
+ 
+For a more specific and deeper discussion about the architectural styles and patters here introduced, together with reason for their choice, please refer to the \nameref{sec:selected-styles-patterns} section.
 
+\begin{figure}[h]
+	\centerline{
+		\includegraphics[width=350px]{../Datas/images/PEhla.jpg}
+	}
+		\caption{The system's high-level architecture}
+		\label{fig:high-lev-arch}
+\end{figure}
+
+
+The general architecture of the system is based on the Client/Server paradigm. As depicted in Figure \ref{fig:high-lev-arch}, a suddivision in 3 layers, also called Distributed Representation is chosen:
 	\begin{itemize}
-		\item Physical point of view: the discussion is focused on physical aspects, with a glance to security solutions. 
-		\item Logical point of view: more focus is dedicated to the logical design choices and the relations between the components of the system. 
-	\end{itemize} 
+		\item Presentation level: the level where information requested are presentend (i.e: rendered by means of a web browser or simply delivered to the final user).
+		\item Application logic level: here the whole logic of the system take place (i.e: vehicles' availability control).
+		\item Data level: where the datas used, created and modified by the application logic tier are stored.
+	\end{itemize}
 
-
-	\paragraph{Physical point of view}
-		Making reference to {figure and number}, the system is physically divided into two layers:
-		\begin{itemize}
-			\item Server layer: also called demilitarized zone.
-			\item Database layer.
-		\end{itemize}
-		This kind of suddivision allows decoupling of datas from the general logic of the system, increasing the maintanance and modularity.
-		Furthermore, the suddivision allows the creation of a so-called Demilitarized Zone, creating an additional layer of security for sensible datas.
-
-		The communications between the outside and the system and between the system and the database is controlled by firewalls interleaved between them. This kind of configuration allows the control of the type of requests, decreasing the risk of successful attacks against the system. 
-
-		In principle, the cars deployed by the Car Sharing Society are trust "devices" and could communicate directly with the Server Layer, without passing through the first firewall. By the way, are known different ways, both in accademic field and in the real world, to sniff and tamper communications between devices or hack directly vehicles. Hence, since the cars cannot be trusted, they have to be considered as other external devices. 
-	\paragraph{Logical point of view}
+The elastic load balancer cloud computing patter is used and placed in front of the web servers and the application logic servers in order to increasethe availability of the system.
+To mitigate security issues, firewalls are located between Application logic tier and Datas tier and in between of the public internet and the system's private network.
