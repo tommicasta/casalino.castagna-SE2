@@ -1,0 +1,84 @@
+##########
+Here are the components I spotted along with the
+functional requirements they map.
+
+Components inside other components (i.e.: Guest inside User Manager) are
+components that compose part of the super component (i.e.: Guest component form User Manager super component).
+
+In this draft there's a lack of description, but refering to the RASD you should have no problem to perform the same reasoning. If it's not the case, ask me.
+
+
+
+- User Manager:
+ -- Guest
+ -- Logged User
+
+>>> 1.2
+>>> 2.4, 2.5
+>>> 3.1
+>>> 5.1
+>>> 5.2
+>>> 7.4
+>>> 7.7
+
+- Security Manager:
+ -- User Security
+  --- Authentication
+  --- Two factor auth. mechanism
+ -- Car Security
+
+>>> 1.2, 1.3
+>>> 3.2
+
+- Vehicle Manager:
+ -- Vehicle
+ -- Central System
+ -- Availability Manager
+ -- Authentication Device
+
+>>> 2.1, 2.2, 2.3, 2.7, 2.8
+>>> 3.1
+>>> 4.1, 4.2
+>>> 5.1, 5.2, 5.3
+>>> 10.1.1, 10.1.2, 10.2.1, 10.3.1
+
+- Ride Manager
+
+>>> 5.1, 5.2, 5.4, 5.5
+>>> 10.1.2
+
+
+- Reservation Manager
+
+>>> 2.9
+>>> 4.4, 4.8
+>>> 5.4
+
+- Timer
+
+>>> 4.3
+>>> 5.3
+>>> 10.1.3
+
+
+- Area Manager:
+ -- Area
+ -- Parking Area (derives from Area)
+ -- Special Parking Area (derives from Area)
+
+>>> 2.10
+>>> 6.1
+
+- Payment Manager:
+
+>>> 5.6
+>>> 7.2
+
+- Driver License Manager (?):
+
+>>> 7.3, 7.4
+
+- Event Handler:
+
+>>> 10.1.1, 10.1.2
+>>> 10.3.1, 10.3.2
