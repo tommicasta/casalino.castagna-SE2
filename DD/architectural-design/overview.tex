@@ -1,25 +1,25 @@
 \subsection{Overview}
 
-In the following, the logical architecture of the system is briefly discussed, introducing the high level design choices made.
-With "logical architecture" here we mean how the system is logically structure, without implying any physical design choice (i.e: physical distinct allocation of web server and application server).
+In the following, a brief overview of the system's architecture is given in order to introduce the reader to the general structure of the system, highlighting the tasks separation.
 
-For a more specific and deeper discussion about the architectural styles and patters here introduced, together with reason for their choice, please refer to the \nameref{sec:selected-styles-patterns} section.
-
-\begin{figure}[h]
-	\centerline{
-		\includegraphics[width=400px]{../Datas/images/PEhla.pdf}
-	}
-		\caption{The system's high-level architecture}
-		\label{fig:high-lev-arch}
-\end{figure}
-
-The general architecture of the system is based on the Client/Server paradigm. As depicted in Figure \ref{fig:high-lev-arch}, a suddivision in 3 layers, also called Distributed Representation is chosen:
+The logic architecture of the system is composed of \textbf{three layer}. Each layer represents a distinct aspect of the system. These distinct aspects are the main tasks for which the system is design for. Each task is accomplished by a set of logically related functionalities, contained into one and only one of the logic layer. The communication between adjacent layers ties the logic architecture of the system. 
 
 \begin{itemize}
-	\item \textbf{Presentation level}: the level where information requested are presentend (i.e: rendered by means of a web browser or simply delivered to the final user).
-	\item \textbf{Application logic level}: here the whole logic of the system take place (i.e: vehicles' availability control).
-	\item \textbf{Data level}: where the datas used, created and modified by the application logic tier are stored.
+	\item \textbf{Presentation layer}: where the datas are used, processed and converted into a usable form.
+	\item \textbf{Logic layer}: where the whole logic of the system take place.
+	\item \textbf{Data layer}: where the functionalities for data management live.
 \end{itemize}
 
-The elastic load balancer cloud computing patter is used and placed in front of the web servers and the application logic servers in order to increasethe availability of the system.
-To mitigate security issues, firewalls are located between Application logic tier and Datas tier and in between of the public internet and the system's private network.
+From a physical point of view, the system is layered in \textbf{four levels}, or \textit{tiers}. Each tier represents a physical computational node where the system's components are placed, according to their functionalities. Each tier is separated from the other and can communicate between themselves.
+
+\begin{itemize}
+	\item \textbf{Client tier}: layer containing the software components usable from the client to access to the system's functionalities and use the data requested.
+	\item \textbf{Web server tier}: layer containing the components design for the processing of requests and responses.
+	\item \textbf{Application server tier}: layer containing the components created to implement and support the business logic.
+	\item \textbf{Database tier}: layer containing software components for access and management of data.
+\end{itemize}
+
+Since the context where the system will be deployed is a highly concurrent context, with requests coming from a large and heterogeneous set of devices, and the workload generated is generally unpredictable, some design choices oriented to increase the performance of the system has been considered.
+Such choices are deeply discussed in \textit{\nameref{sec:selected-styles-patterns}} section, describing the motivation for their choice and how they are used.
+
+Design choices not regarding performances, i.e. System's security, are shown and explained in \textit{\nameref{sec:other-design-decisions}}.
