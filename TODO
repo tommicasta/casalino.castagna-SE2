@@ -21,7 +21,21 @@
 ###################################################
 
 
+
+
+Tommaso
+> (L) : Introduction
+> () : Component View
+	> () : Deployment View
+	> () : Runtime View
+	> () : Component Interfaces
+> () : Algorithm Design
+> (XL) : User Interface Design (Mockups)
+
+Lorenzo
 > (L): Complete the cover page.
-> (L): Syntax check. Do we use Aspell?
-> (M): Create the images for the Overview section.
 > (M): Complete and insert the utility tree.
+> (M): Create the images for the Overview section.
+> () : Selected architectural styles and patterns
+> () : Other design decisions
+> () : User Interface Design (Diagrams)
