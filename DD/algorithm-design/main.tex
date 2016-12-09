@@ -1,1 +1,69 @@
 \section{ALGORITHM DESIGN}
+
+This sections present some of the main algorithms used in the application.
+
+\subsection{Available car search}
+The following algorithm searches all the available cars near the area specified by the user, if a car
+is within the visible area of the map, this function will place it on the map in the correct position
+so that the user can possibly reserve it. Referring to the Google Maps API this function should be
+added as a listener either to the "bounds\textunderscore changed" event and to the generation event, so
+that the user can drag the map and still see the available cars.
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+  \caption{\label{alg:stdreqhandler} Car Search Handling Algorithm}
+
+  \Function{nearbyAvailableCarSearch}{}
+    \State $ bounds = \textit{map.getBounds()} $
+    \State $ i = \textit{0}$
+    \For {$ i < \textit{availableCars.size()} $}
+      \State $ currentLatLng = \textit{availableCars[i].getLatLng} $
+      \State $ currentId = \textit{availableCars[i].getId} $
+      \If {$ \textit{bounds.contains(currentLatLng)} $}
+        \State \textit{map.addCar(
+          \State position: currentLatLng,
+          \State title: currentId,
+          \State details: availableCars[i].getDetails
+        \State )}
+      \ElsIf {$ \textit{map.contains(currentId)} $}
+        \State map.removeCar(currentId)
+      \EndIf
+    \EndFor
+  \EndFunction
+
+\end{algorithmic}
+\end{algorithm}
+
+\pagebreak
+
+\subsection{Car reservation}
+The following algorithm searches all the available cars near the area specified by the user, if a car
+is within the visible area of the map, this function will place it on the map in the correct position
+so that the user can possibly reserve it. Referring to the Google Maps API this function should be
+added as a listener either to the "bounds\textunderscore changed" event and to the generation event, so
+that the user can drag the map and still see the available cars.
+
+\begin{algorithm}
+\begin{algorithmic}[2]
+  \caption{\label{alg:stdreqhandler} Car Reservation Handling Algorithm}
+
+  \Function{carReservation}{CarId id, User u}
+    \State $ bounds = \textit{map.getBounds()} $
+    \State $ i = \textit{0}$
+    \For {$ i < \textit{availableCars.size()} $}
+      \State $ currentLatLng = \textit{availableCars[i].getLatLng} $
+      \State $ currentId = \textit{availableCars[i].getId} $
+      \If {$ \textit{bounds.contains(currentLatLng)} $}
+        \State \textit{map.addCar(
+          \State position: currentLatLng,
+          \State title: currentId,
+          \State details: availableCars[i].getDetails
+        \State )}
+      \ElsIf {$ \textit{map.contains(currentId)} $}
+        \State map.removeCar(currentId)
+      \EndIf
+    \EndFor
+  \EndFunction
+
+\end{algorithmic}
+\end{algorithm}
