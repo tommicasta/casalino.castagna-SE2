@@ -24,18 +24,17 @@
 
 
 Tommaso
-> (L) : Introduction
-> () : Component View
+> (L): Introduction
+> (): Component View
 	> () : Deployment View
 	> () : Runtime View
 	> () : Component Interfaces
-> () : Algorithm Design
-> (XL) : User Interface Design (Mockups)
+> (): Algorithm Design
+> (XL): User Interface Design (Mockups)
 
 Lorenzo
-> (L): Complete the cover page.
-> (M): Complete and insert the utility tree.
-> (M): Create the images for the Overview section.
-> () : Selected architectural styles and patterns
-> () : Other design decisions
-> () : User Interface Design (Diagrams)
+> (L): Complete and insert the utility tree.
+> (L): Create the images for the Overview section.
+> (H): Selected architectural styles and patterns
+> (H): Other design decisions
+> (H): User Interface Design (Diagrams)
