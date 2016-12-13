@@ -11,7 +11,7 @@
 # Every item of the list has a urgency level$    ##
 # $specified with a letter sorrounded by    $    ##
 # $rounded parenths "(" & ")"			 ##
-# There are three level of urgency		 ##
+# There are three main level of urgency		 ##
 # (L): low					 ##
 # (M): medium					 ##
 # (H): high					 ##
@@ -33,8 +33,7 @@ Tommaso
 > (XL): User Interface Design (Mockups)
 
 Lorenzo
-> (L): Complete and insert the utility tree.
+> (XXL): Complete and insert the utility tree.
 > (L): Create the images for the Overview section.
-> (H): Selected architectural styles and patterns
-> (H): Other design decisions
-> (H): User Interface Design (Diagrams)
+> (M): Selected architectural styles and patterns
+> (M): Other design decisions
