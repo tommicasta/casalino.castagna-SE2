@@ -19,7 +19,16 @@ From a physical point of view, the system is layered in \textbf{four levels}, or
 	\item \textbf{Data tier}: layer containing software components for access and management of data.
 \end{itemize}
 
-Since the context where the system will be deployed is a highly concurrent context, with requests coming from a large and heterogeneous set of devices, and the workload generated is generally unpredictable, some design choices oriented to increase the performance of the system has been considered.
+In order to design and, in the end, develop a highly scalable, flexible, easy to expande and easy to maintain system some design principles has been taken in consideration during the process of identification of the functional components composing the system to be:
+
+\begin{itemize}
+	\item \textbf{High Cohesion.}
+	\item \textbf{Loose Coupling.}
+	\item \textbf{High level of abstraction.}
+	\item \textbf{Separation of concerns.}
+\end{itemize}
+
+Since the environment where the system will be deployed is a highly concurrent context, with requests coming from a large and heterogeneous set of devices, and the workload generated is generally unpredictable, some design choices oriented to increase the performance of the system has been considered.
 Such choices are deeply discussed in \textit{\nameref{sec:selected-styles-patterns}} section, describing the motivation for their choice and how they are used.
 
 Design choices not regarding performances, i.e. System's security, are shown and explained in \textit{\nameref{sec:other-design-decisions}}.
