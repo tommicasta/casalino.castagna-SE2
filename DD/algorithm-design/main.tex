@@ -19,13 +19,13 @@ so that the user can drag the map and still see the available cars.
     \State $ availableCars = \Call {getAvailableCars} $
     \State $ i = \textit{0}$
     \For {$ i < \textit{availableCars.size()} $}
-      \State $ currentLatLng = \textit{availableCars[i].getLatLng} $
-      \State $ currentId = \textit{availableCars[i].getId} $
+      \State $ currentLatLng = \textit{availableCars[i].getLatLng()} $
+      \State $ currentId = \textit{availableCars[i].getId()} $
       \If {$ \textit{bounds.contains(currentLatLng)} $}
         \State \textit{map.addCar(
           \State position: currentLatLng,
           \State title: currentId,
-          \State details: availableCars[i].getDetails
+          \State details: availableCars[i].getDetails()
         \State )}
       \ElsIf {$ \textit{map.contains(currentId)} $}
         \State map.removeCar(currentId)
