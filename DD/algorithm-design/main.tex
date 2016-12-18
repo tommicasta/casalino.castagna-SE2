@@ -38,11 +38,56 @@ so that the user can drag the map and still see the available cars.
 \end{algorithmic}
 \end{algorithm}
 
+\subsubsection{Functions and variables description}
+\begin{itemize}
+	\item \textbf{\textsc{getReservationLock}(CarId, User)}: Function that tries to acquire the lock on the
+                                                           reservation part of the Car object and the
+                                                           user object identified by the parameters
+                                                           \textit{CarId} and \textit{User}.
+                                                           If it can't get the lock after a certain
+                                                           amount of time the function throws a
+                                                           \textit{LockTimeoutException}.
+	\item \textbf{\textsc{getCar}(CarId)}: Function that returns the Car object identified by the
+                                         \textit{CarId} parameter.
+                                         If no car corresponding to the specified ID is found, the
+                                         function throws a \textit{CarNotFoundException}.
+	\item \textbf{Car.isAvailable()}: Method that returns \textit{True} if the car on which it is called
+                                    is currently available, returns \textit{False} instead.
+	\item \textbf{Car.reserveCar()}: Method that set the state of the car on which it is called to
+                                   \textit{Reserved}.
+                                   This method is subject to the \textit{ReservationLock} obtainable
+                                   through the \textit{\textsc{getCarReservationLock(CarId)}} function.
+	\item \textbf{User.hasActiveReservation()}: Method that returns \textit{True} if the user on
+                                                       which it is called on already has an active
+                                                       reservation, returns \textit{False} instead.
+	\item \textbf{ReservationTimer(minutes)}: This timer expires after the amount of minutes defined by the
+                                            parameter \textit{minutes}, once expired it deletes the
+                                            reservation it is associated to.
+	\item \textbf{\textsc{reservation\textunderscore timer}}: Variable containing the duration of the
+                                                            \textit{ReservationTimer} expressed in
+                                                            minutes.
+  \item \textbf{\textsc{createReservation}(CarId, User, ReservationTimer)}: Function that creates the
+                                                                            reservation, associating the
+                                                                            car, the user and the timer
+                                                                            it gets as parameters.
+                                                                            Among other things, it is
+                                                                            in charge of setting the car
+                                                                            as \textit{Reserved}, and
+                                                                            starting the \textit{Timer}.
+                                                                            The methods called in this
+                                                                            function are subject to
+                                                                            the \textit{ReservationLock}
+                                                                            obtainable through the
+                                                                            \textit{\textsc{getReservationLock}(CarId, User)}
+                                                                            function.
+	\item \textbf{Lock.releaseLock()}: Function that releases the lock on which it is called.
+\end{itemize}
+
 \pagebreak
 
 \subsection{Car reservation}
 The following algorithm takes care of the reservation of a car by a user. In order to avoid consistency
-issues we need to ensure the atomicity of the reservation so that a car cannot be served by more than
+issues we need to ensure the atomicity of the reservation so that a car cannot be reserved by more than
 one user. To do so we decided to use a lock-like pattern.
 
 
@@ -57,29 +102,25 @@ one user. To do so we decided to use a lock-like pattern.
 \begin{algorithmic}[1]
   \caption{\label{alg:stdreqhandler} Car Reservation Handling Algorithm}
 
-  \Function{carReservation}{CarId id, User user}
-    \State $ lock = null $
+  \Function{carReservation}{carId, user}
+    \State $ reservationLock = null $
     \State $ car = null $
     \try
-      \State $ lock = getCarLock(id) $
-      \State $ availableCars = $ \Call {getAvailableCars}{$ $}
-      \State $ car = availableCars.getCar(id) $
-      \State $ car.reserveCar() $
-      \State $ currentReservations =  $ \Call {getCurrentReservations}{$ $}
-      \If {$ currentReservations.contains(user) $}
+      \State $ reservationLock = \Call {getReservationLock}{carId, user} $
+      \State $ car = \Call {getCar}{carId} $
+      \If {$ !car.isAvailable() $}
+        \State {\textbf{Throw} carNotAvailableException}
+      \EndIf
+      \If {$ user.hasActiveReservation() $}
         \State {\textbf{Throw} multipleReservationException}
       \EndIf
-      \State $ reservationTimer = Timer(60) $
-      \State $ reservationTimer.start() $
-      \State \Call {createReservation}{id, user, reservationTimer}{$ $}
-    \catch {(LockedResourceException)}
+      \State $ reservationTimer = Timer $(\textsc{reservation\textunderscore timer})
+      \State \Call {createReservation}{carId, user, reservationTimer}{$ $}
+      \State $ ReservationLock.releaseLock() $
+    \catch {(LockTimeoutException, carNotAvailableException)}
       \State {\textbf{return} ReservationError}
-    \catch{(CarNotFoundException)}
-      \State $ lock.releaseLock() $
-      \State {\textbf{return} ReservationError}
-    \catch{(multipleReservationException)}
-      \State $ lock.releaseLock() $
-      \State $ car.setAvailable() $
+    \catch{(CarNotFoundException, multipleReservationException)}
+      \State $ reservationLock.releaseLock() $
       \State {\textbf{return} ReservationError}
     \endtry
     \State \textbf{return}
@@ -87,5 +128,31 @@ one user. To do so we decided to use a lock-like pattern.
 
 \end{algorithmic}
 \end{algorithm}
+
+\subsubsection{Functions and variables description}
+\begin{itemize}
+	\item \textbf{map}: Variable referencing the map object created using the Google Maps API.
+	\item \textbf{Map.getBounds()}: Method of the \textit{map} object that returns an object describing
+                                  the boundaries of the currently visible map.
+	\item \textsc{\textbf{getAvailableCars()}}: Is a function that returns a list of car objects
+                                              containing all the currently available cars.
+	\item \textbf{List.size()}: Method that returns the number of elements contained in the list on which
+                              it is called.
+	\item \textbf{Car.getLatLng()}: Method that returns a variable containing the current latitude and
+                                  longitude of the car on which it is called.
+	\item \textbf{Car.getId()}: Method that returns the identification code of the car on which it is
+                              called.
+	\item \textbf{Bounds.contains(LatLng)}: This method returns true in the case in which the
+                                          geographical position described by its argument
+                                          \textit{LatLng}, is inside the boundaries defined by
+                                          the \textit{bounds} object on which the method is called.
+	\item \textbf{Map.addCar(CarMarker)}: This method adds the \textit{CarMarker} object that receives
+                                        as a parameter to the map on which it's called, making the car
+                                        and all its informations visible on the map, and allowing the
+                                        user to reserve it.
+	\item \textbf{CarMarker}: Object containing the all the necessary informations concerning the car.
+	\item \textbf{Map.removeCar(CarId)}: Method that removes the car identified by the \textit{CarId}
+                                       parameter from the map on which it is called.
+\end{itemize}
 
 \pagebreak
