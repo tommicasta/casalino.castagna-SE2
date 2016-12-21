@@ -1,0 +1,40 @@
+\subsection{Non-functionals Requirements}
+
+Unlike the previous subsection, here is given more emphasis to the non-functional requirements, mapping them to the design choices.
+
+To have a better understanding about how the design choices satisfy the related requirements, see the \textit{\nameref{sec:selected-styles-patterns}} and \textit{nameref{sec:other-design-decisions}} sections.
+
+\begin{longtable}{ |l|p{10cm}| }
+	\hline
+	\textbf{Requirement} & \textbf{Design Choice(s)}\\ \hline
+	Performance & Distributed representation
+
+Elastic infrastructure.
+
+Elastic platform.
+
+Load balancer\\ \hline
+
+	Reliability & Elastic infrastructure.
+
+Elastic platform.\\ \hline
+	Availability & Elastic load balancer.
+
+Elastic infrastructure.
+
+Elastic platform.\\ \hline
+	Security & Firewalls
+
+Demilitarized zone.
+
+Elastic load balancer.
+
+Password protection.
+
+Password security.
+
+Secure connection.
+
+DoS/DDoS protection.
+\\ \hline
+\end{longtable}
