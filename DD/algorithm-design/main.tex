@@ -4,11 +4,12 @@ This sections present some of the main algorithms used in the application. Those
 in a pseudocode resembling the java syntax.
 
 \subsection{Available car search}
-The following algorithm searches all the available cars near the area specified by the user, if a car
+The following algorithm searches all the available cars in the area shown in the map, if a car
 is within the visible area of the map, this function will place it on the map in the correct position
-so that the user can possibly reserve it. Referring to the Google Maps API this function should be
-added as a listener either to the "bounds\textunderscore changed" event and to the map generation event,
-so that the user can drag the map and still see the available cars.
+so that the user can possibly reserve it.
+% Referring to the Google Maps API this function should be
+% added as a listener either to the "bounds\textunderscore changed" event and to the map generation event,
+% so that the user can drag the map and still see the available cars.
 
 \begin{algorithm}
 \begin{algorithmic}[1]
@@ -16,20 +17,14 @@ so that the user can drag the map and still see the available cars.
 
   \Function{nearbyAvailableCarSearch}{}
     \State $ bounds = \textit{map.getBounds()} $
-    \State $ availableCars = \Call {getAvailableCars} $
+    \State $ availableCars = \Call {getAvailableCars}{bounds} $
     \State $ i = \textit{0}$
     \For {$ i < \textit{availableCars.size()} $}
-      \State $ currentLatLng = \textit{availableCars[i].getLatLng()} $
-      \State $ currentId = \textit{availableCars[i].getId()} $
-      \If {$ \textit{bounds.contains(currentLatLng)} $}
-        \State \textit{map.addCar(
-          \State position: currentLatLng,
-          \State title: currentId,
-          \State details: availableCars[i].getDetails()
-        \State )}
-      \ElsIf {$ \textit{map.contains(currentId)} $}
-        \State map.removeCar(currentId)
-      \EndIf
+      \State \textit{map.addCar(
+        \State position: availableCars[i].getLatLng(),
+        \State title: availableCars[i].getId(),
+        \State details: availableCars[i].getDetails()
+      \State )}
       \State $ i++ $
     \EndFor
     \State \textbf{return}
@@ -43,8 +38,10 @@ so that the user can drag the map and still see the available cars.
 	\item \textbf{map}: Variable referencing the map object created using the Google Maps API.
 	\item \textbf{Map.getBounds()}: Method of the \textit{map} object that returns an object describing
                                   the boundaries of the currently visible map.
-	\item \textsc{\textbf{getAvailableCars()}}: Is a function that returns a list of car objects
-                                              containing all the currently available cars.
+	\item \textbf{\textsc{getAvailableCars}(Bounds)}: Is a function that returns a list of car objects
+                                                    containing all the currently available cars
+                                                    inside the boundaries defined by the
+                                                    \textit{Bounds} parameter.
 	\item \textbf{List.size()}: Method that returns the number of elements contained in the list on which
                               it is called.
 	\item \textbf{Car.getLatLng()}: Method that returns a variable containing the current latitude and

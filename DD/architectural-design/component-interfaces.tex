@@ -1,0 +1,97 @@
+\subsection{Component interfaces}
+In this sections will be presented and described all the interfaces present in
+our system.
+
+\begin{itemize}
+  \item \textbf{Web Server Interface}: Our web server exposes a RESTful
+                                       interface over the HTTPS protocol.
+  \item \textbf{Authentication Interface}: The access to the resources of our
+                                           system is mediated by this interface
+                                           that verifies the identity of each
+                                           client that tries to connect to our
+                                           system using HTTP basic auth over
+                                           HTTPS.
+  \item \textbf{Registration Interface}: This is the interface that provides
+                                         the registration functionalities to the
+                                         client connecting to our system, it
+                                         relies on a document validation service
+                                         and on a payment handling service.
+  \item \textbf{Login Interface}: This inteface provides the login
+                                  functionality to our system, it allows three
+                                  different user type: Normal User,
+                                  Administrator User and Maintenance Staff.
+  \item \textbf{Account Management Interface}: This inteface allows any user to
+                                               edit his account data or even to
+                                               remove his account from the
+                                               system.
+  \item \textbf{Validation Interface}: This is the interface that connects our
+                                       system to the external document
+                                       validation service.
+  \item \textbf{Validation API}: The \textit{IDCHECK.IO} APIs are used in our
+                                 system for the driving license validation.
+                                 These are RESTful APIs that use JSON format.
+                                 Given the picture of a driving license this
+                                 service tells our system if the document is
+                                 valid or not.
+  \item \textbf{Payment Credential Validation Interface}: This interface
+                                 connects our system to an exteral API that
+                                 controls the authenticity of the payment
+                                 informations submitted by the user.
+  \item \textbf{Payment Service API}: The \textit{LevelUp} APIs offer a lot of
+                                      features related to the payments. They
+                                      use JSON format response.
+  \item \textbf{Reservation Interface}: This is the interface with which a
+                                        normal user interacts in order to make a
+                                        reservation. It interacts with different
+                                        components in order to give the user all
+                                        the informations he needs to make a
+                                        reservation.
+  \item \textbf{Payment Interface}: This is the interface responsible for the
+                                    communication between the system and the
+                                    external service that handles payments.
+  \item \textbf{Search Interface}: This interface allows a user to search an
+                                   available car.
+  \item \textbf{Areas Data Interface}: This is the iterface used to fetch all
+                                       the data about the parking areas, such as
+                                       their position, and in case of special
+                                       parking areas, the number of available
+                                       plugs.
+  \item \textbf{Areas Management Interface}: This is the iterface used by the
+                                             administrator users to manage all
+                                             the aspects of the parking areas.
+                                             They can be added, removed or
+                                             modified to reflect any changes in
+                                             the real world.
+  \item \textbf{Fares and Policies Interface}: This interface provides all the
+                                               policies and is used to retrieve
+                                               the fares to apply to the rides.
+  \item \textbf{Fares and Policies Management Interface}: This interface
+                                       provides to an administrator user all the
+                                       functionalities to manage the fares and
+                                       the policies of the company.
+  \item \textbf{Maintenance Interface}: This interface provides the maintenance
+                                        staff with all the information about
+                                        malfunctioning or ordinary maintenance
+                                        needed by cars and charging plugs.
+  \item \textbf{Cars Data Interface}: This is the interface that serves all the
+                                      datas that the sensors installed on the
+                                      cars read and send to the system.
+  \item \textbf{Locking System Interface}: This interface is used for the
+                                           communications between the
+                                           application and the car locking
+                                           system. It is used to send the
+                                           locking and unlocking signal, to
+                                           alert the system if the doors are not
+                                           closed, and to transmit the unlocking
+                                           code inserted by the user on the
+                                           keyboard placed on the car's door.
+  \item \textbf{Cars Management Interface}: This is the interface used by an
+                                            administrator user in order to
+                                            manage the car fleet of the company.
+                                            Cars can be added or removed, and
+                                            the state of a car can be changed
+                                            manually in case of malfunctioning
+                                            of the automated system.
+
+
+\end{itemize}
