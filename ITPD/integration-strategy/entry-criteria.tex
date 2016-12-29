@@ -1,12 +1,28 @@
 \subsection{Entry Criteria}
 
-Before that the integration test phase of specific components may take place, it is fundamental that the following criteria (or conditions) here describe are met.
+Before the integration testing phase of specific components may take place, it is fundamental that the following criteria (or conditions) here described are satisfied.
 The verification of these conditions is really important in order to have as output of the integration test phase meaningful result, useful to assess the quality of the software system designed and, possibly, improve it.
 
-It's worthful point out that some of the chosen criteria are strictly tied to the kind of strategy chosen to perform the integration testing of the system's components. To have informations about the integration testing strategy chosen for this software system, please refer to the \textit{\nameref{sec:integration-testing-strategy}} section.
+It's worthful point out that some of the criteria presented are strictly tied to the kind of strategy chosen to perform the integration testing of the system's components. For informations about the integration testing strategy picked out for this software system, please refer to the \textit{\nameref{sec:integration-testing-strategy}} section.
 
-First criteria to be met before any phase of the integration testing process may take place is the complete draw up of the \textbf{Requirements Analysis and Specification Document} and its positive assessment, since the RASD is the first and most important source of comparison that the development team has to check the testing results. This is more a general condition, refered to the whole testing process than to the specific component testing phase.
+Other criteria, instead, are more general and act as pre-conditions to the whole integration testing process.
 
-Since the integration testing follows a functional-integration based strategy, each core functionality implemented by each component, and supporting the software functionality to be tested, should be completely tested. The kind of test to perform should be both statical, i.e. through code inspections, and dynamical through the use of unit test cases. 
+\textbf{GENERAL CRITERIA}
 
-Before the integration test of a functionality may take place, the components supporting that functionality, their interfaces and their interaction should be described in the \textit{Design Document}, in order to have a overall view on how the components interacts and what kind of services they provide to support the main software functionality to be tested.
+\begin{itemize}
+	\item \textbf{RASD complete draw up:} the RASD has the main function of thoroughly document the functionalities and requirements of the software system. Because of its purpose, it is the first important source of informations and comparison that the development team has to refer to check the results obtained after the integration testing of components. Therefore, the complete draw up of the RASD document is an important condition to satisfy in order to proceed with the integration testing phase. 
+
+
+	\item \textbf{RASD positive assessment}: since the development team refers to the RASD to veify the results of the integration tests, it's fundamental that the RASD content reflects the goals of the stakeholders involved into the project. Documented functionalities diverging from the stakeholders' desires lead to wrong implementations, regardless of the integration testing results.
+\end{itemize}
+
+\textbf{COMPONENT TESTING CRITERIA}
+
+\begin{itemize}
+	\item \textbf{Complete functionality-to-component(s) mapping:} the development team needs to know what components support a precise functionality. Hence, when a certain functionality is going to be tested, is necessary that all the components needed are known.
+	\item \textbf{Complete component-related-to-functionality documentation:} the kind of support provided by a certain component to a certain system functionality must be described in the Design Document.
+	\item \textbf{Complete components interaction description:} to test the integration and interaction between components the Design Document must report in depth how they interact and communicate to support a specific functionality.
+	\item \textbf{Complete component static and dynamic analysis:} the supporting functionalities provided by the components to be integrated must thoroughly inspected through static analysis methods, such as code inspection, and dynamic analysis methods, i.e. unit testing. This step is important because allows to discover possible fault in the implementation, easing and speeding up the integration testing process.
+	\item \textbf{Regression testing:} before starting the integration testing of a certain functionality through new test cases, the old test cases should be run in order to verify the compatibility and the correctenes of the new integration. This process should be executed before the new functionality testing because if the old tests show an incompatibility, the components integration must be reviewed.
+\end{itemize}
+
