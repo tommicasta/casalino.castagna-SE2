@@ -1,3 +1,35 @@
 \subsection{Elements to be Integrated}
 
-In the following, the system's elements to be integrated are spotted and described. With \textit{elements} here we mean the subsystems composing the system's design. The description of a subsystem is recursive, meaning that if a subsystem is composed by other subsystems, even these are described. Description of atomic components is avoided since are well described into the DD.
+In the following, the system's elements to be integrated are spotted and
+described. With \textit{elements} here we mean the subsystems composing the
+system's design. The description of a subsystem is recursive, meaning that if a
+subsystem is composed by other subsystems, even these are described. Description
+of atomic components is avoided since are well described into the DD.
+
+The main \textit{elements} composing our system are:
+\begin{itemize}
+  \item \textbf{Data Tier:} This element represents the DBMS. Even though we are
+                            not developing the DBMS itself, it is still part of
+                            the system, hence it has to be integrated.
+  \item \textbf{Business Logic:} This element contains all the application
+                                 logic present in our system. The main
+                                 components of this element are: the
+                                 \textbf{Authentication Manager}, the
+                                 \textbf{Account Manager}, the
+                                 \textbf{Maintenance Manager}, the
+                                 \textbf{Vehicle Manager} and the
+                                 \textbf{Reservation Manager}.
+  \item \textbf{Web Server:} This is the element responsible for the
+                             communications between the business logic tier and
+                             the clients. It exposes a RESTful implementation
+                             of the communication interfaces.
+  \item \textbf{Client:} This element contains the three different kind of
+                         clients that can access our application, namely the
+                         \textbf{mobile client}, the
+                         \textbf{web application client} and the
+                         \textbf{car central system}
+\end{itemize}
+
+Every component that forms the different \textit{elements} has aledy been tested
+individually, the tests to be performed are applied to the interfaces that
+connect a component with another one.
