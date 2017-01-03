@@ -1,29 +1,34 @@
 \subsection{Entry Criteria}
 
 Before the integration testing phase of specific components may take place, it is fundamental that the following criteria (or conditions) here described are satisfied.
-The verification of these conditions is really important in order to have as output of the integration test phase meaningful result, useful to assess the quality of the software system designed and, possibly, improve it.
 
-It's worthful point out that some of the criteria presented are strictly tied to the kind of strategy chosen to perform the integration testing of the system's components. For informations about the integration testing strategy picked out for this software system, please refer to the \textit{\nameref{sec:integration-testing-strategy}} section.
+The verification of these conditions is really important in order to have as outputs of the integration test phase meaningful results, useful to assess the quality of the software system designed and, possibly, improve it.
 
-Other criteria, instead, are more general and act as pre-conditions to the whole integration testing process.
+It's worthful point out that some of the criteria presented are strictly tied to the kind of strategy chosen to perform the integration testing of the system's components, while others are more general and act as pre-condition for the whole integration test process.
 
+For informations about the integration testing strategy picked out for this software system, please refer to the \textit{\nameref{sec:integration-testing-strategy}} section.
 
 \textbf{GENERAL CRITERIA}
 
 \begin{itemize}
-	\item \textbf{RASD complete draw up:} the RASD has the main function of thoroughly document the functionalities and requirements of the software system. Because of its purpose, it is the first important source of informations and comparison that the development team has to refer to check the results obtained after the integration testing of components. Therefore, the complete draw up of the RASD document is an important condition to satisfy in order to proceed with the integration testing phase.
+	\item \textbf{RASD complete draw up:} the RASD has the main function of thoroughly document the functionalities and requirements of the software system. Because of its purpose, it is the main source of informations and comparison that the development team has to refer to check the results obtained after the integration test of components and subsystems.
 
+	\item \textbf{RASD positive assessment}: since the development team refers to the RASD to veirify the results of the integration tests, it's fundamental that the RASD content reflects the goals of the stakeholders involved into the project. Documented functionalities diverging from the stakeholders' desires lead to wrong implementations, regardless of the integration test results.
 
-	\item \textbf{RASD positive assessment}: since the development team refers to the RASD to veify the results of the integration tests, it's fundamental that the RASD content reflects the goals of the stakeholders involved into the project. Documented functionalities diverging from the stakeholders' desires lead to wrong implementations, regardless of the integration testing results.
+	\item \textbf{DD complete draw up:} the design document has the purpose to describe the system's architecture and the design choices taken. These informations are essential in the development phase, where the implementation of the described software architecture take place. Furthermore, the verification of the result obtained from the integration test of subsystems relies on the content described in the DD.
+
+	\item \textbf{DD positive assessment:} development and integration phase rely heavily on the informations contained in the Design Document, therefore the positive assessment of its content is an essential criterion for the correct development and integration of system's components.
+
+	\item \textbf{ITPD complete draw up:} the ITPD describes all the aspects regarding the integration test phase. Without it, the integration process cannot take place.
+
+	\item \textbf{ITPD positive assessment:} the integration test choices and the path planned must comply and being consistent with the RASD and DD documents. A divergence between what is stated in the ITPD document and what is stated in the RASD and/or in the DD compromises the entire integration and development phases.
+
 \end{itemize}
 
-
-\textbf{COMPONENT TESTING CRITERIA}
+\textbf{SUBSYSTEMS AND COMPONENTS TEST CRITERIA}
 
 \begin{itemize}
-	\item \textbf{Complete functionality-to-component(s) mapping:} the development team needs to know what components support a precise functionality. Hence, when a certain functionality is going to be tested, is necessary that all the components needed are known.
-	\item \textbf{Complete component-related-to-functionality documentation:} the kind of support provided by a certain component to a certain system functionality must be described in the Design Document.
-	\item \textbf{Complete components interaction description:} to test the integration and interaction between components the Design Document must report in depth how they interact and communicate to support a specific functionality.
+	\item \textbf{Creation of required stubs:} some components may need the support of functionalities provided by components not already developed. To overcome this obstacle, the scaffolding process comes in play, designing the stubs needed to emulate the required components. 
 	\item \textbf{Complete component static and dynamic analysis:} the supporting functionalities provided by the components to be integrated must thoroughly inspected through static analysis methods, such as code inspection, and dynamic analysis methods, i.e. unit testing. This step is important because allows to discover possible fault in the implementation, easing and speeding up the integration testing process.
 	\item \textbf{Regression testing:} before starting the integration testing of a certain functionality through new test cases, the old test cases should be run in order to verify the compatibility and the correctenes of the new integration. This process should be executed before the new functionality testing because if the old tests show an incompatibility, the components integration must be reviewed.
 \end{itemize}

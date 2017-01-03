@@ -1,8 +1,14 @@
 \subsection{Integration Testing Strategy}
 \label{sec:integration-testing-strategy}
 
-Since the system to be developed is quite large and there's a quite number of components that can work independently from others, the most indicated strategy to approach the integration testing process is a blending of \textbf{thread-integration} method and \textbf{bottom-up} method.
+The system's architecture design, presented in [DD 2.2] and described in more detail in [DD 2.3], shown a relatively low architecture complexity. Functionality-oriented strategies, i.e. thread strategy, or critical-modules-oriented strategies are not considered appropriate since the planning efforts needed exceed the possible outcomes derived from the use of these strategies.
 
-To be more specific, the \textbf{thread-integration} method is \textit{functionality-oriented}, meaning that a system functionality at a time is tested. The testing of a system functionality is achieved by the development of specific components' parts that support that functionality (this is why the component-functionality mapping must be complete and correct) and integrating them together and testing. The use of this approach allows the developers to focus on one functionality at a time and to focus on the interaction between the involved components, easing the bugs discovery, interaction issues and performance issues.
+Structural-oriented strategies, instead, shown to be quite simply to plan and apply. Among the possible strategies of this testing category, the one considered most indicated to approach the integration test activity is the \textbf{Top-Down Strategy}.
 
-The \textbf{bottom-up} approach, instead, consists in the development of complete components and integration of them. In this project this approach is used for the integration of atomic components, that is either components which functionalities are independent from other components or components already developed, such as external components. The main benefits brought by this strategy are the simplification of the scaffolding plan thanks to the reduction of needed stubs (real components can be used for the testing), speeding up the integration process (real components are integrated from the beginning), ease the bugs discovery and interaction/performance issues discovery.
+The choice is driven by three main features that characterize this testing approach:
+
+\begin{itemize}
+	\item \textbf{Unit test prioritization:} after a component is implemented, it must be immediately tested before any other activity, i.e. implementation or testing another component, can be performed. This means that possible implementation errors, like functionality discrepancies or performance issues, may be discovered immediately after the implementation phase.
+	\item \textbf{Ease design flaws detection:} structural errors in the software system's architecture can be easier detected, avoiding extensive design re-implementation or correction.
+	\item \textbf{Early availability of a prototype:} the presence of a prototype allows an early validation stage. This means that eventual discrepancies between what has been designed in terms of functionalities and what has been developed may be detected in due time.
+\end{itemize}
