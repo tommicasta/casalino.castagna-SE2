@@ -1,0 +1,69 @@
+\subsection{Sequence of Component/Function Integration}
+
+\subsubsection{Software Integration Sequence}
+In this section the integration sequence of the system's components will be
+described. We will start from the business logic tier since this is the
+largest and most complicated part of our system, we will then follow with the
+different clients and the with the web tier. Due to the fact that we rely on the
+\textbf{Java Persistence API (JPA)} the integration with the database is
+implicitly checked every time a component is tested.
+
+
+\begin{longtable}{ |l|lcl| }
+  \caption{Business Logic} \\
+	\hline
+	\textbf{ID} & \multicolumn{3}{c|}{\textbf{\textsc{Integration Test}}} \\
+  \hline
+  \textbf{I1} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Registration} \\
+  \hline
+  \textbf{I2} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Login} \\
+  \hline
+  \textbf{I3} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Account Data Management} \\
+  \hline
+  \textbf{I4} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Reservation Manager} \\
+  \hline
+  \textbf{I5} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Maintenance Manager} \\
+  \hline
+  \textbf{I6} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Area Manager} \\
+  \hline
+  \textbf{I7} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
+  \hline
+  \textbf{I8} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Fares and Policies Manager} \\
+  \hline
+  \textbf{I9} & \textbf{Registration} & \textbf{\textrightarrow{}} & \textbf{Driving License Manager} \\
+  \hline
+  \textbf{I10} & \textbf{Registration} & \textbf{\textrightarrow{}} & \textbf{Payment Manager} \\
+  \hline
+  \textbf{I11} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Payment Manager} \\
+  \hline
+  \textbf{I12} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Map Manager} \\
+  \hline
+  \textbf{I13} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
+  \hline
+  \textbf{I14} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Fares and Policies Manager} \\
+  \hline
+  \textbf{I15} & \textbf{Maintenance Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
+  \hline
+  \textbf{I16} & \textbf{Maintenance Manager} & \textbf{\textrightarrow{}} & \textbf{Area Manager} \\
+  \hline
+\end{longtable}
+
+\begin{longtable}{ |l|p{4.5cm}cp{4.7cm}| }
+  \caption{Car Central System} \\
+	\hline
+  \textbf{ID} & \multicolumn{3}{c|}{\textsc{\textbf{Integration Test}}} \\
+  \hline
+  \textbf{I17} & \textbf{Sensors Controller} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
+  \hline
+  \textbf{I18} & \textbf{Unlocking System} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
+  \hline
+  \textbf{I18} & \textbf{Navigation System} & \textbf{\textrightarrow{}} & \textbf{Area Manager} \\
+  \hline
+\end{longtable}
+
+\subsubsection{Subsystem Integration Sequence}
+
+After all the subsystems are individually tested we can start the integration
+between them using the following order: \newline
+
+\centerline{\textsc{\textbf{Client \textrightarrow{} Web Server \textrightarrow{} Business Logic}}}
