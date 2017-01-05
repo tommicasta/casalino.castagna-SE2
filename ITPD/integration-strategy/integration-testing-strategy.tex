@@ -1,14 +1,9 @@
 \subsection{Integration Testing Strategy}
 \label{sec:integration-testing-strategy}
 
-The system's architecture design, presented in [DD 2.2] and described in more detail in [DD 2.3], shown a relatively low architecture complexity. Functionality-oriented strategies, i.e. thread strategy, or critical-modules-oriented strategies are not considered appropriate since the planning efforts needed exceed the possible outcomes derived from the use of these strategies.
+The system's architecture, presented in [DD 2.2] and described in more detail in [DD 2.3], shows a low extension, with a relatively low complexity and characterized by the presence of several independent components. Functionality-oriented strategies, i.e. thread strategy, or critical-modules-oriented strategies are not considered appropriate since the effort needed to define a testing plan exceeds the outcomes derived from the use of these test approaches.
 
-Structural-oriented strategies, instead, shown to be quite simply to plan and apply. Among the possible strategies of this testing category, the one considered most indicated to approach the integration test activity is the \textbf{Top-Down Strategy}.
+Structural-oriented strategies, instead, present characteristics that make them quite simple to plan and apply. Among the possible approaches belonging to this testing category, the one considered most indicated to face the integration test activity is the \textbf{Hybrid Strategy}, also known as \textit{Sandwich Strategy}. The hybrid strategy consists in the parallel use of the \textit{Top-Down Strategy} and \textit{Bottom-Up Strategy}, combining the advantages characterizing them.
 
-The choice is driven by three main features that characterize this testing approach:
-
-\begin{itemize}
-	\item \textbf{Unit test prioritization:} after a component is implemented, it must be immediately tested before any other activity, i.e. implementation or testing another component, can be performed. This means that possible implementation errors, like functionality discrepancies or performance issues, may be discovered immediately after the implementation phase.
-	\item \textbf{Ease design flaws detection:} structural errors in the software system's architecture can be easier detected, avoiding extensive design re-implementation or correction.
-	\item \textbf{Early availability of a prototype:} the presence of a prototype allows an early validation stage. This means that eventual discrepancies between what has been designed in terms of functionalities and what has been developed may be detected in due time.
-\end{itemize}
+The integration test activity starts from the lowest level of the architecture's hierarchy, that is from the indipendent components composing the software system. Following the bottom-up strategy, these components are integrated into small subsystems. 
+Once all the indipendent components are integrated and tested, the top-down approach comes in play, continuing the integration from the highest level of the hierarchy. The integration goes down up to the lower levels, until the small subsystems obtained with the bottom-up approach are reached.
