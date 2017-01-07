@@ -1,0 +1,38 @@
+\section{Program Stubs and Test Data Required}
+
+In this section we are presenting the drivers and stubs that have to be created
+in order to test our system.
+Thanks to the fact that we are using an hybrid strategy there are different
+independent low-level components that do not require any driver or stub since
+these components will be created before the component that needs them.
+
+\begin{description}
+
+\item[A populated test database:] The database has to contain a small set of
+all the entities needed to the system to work properly.
+
+\item[Account Manager Stub:] This is the stub that exposes the registration,
+login and account data management functionalities. The registration of a user
+simply returns the result of the registration based on the results obtained from
+the \textbf{Driving License Manager} and the \textbf{Payment Manager}.
+
+\item[Reservation Manager Stub:] This stub simulates all the possible operations
+that can be done while reserving a car, for instance: reserving a car, ending a
+reservation or viewing the reservation details. It can retrieve datas from the
+\textbf{Fares and Policies Manager} and from the \textbf{Area Manager}.
+
+\item[Map Manager Stub:] This stub shows the functionalities of the interactive
+map displayed during the reservation process. This component can get datas from
+the \textbf{Area Manager} and from the \textbf{Vehicle manager}.
+
+\item[Maintenance Manager Stub:] This stub presents the functionalities related
+to the maintenance of the cars and the different parking areas. It has to show
+data relative to any malfunction that it can acqure from the
+\textbf{Area Manager} and the \textbf{Vehicle Manager} components.
+
+\end{description}
+
+The \textbf{Driving License Manager}, the \textbf{Payment Manager}, the
+\textbf{Fares and Policies Manager}, the \textbf{Area Manager} and the
+\textbf{Vehicle Manager} are those independent components that are preemptively
+created in order to reduce the numeber of stubs needed in the project.
