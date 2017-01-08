@@ -2,57 +2,51 @@
 
 \subsubsection{Software Integration Sequence}
 In this section the integration sequence of the system's components will be
-described. We will start from the business logic tier since this is the
-largest and most complicated part of our system, we will then follow with the
-different clients and then with the web tier. Due to the fact that we rely on the
+described. Due to the fact that we rely on the
 \textbf{Java Persistence API (JPA)} the integration with the database is
-implicitly checked every time a component is tested.
+checked every time a component is tested.
+
+The component to the left of the arrow is needed to the component to the right
+in order for it to function.
 
 
 \begin{longtable}{ |l|lcl| }
 	\hline
 	\textbf{ID} & \multicolumn{3}{c|}{\textbf{\textsc{Integration Test}}} \\
   \hline
-  \textbf{I1} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Registration} \\
+	\textbf{I1} & \textbf{Area Manager} & \textbf{\textrightarrow{}} & \textbf{Map Manager} \\
   \hline
-  \textbf{I2} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Login} \\
+  \textbf{I2} & \textbf{Vehicle Manager} & \textbf{\textrightarrow{}} & \textbf{Map Manager} \\
+	\hline
+  \textbf{I3} & \textbf{Vehicle Manager} & \textbf{\textrightarrow{}} & \textbf{Maintenance Manager} \\
   \hline
-  \textbf{I3} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Account Data Management} \\
+  \textbf{I4} & \textbf{Area Manager} & \textbf{\textrightarrow{}} & \textbf{Maintenance Manager} \\
   \hline
-  \textbf{I4} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Reservation Manager} \\
+  \textbf{I5} & \textbf{Payment Manager} & \textbf{\textrightarrow{}} & \textbf{Account Manager} \\
   \hline
-  \textbf{I5} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Maintenance Manager} \\
+  \textbf{I6} & \textbf{Driving License Manager} & \textbf{\textrightarrow{}} & \textbf{Account Manager} \\
   \hline
-  \textbf{I6} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Area Manager} \\
-  \hline
-  \textbf{I7} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
-  \hline
-  \textbf{I8} & \textbf{Authentication Manager} & \textbf{\textrightarrow{}} & \textbf{Fares and Policies Manager} \\
-  \hline
-  \textbf{I9} & \textbf{Registration} & \textbf{\textrightarrow{}} & \textbf{Driving License Manager} \\
-  \hline
-  \textbf{I10} & \textbf{Registration} & \textbf{\textrightarrow{}} & \textbf{Payment Manager} \\
-  \hline
-  \textbf{I11} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Payment Manager} \\
-  \hline
-  \textbf{I12} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Map Manager} \\
-  \hline
-  \textbf{I13} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
-  \hline
-  \textbf{I14} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Fares and Policies Manager} \\
-  \hline
-  \textbf{I15} & \textbf{Maintenance Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
-  \hline
-  \textbf{I16} & \textbf{Maintenance Manager} & \textbf{\textrightarrow{}} & \textbf{Area Manager} \\
-  \hline
-  \textbf{I17} & \textbf{Map Manager} & \textbf{\textrightarrow{}} & \textbf{Area Manager} \\
-  \hline
-  \textbf{I18} & \textbf{Map Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
-  \hline
-  \textbf{I18} & \textbf{Map Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
-  \hline
-  \textbf{I18} & \textbf{Map Manager} & \textbf{\textrightarrow{}} & \textbf{Vehicle Manager} \\
-  \hline
+  \textbf{I7} & \textbf{Fares and Policies Manager} & \textbf{\textrightarrow{}} & \textbf{Reservation Manager} \\
+	\hline
+  \textbf{I8} & \textbf{Payment Manager} & \textbf{\textrightarrow{}} & \textbf{Reservation Manager} \\
+	\hline
+	\textbf{I9} & \textbf{Map Manager} & \textbf{\textrightarrow{}} & \textbf{Reservation Manager} \\
+	\hline
+  \textbf{I10} & \textbf{Vehicle Manager} & \textbf{\textrightarrow{}} & \textbf{Reservation Manager} \\
+	\hline
+  \textbf{I11} & \textbf{Maintenance Manager} & \textbf{\textrightarrow{}} & \textbf{Authentication Manager} \\
+	\hline
+  \textbf{I12} & \textbf{Vehicle Manager} & \textbf{\textrightarrow{}} & \textbf{Authentication Manager} \\
+	\hline
+  \textbf{I13} & \textbf{Fares and Policies Manager} & \textbf{\textrightarrow{}} & \textbf{Authentication Manager} \\
+	\hline
+  \textbf{I14} & \textbf{Area Manager} & \textbf{\textrightarrow{}} & \textbf{Authentication Manager} \\
+	\hline
+  \textbf{I15} & \textbf{Reservation Manager} & \textbf{\textrightarrow{}} & \textbf{Authentication Manager} \\
+	\hline
+  \textbf{I16} & \textbf{Account Manager} & \textbf{\textrightarrow{}} & \textbf{Authentication Manager} \\
+	\hline
+
 \end{longtable}
 
 

@@ -2,37 +2,38 @@
 
 In this section we are presenting the drivers and stubs that have to be created
 in order to test our system.
-Thanks to the fact that we are using an hybrid strategy there are different
-independent low-level components that do not require any driver or stub since
-these components will be created before the component that needs them.
+Since we are using a bottom-up approach we will be developing different drivers
+that allow us to simulate parts of the system that are not yet implemented.
 
 \begin{description}
 
-\item[A populated test database:] The database has to contain a small set of
-all the entities needed to the system to work properly.
+  \item[A populated test database:] The database has to contain a small set of all
+  the entities needed to the system to work properly.
 
-\item[Account Manager Stub:] This is the stub that exposes the registration,
-login and account data management functionalities. The registration of a user
-simply returns the result of the registration based on the results obtained from
-the \textbf{Driving License Manager} and the \textbf{Payment Manager}.
+  \item[Map Manager Driver:] This driver uses the functionalities exposed by the
+  \textbf{Area Manager} and the \textbf{Vehicle manager}. It should be developed
+  in two different steps, in the first step will be developed and tested the part
+  related to the vehicle manager, while in the second step the functions relative
+  to the area manager will be tested.
 
-\item[Reservation Manager Stub:] This stub simulates all the possible operations
-that can be done while reserving a car, for instance: reserving a car, ending a
-reservation or viewing the reservation details. It can retrieve datas from the
-\textbf{Fares and Policies Manager} and from the \textbf{Area Manager}.
+  \item[Maintenace Manager Driver:] The development of this driver can also be
+  separated into two different parts, the first one regarding the
+  \textbf{Vehicle Manager}, and the second one regarding the \textbf{Area Manager}.
 
-\item[Map Manager Stub:] This stub shows the functionalities of the interactive
-map displayed during the reservation process. This component can get datas from
-the \textbf{Area Manager} and from the \textbf{Vehicle manager}.
+  \item[Account Manager Driver:] This is the driver used while testing the
+  \textbf{Driving License Manager} and the \textbf{Payment Manager} components that
+  are used during the \textit{registration} of a user.
 
-\item[Maintenance Manager Stub:] This stub presents the functionalities related
-to the maintenance of the cars and the different parking areas. It has to show
-data relative to any malfunction that it can acqure from the
-\textbf{Area Manager} and the \textbf{Vehicle Manager} components.
+  \item[Reservation Manager Driver:] This driver that is the one used to simulate
+  the action of a user reserving a car. It is used to perform the integration test
+  on the \textbf{Fares and Policies Manager} component, the
+  \textbf{Vehicle Manager} component, the \textbf{Payment Manager} component and
+  on the \textbf{Map Manager} component.
+
+  \item[Authentication Manager Driver:] This is the driver situated at the highest
+  level of the bottom-up hierarchy, it is used to test the full functionalities of
+  system. This driver exploits the \textbf{Abbount Manager} component, the
+  \textbf{Reservation Manager} component and the \textbf{Maintenance Manager}
+  component.
 
 \end{description}
-
-The \textbf{Driving License Manager}, the \textbf{Payment Manager}, the
-\textbf{Fares and Policies Manager}, the \textbf{Area Manager} and the
-\textbf{Vehicle Manager} are those independent components that are preemptively
-created in order to reduce the numeber of stubs needed in the project.
