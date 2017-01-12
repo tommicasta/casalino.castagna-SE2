@@ -1,0 +1,32 @@
+\subsubsection{Map manager -> Authentication manager}
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Encode position}} \\
+        \hline
+        \textbf{Parameter(s)} & Position coordinates. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	The position coordinates does not respect the designed decoded position patter. & Returns a specific error. \\
+        \hline
+        The position coordinates respect the designed decoded coordinates patter. & Returns a positive notification. The encoded position is returned. \\
+        \hline
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Decoded position}} \\
+        \hline
+        \textbf{Parameter(s)} & Position coordinates. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	The position coordinates does not respect the designed encoded coordinates patter. & Returns a specific error. \\
+        \hline
+	The position coordinates are already decoded. & Returns a specific error. \\
+        \hline
+        The position coordinates respect the designed encoded coordinates patter. & Returns a positive notification. The decoded position is returned. \\
+        \hline
+\end{longtable}
