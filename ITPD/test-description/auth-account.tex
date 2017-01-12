@@ -1,0 +1,104 @@
+\subsubsection{Account Manager -> Authentication Manager}
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Delete an user account}} \\
+        \hline
+        \textbf{Parameter(s)} & Account identificator \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        No user account is matched by the account identificator. & Returns a specific error. Nothing is deleted from the system's storage.\\
+        \hline
+        The account identificator does not respect the designed account identificator patter & Returns a specific error. Nothing is deleted from the system's storage.\\
+	\hline
+	The account identificator matches one user account stored in the system's storage. & Returns a positive notification. The account matched and all related informations are removed from the system's storage. \\
+        \hline
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Edit user informations}} \\
+        \hline
+        \textbf{Parameter(s)} & Account identificator, information field indentifier(s), updated information(s) \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        No user account is matched by the account identificator. & Returns a specific error. Nothing is deleted from the system's storage.\\
+        \hline
+        The account identificator does not respect the design account identificator patter & Returns a specific error. Nothing is deleted from the system's storage. \\
+	\hline
+	No information field recorded in the system's storage is matched by the information field identifier(s). & Return a speficic error. No modification is performed to the informations stored in the system's storage. \\
+	\hline
+	The information field identificators do not respect the designed information field identificator pattern. & Return a specific error. No modification is performed to the informations stored in the system's storage. \\
+	\hline
+	The updated informations do not respect the designed input pattern. & No modification is performed to the informations stored in the system's storage. \\
+        \hline
+	The account identificator matches one user account stored in the system's storage. The information field identificators respect the designed information field identificator pattern. All the information fields are matched by the information field identifiers. All the updated informations respect the designed input pattern. & Returns a positive notification. The updates are performed correctly. \\
+	\hline
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Verify an user account existence}} \\
+        \hline
+        \textbf{Parameter(s)} & Account identificator \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        No user account is matched by the account identificator. & Returns a specific error. .\\
+        \hline
+        The account identificator does not respect the designed account identificator patter & Returns a specific error. .\\
+	\hline
+	The account identificator matches one user account stored in the system's storage. & Returns a positive notification. . \\
+        \hline
+\end{longtable}
+
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Performe the access to the system's services}} \\
+        \hline
+        \textbf{Parameter(s)} & Identification credentials, authentication credentials\\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        No user account is matched by the indentification credentials. & Returns a specific error. System's services usage and access is not granted. No other action is performed.\\
+        \hline
+	The authentication credentials are not verified & Returns a specific error. System's services usage and access is not granted. No other action is performed.\\
+	\hline
+	The identification credentials does not respect the designed input patter. & Returns a specific error. System's services access and usage is not granted. No other action is performed. \\
+	\hline	
+	The indentification credentials match one user account stored in the system's storage. The authentication credentials are verified. & Returns a positive notification. The access and usage to the system's services is granted. \\
+	\hline
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Register an user account}} \\
+        \hline
+        \textbf{Parameter(s)} & Identification credentials, driving license informations, payment informations, user informations \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The indentification credentials do not respect the designed input pattern. & Returns a specific error. No information is stored in the system's storage. No other action is performed. \\
+	\hline
+	The user informations do not respect the designed input patter. & Returns a specific error. No information is stored in the system's storage. No other action is performed. \\
+        \hline
+        One user account is matched by the indentification credentials. & Returns a specific error. No information is stored in the system's storage. No other action is performed.\\
+        \hline
+	The driving license informations are not valid & Returns a specific error. No information is stored in the system's storage. No other action is performed.  \\
+	\hline
+	The driving license informations are already stored in the system's storage. & Returns a specific error. No information is stored in the system's storage. No other action is performed. \\
+	\hline
+	The payment informations are not valid. & Returns a specific error. No information is stored in the system's storage. No other action is performed. \\
+	\hline	
+	The indentification credentials and the user informations respect the designed input pattern. No account is matched by the identification credentials. The driving license informations are not stored in the system's storage. The driving license informations are valid. The payment informations are valid. & Returns a positive notification. All the informations are stored in the system's storage. \\
+	\hline
+\end{longtable}
+
+\newpage
