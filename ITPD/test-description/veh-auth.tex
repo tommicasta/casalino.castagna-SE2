@@ -40,6 +40,7 @@
 	The vehicle matched by the car identificator is not inside a parking area. & Returns a specific error. \\
 	\hline
 	The car identificator matches one vehicle register inside the system. The vehicle matched is unlocked. The vehicle matched has the engine turned off. The vehicle matched has the vehicle's keys inserted in the vehicle's panel. The vehicle matched has no passenger inside. The vehicle matched has no door open. The vehicle matched is inside a parking area. & Returns a positive notification. The vehicle is locked. \\
+	\hline
 \end{longtable}
 
 
@@ -58,6 +59,7 @@
 	The frame id provided matches the frame id of an already registered vehicle in the system. & Returns a specific error. Nothing is recorded in the system's storage. \\
 	\hline
 	The informations in input are encoded correctly. The vehicle plate provided does not match the plate of any vehicle registered in the system. The frame id provided does not match the frame id of any vehicle registered in the system. & Returns a positive notification. All the informations provided as input are correctly recorded in the system. An unique identificator is associated to the registered vehicle. \\
+	\hline
 \end{longtable}
 
 
@@ -73,7 +75,8 @@
         \hline
 	The car identificator matches a vehicle currently used. & Returns a specific error. Nothing is removed from the system. \\
 	\hline
-	The car identificator matches a vehicle not used. & Returns a positive notification. The informations regarding the vehicle matched by the identificator provided are correectly removed from the system. \\	
+	The car identificator matches a vehicle not used. & Returns a positive notification. The informations regarding the vehicle matched by the identificator provided are correectly removed from the system. \\
+	\hline
 \end{longtable}
 
 
@@ -90,5 +93,6 @@
         The car identificator provided is associated to any vehicle registered in the system. & Returns a specific error. Nothing is removed from the system. \\
         \hline
         The informations in input are encoded in a correct way. The car identificator matches a vehicle registered in the system. & Returns a positive notification. The informations regarding the vehicle matched by the identificator provided are correctly updated with the one provided in input. \\
+	\hline
 \end{longtable}
-
+\newpage
