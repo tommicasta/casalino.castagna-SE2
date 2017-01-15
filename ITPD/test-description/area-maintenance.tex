@@ -1,0 +1,23 @@
+\subsection{Area Manager \textrightarrow{} Maintenance Manager}
+
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Retrive parking area information}} \\
+	\hline
+	\textbf{Parameter(s)} & Parking area identifier \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The parking area identifier does not match any parking area registered in the
+	system.
+	&
+	Returns a specific error.\\
+	\hline
+	The parking area identifier matches one vehicle registered in the system.
+	&
+	Returns in an encoded form the status informations regarding the parking area
+	specified. \\
+	\hline
+\end{longtable}
+\end{minipage}

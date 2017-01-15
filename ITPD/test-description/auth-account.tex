@@ -1,6 +1,7 @@
-\subsubsection{Account Manager -> Authentication Manager}
+\subsection{Account Manager \textrightarrow{} Authentication Manager}
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Delete an user account}} \\
         \hline
@@ -15,9 +16,11 @@
 	The account identificator matches one user account stored in the system's storage. & Returns a positive notification. The account matched and all related informations are removed from the system's storage. \\
         \hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+  \begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Edit user informations}} \\
         \hline
@@ -38,9 +41,11 @@
 	The account identificator matches one user account stored in the system's storage. The information field identificators respect the designed information field identificator pattern. All the information fields are matched by the information field identifiers. All the updated informations respect the designed input pattern. & Returns a positive notification. The updates are performed correctly. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+  \begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Verify an user account existence}} \\
         \hline
@@ -55,10 +60,12 @@
 	The account identificator matches one user account stored in the system's storage. & Returns a positive notification. . \\
         \hline
 \end{longtable}
+\end{minipage}
 
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+  \begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Performe the access to the system's services}} \\
         \hline
@@ -71,13 +78,15 @@
 	The authentication credentials are not verified & Returns a specific error. System's services usage and access is not granted. No other action is performed.\\
 	\hline
 	The identification credentials does not respect the designed input patter. & Returns a specific error. System's services access and usage is not granted. No other action is performed. \\
-	\hline	
+	\hline
 	The indentification credentials match one user account stored in the system's storage. The authentication credentials are verified. & Returns a positive notification. The access and usage to the system's services is granted. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+  \begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Register an user account}} \\
         \hline
@@ -96,9 +105,8 @@
 	The driving license informations are already stored in the system's storage. & Returns a specific error. No information is stored in the system's storage. No other action is performed. \\
 	\hline
 	The payment informations are not valid. & Returns a specific error. No information is stored in the system's storage. No other action is performed. \\
-	\hline	
+	\hline
 	The indentification credentials and the user informations respect the designed input pattern. No account is matched by the identification credentials. The driving license informations are not stored in the system's storage. The driving license informations are valid. The payment informations are valid. & Returns a positive notification. All the informations are stored in the system's storage. \\
 	\hline
 \end{longtable}
-
-\newpage
+\end{minipage}

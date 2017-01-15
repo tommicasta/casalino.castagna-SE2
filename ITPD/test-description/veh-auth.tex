@@ -1,6 +1,7 @@
-\subsubsection{Vehicle Manager -> Authentication Manager}
+\subsection{Vehicle Manager \textrightarrow{} Authentication Manager}
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Unlock the vehicle}} \\
         \hline
@@ -12,12 +13,14 @@
         \hline
         The vehicle matched by the car identificator provided is already unlocked. & Returns a specific error. \\
         \hline
-	The car identificator is associated to one vehicle registered in the system. The vehicle matched is locked. & Returns a positive notification. The vehicle is unlocked. \\ 
+	The car identificator is associated to one vehicle registered in the system. The vehicle matched is locked. & Returns a positive notification. The vehicle is unlocked. \\
         \hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Lock a vehicle}} \\
         \hline
@@ -42,9 +45,11 @@
 	The car identificator matches one vehicle register inside the system. The vehicle matched is unlocked. The vehicle matched has the engine turned off. The vehicle matched has the vehicle's keys inserted in the vehicle's panel. The vehicle matched has no passenger inside. The vehicle matched has no door open. The vehicle matched is inside a parking area. & Returns a positive notification. The vehicle is locked. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Add new vehicle}} \\
         \hline
@@ -61,9 +66,11 @@
 	The informations in input are encoded correctly. The vehicle plate provided does not match the plate of any vehicle registered in the system. The frame id provided does not match the frame id of any vehicle registered in the system. & Returns a positive notification. All the informations provided as input are correctly recorded in the system. An unique identificator is associated to the registered vehicle. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Remove a vehicle}} \\
         \hline
@@ -78,9 +85,11 @@
 	The car identificator matches a vehicle not used. & Returns a positive notification. The informations regarding the vehicle matched by the identificator provided are correectly removed from the system. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Update vehicle's informations}} \\
         \hline
@@ -95,4 +104,4 @@
         The informations in input are encoded in a correct way. The car identificator matches a vehicle registered in the system. & Returns a positive notification. The informations regarding the vehicle matched by the identificator provided are correctly updated with the one provided in input. \\
 	\hline
 \end{longtable}
-\newpage
+\end{minipage}

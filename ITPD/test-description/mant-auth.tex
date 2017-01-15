@@ -1,8 +1,9 @@
-\subsubsection{Vehicle Manager $\rightarrow$ Mantainance Manager}
+\subsection{Maintenance Manager \textrightarrow{} Authentication Manager}
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
-        \multicolumn{2}{ |c| }{\textbf{Assign mantainance task}} \\
+        \multicolumn{2}{ |c| }{\textbf{Assign maintenance task}} \\
         \hline
         \textbf{Parameter(s)} & Car identifier, employee identifier, encoded scheduling time, encoded task informations. \\
         \hline
@@ -12,51 +13,54 @@
 	\hline
         The car identifier does not match any vehicle registered in the system & Returns a specific error.\\
         \hline
-        The car identifier matches one vehicle already scheduled for mantainance. & Returns a specific error. \\
+        The car identifier matches one vehicle already scheduled for maintenance. & Returns a specific error. \\
         \hline
 	The employee identifier does not match any registered employee in the system. & Returns a specific error. \\
 	\hline
 	The scheduling time provided conflicts with the already defined scheduling of the employee. & Returns a specific error. \\
 	\hline
-	The input provided is correctly encoded. The car identifier matches a vehicle not yet scheduled for mantainance. The employee identifier matches one registered employee. & Returns a positive notification. The mantainance task is created, recording the scheduling time and the task informations, associating it to the employee specified. A unique mantainance task identifier is assigned to the mantainance task. \\
+	The input provided is correctly encoded. The car identifier matches a vehicle not yet scheduled for maintenance. The employee identifier matches one registered employee. & Returns a positive notification. The maintenance task is created, recording the scheduling time and the task informations, associating it to the employee specified. A unique maintenance task identifier is assigned to the maintenance task. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+  \begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
-        \multicolumn{2}{ |c| }{\textbf{Remove mantainance task}} \\
+        \multicolumn{2}{ |c| }{\textbf{Remove maintenance task}} \\
         \hline
-        \textbf{Parameter(s)} & Mantainance task identifier \\
+        \textbf{Parameter(s)} & Maintenance task identifier \\
         \hline
         \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
         \hline
-        The mantainance task identifier does not match any task recorded in the system & Returns a specific error.\\
-	\hline        
-        The mantainance task identifier matches one task. & Returns a positive notification. All the informations regarding the task are correctly removed from the system. \\
+        The maintenance task identifier does not match any task recorded in the system & Returns a specific error.\\
+	\hline
+        The maintenance task identifier matches one task. & Returns a positive notification. All the informations regarding the task are correctly removed from the system. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
-        \multicolumn{2}{ |c| }{\textbf{Update mantainance task}} \\
+        \multicolumn{2}{ |c| }{\textbf{Update maintenance task}} \\
         \hline
-        \textbf{Parameter(s)} & Mantainance task identifier, car identifier, employee identifier, encoded scheduling time, encoded task informations. \\
+        \textbf{Parameter(s)} & Maintenance task identifier, car identifier, employee identifier, encoded scheduling time, encoded task informations. \\
         \hline
         \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
-	\hline	
+	\hline
 	The encoded input provided is not encoded correctly. &  Returns a specific error. \\
         \hline
         The car identifier does not match any vehicle registered in the system & Returns a specific error.\\
         \hline
         The employee identifier does not match any registered employee in the system. & Returns a specific error. \\
-	\hline	
+	\hline
 	The scheduling time provided conflicts with the already defined scheduling of the employee. & Returns a specific error. \\
         \hline
-        The mantainance task identifier does not match any task recorded in the system & Returns a specific error.\\
+        The maintenance task identifier does not match any task recorded in the system & Returns a specific error.\\
 	\hline
-        The input provided is encoded correctly. The mantainance task identifier matches one recorded mantainance task. The car identifier matches one registered vehicle. The employee identifier matches one registered employee. The scheduling time does not conflict with the already defined employee mantainance schedule. & Returns a positive notification. The mantainance task is updated, recording the new task informations and scheduling time,  associating it to the employee specified. \\
+        The input provided is encoded correctly. The maintenance task identifier matches one recorded maintenance task. The car identifier matches one registered vehicle. The employee identifier matches one registered employee. The scheduling time does not conflict with the already defined employee maintenance schedule. & Returns a positive notification. The maintenance task is updated, recording the new task informations and scheduling time,  associating it to the employee specified. \\
         \hline
 \end{longtable}
-
+\end{minipage}

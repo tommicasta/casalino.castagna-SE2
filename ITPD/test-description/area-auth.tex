@@ -1,6 +1,7 @@
-\subsubsection{Area Manager -> Authentication Manager}
+\subsection{Area Manager \textrightarrow{} Authentication Manager}
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Insert a new area}} \\
         \hline
@@ -13,9 +14,11 @@
 	The encoded area details are correcly encoded. & Returns a positive notification. The details are correctly recorded in the system. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Delete an area}} \\
         \hline
@@ -28,9 +31,10 @@
 	The area identificator matches one registered area in the system. & Returns a positive notification. The details are correctly removed from the system. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
 
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Update area details}} \\
         \hline
@@ -39,15 +43,16 @@
         \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
         \hline
 	The area identificator does not match any area registered in the system. & Returns a specific error. Nothing is removed from  the system.\\
-	\hline	
+	\hline
 	The encoded area details are not correctly encoded. & Returns a specific error. Nothing is recorded in the system.\\
 	\hline
 	The area identificator matches one registered area in the system. The encoded area details are correcly encoded. & Returns a positive notification. The details are correctly recorded in the system. \\
 	\hline
 \end{longtable}
+\end{minipage}
 
-
-\begin{longtable}{ |p{5cm}|p{5cm}| }
+\begin{minipage}{\textwidth}
+\begin{longtable}{ |p{6cm}|p{6cm}| }
         \hline
         \multicolumn{2}{ |c| }{\textbf{Retrieve area details}} \\
         \hline
@@ -57,5 +62,7 @@
         \hline
 	The area identificator does not match any area registered in the system. & Returns a specific error. \\
 	\hline
-	The area identificator matches one registered area in the system. & Returns a positive notification. The matched-area details are returned in a correctly encoded format.
+	The area identificator matches one registered area in the system. & Returns a positive notification. The matched-area details are returned in a correctly encoded format. \\
+  \hline
 \end{longtable}
+\end{minipage}
