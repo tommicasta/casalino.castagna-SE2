@@ -1,0 +1,18 @@
+\subsection{Integration Testing Strategy}
+\label{sec:integration-testing-strategy}
+
+The architecture designed for the system software under development [DD 2.2] [DD 2.3] is characterized by a \textbf{small extension}, that is a restricted number of components and subsystems, and by a \textbf{loose coupling factor}, due to the presence of several indipendent components.
+
+Making reference to the integration test strategies present in software engineering literature, the category of \textbf{structural integration strategies} results to be the most indicated for small and medium projects.
+Other integration categories, like the functional-oriented strategies, require a planning effort that overcomes the output of the process, making them useless.
+
+Among the strategies belonging to the structural category, the \textbf{Hybrid integration strategy} provide several advantages deriving from the mixed use of the \textit{Top-down approach} and the \textit{Bottom-up approach}:
+
+\begin{itemize}
+	\item \textbf{Bottom-up:} exploiting the loose coupling factor of the architecture, several components at the lowest level of the hierarchy architecture may be integrated and tested from the beginning.
+	\item \textbf{Top-down:} starting the from the highest level of the hierarchy architecture, the components are integrated and tested, providing from the beginning a functional prototype of the software system.
+\end{itemize}
+
+To best exploit the benefits of the hybrid approach, the integration activity starts from the bottom, integrating and testing all the indipendent components, leading to the creation of small subsystems.
+
+The process shifts to the top of the hierarchy, integrating the higher-level components. Going down the hierarchy, the integration process benefits the presence of already integrated and tested subsystems, avoiding further scaffolding and integrating directly already implemented components, easing the detection of bugs and interactions issues.

@@ -1,18 +1,16 @@
-\subsubsection{Vehicle Manager -> Authentication Manager}
+\subsubsection{Vehicle Manager -> Mantainance Manager}
 
 \begin{longtable}{ |p{5cm}|p{5cm}| }
 	\hline
 	\multicolumn{2}{ |c| }{\textbf{Retrive car's components status}} \\
 	\hline
-	\textbf{Parameter(s)} & None \\
+	\textbf{Parameter(s)} & Car identifier \\
 	\hline
 	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
 	\hline
-	The vehicle manager is not associated to a car & Returns in an encoded form a specific error.\\
+	The car identifier does not match any vehicle registered in the system & Returns a specific error.\\
 	\hline
-	The vehicle manager is associated to a car & Returns in an encoded form the status informations regarding the vehicle's components. \\ 
-	\hline
-	Communication between vehicle manager and related car disrupted & Returns in an encoded form a specific error.\\
+	The car identifier matches one vehicle registered in the system & Returns in an encoded form the status informations regarding the vehicle's components. \\ 
 	\hline	 
 \end{longtable}
 
@@ -20,15 +18,13 @@
 	\hline
 	\multicolumn{2}{ |c| }{\textbf{Retrive car's status}} \\
 	\hline
-	\textbf{Parameters} & None \\
+	\textbf{Parameters} & Car identifier \\
 	\hline
 	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
 	\hline
-	The vehicle manager is not associated to a car & Returns in an encoded form a specific error.\\
+	The car identifier does not match any vehicle registered in the system & Returns a specific error.\\
 	\hline
-	The vehicle manager is associated to a car & Returns in an encoded form the status informations regarding the vehicle. \\ 
-	\hline
-	Communication between vehicle manager and related car disrupted & Returns in an encoded form a specific error.\\
+	The car identifier matches one vehicle registered in the system & Returns in an encoded form the status informations regarding the vehicle. \\ 
 	\hline
 \end{longtable}
  
@@ -36,15 +32,13 @@
 	\hline
 	\multicolumn{2}{ |c| }{\textbf{Perform diagnostic on car's components}} \\
 	\hline
-	\textbf{Parameters} & None \\
+	\textbf{Parameters} & Car identifier \\
 	\hline
 	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
 	\hline
-	The vehicle manager is not associated to a car & Returns in an encoded form a specific error.\\
+	The car identifier does not match any vehicle registered in the system & Returns a specific error.\\
 	\hline
-	The vehicle manager is associated to a car & Returns in an encoded form the \textbf{updated} status informations regarding the vehicle's components. \\ 
-	\hline
-	Communication between vehicle manager and related car disrupted & Returns in an encoded form a specific error.\\
+	The car identifier matches one vehicle registered in the system & Returns in an encoded form the updated status informations regarding the vehicle's components. \\ 
 	\hline
 \end{longtable}
 \newpage

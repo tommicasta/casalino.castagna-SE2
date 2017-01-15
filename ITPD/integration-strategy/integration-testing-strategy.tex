@@ -1,18 +1,14 @@
 \subsection{Integration Testing Strategy}
 \label{sec:integration-testing-strategy}
 
-The architecture designed for the system software under development [DD 2.2] [DD 2.3] is characterized by a \textbf{small extension}, that is a restricted number of components and subsystems, and by a \textbf{loose coupling factor}, due to the presence of several indipendent components.
+The architecture designed for the system software under development [DD 2.2] [DD 2.3] is characterized by a \textbf{small extension}, namely a restricted number of components, and by a \textbf{loose coupling factor}, due to the presence of several indipendent components.
 
 Making reference to the integration test strategies present in software engineering literature, the category of \textbf{structural integration strategies} results to be the most indicated for small and medium projects.
 Other integration categories, like the functional-oriented strategies, require a planning effort that overcomes the output of the process, making them useless.
 
-Among the strategies belonging to the structural category, the \textbf{Hybrid integration strategy} provide several advantages deriving from the mixed use of the \textit{Top-down approach} and the \textit{Bottom-up approach}:
+Among the strategies belonging to the structural category, the \textbf{Bottom-up strategy} proves to be the most appropriated approach, exploiting at the best the simplicity of the system's architecture, avoiding complex and unnecessary scaffolding, and the presence of low level indipendent components.
 
-\begin{itemize}
-	\item \textbf{Bottom-up:} exploiting the loose coupling factor of the architecture, several components at the lowest level of the hierarchy architecture may be integrated and tested from the beginning.
-	\item \textbf{Top-down:} starting the from the highest level of the hierarchy architecture, the components are integrated and tested, providing from the beginning a functional prototype of the software system.
-\end{itemize}
+Starting from the bottom of the architecture's hierarchy, the process integrates step by step the indipendent components into small subsystems, shifting afterwards to integrate the small subsystems obtained from the previous steps, climbing up the hierarchy until all the components are integrated and tested.
 
-To best exploit the benefits of the hybrid approach, the integration activity starts from the bottom, integrating and testing all the indipendent components, leading to the creation of small subsystems.
-
-The process shifts to the top of the hierarchy, integrating the higher-level components. Going down the hierarchy, the integration process benefits the presence of already integrated and tested subsystems, avoiding further scaffolding and integrating directly already implemented components, easing the detection of bugs and interactions issues.
+Each step of the integration testing activity is supported by the implementation of \textit{drivers}, which emulate the behaviour and the calls performed by one higher-level components towards the lower components to which it is linked, allowing the integration and testing of the architecture.
+Once one of the small subsystems is thoroughly tested and integrated, the driver can be substituted by the real implementation of the component emulated.

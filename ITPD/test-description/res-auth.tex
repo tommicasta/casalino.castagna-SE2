@@ -1,0 +1,95 @@
+\subsubsection{Reservation Manage -> Authentication Manager}
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Create a reservation}} \\
+        \hline
+        \textbf{Parameter(s)} & Account indentificator, car identificator \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        The account identificator is not associated to any registered account in the system & Returns a specific error. Nothing is recorded in the system.\\
+        \hline
+        The car identificator is not associated to any registered vehicle in the system & Returns a specific error. Nothing is recorded in the system.\\
+        \hline
+	The vehicle associated to the car identificator provided is currently unavailable. & Returns a specific error. Nothing is recorded in the system. \\
+	\hline
+	The account identificator is associated to one registered account. The car identificator is associated to one registered vehicle in the system. The vehicle associated to the car identificator is currently available. & Returns a positive notification. The reservation is created in the system, associating it to the account identificator and the car indentificator provided, along wih the reservation details. The timer associated to the reservation is associated. \\
+        \hline	
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Delete current reservation}} \\
+        \hline
+        \textbf{Parameter(s)} & Account indentificator \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        The account identificator is not associated to any registered account in the system & Returns a specific error. Nothing is recorded in the system.\\
+        \hline
+	The account identificator matches an existing account with no current reservation associated & Returns a specific error. Nothing is removed from the system. \\	
+	\hline
+	The account identificator is associated to one registered account. & Returns a positive notification. The reservation is created in the system, associating it to the account identificator and the car indentificator provided, along with reservation details. Existing timers are removed. \\
+        \hline	
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Update current reservation}} \\
+        \hline
+        \textbf{Parameter(s)} & Account indentificator, event \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        The account identificator is not associated to any registered account in the system & Returns a specific error. Nothing is recorded in the system.\\
+        \hline
+	The account identificator matches an existing account with no current reservation associated & Returns a specific error. Nothing is recorded in the system. \\
+	\hline
+	The event is not correctly encoded & Returns a specific error. Nothing is recorded in the system. \\
+	\hline
+	The account identificator is associated to one registered account. The event is correctly encoded & Returns a positive notification. The reservation associated to the matched account  is updated with the informations containded in the encoded event. \\
+        \hline
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Retrieve current reservation details}} \\
+        \hline
+        \textbf{Parameter(s)} & Account identificator \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        The account identificator is not associated to any registered account in the system & Returns a specific error. \\
+        \hline
+	The account identificator matches an existing account with no current reservation associated & Returns a specific error. \\	
+	\hline
+	The account identificator is associated to one registered account. The registered account has a current reservation associated. & Returns a positive notification. Returns the reservation details correctly encoded. \\
+        \hline	
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Retrieve specific-reservation details}} \\
+        \hline
+        \textbf{Parameter(s)} & Account identificator, filtering option, ordering option \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+        The account identificator is not associated to any registered account in the system & Returns a specific error. \\
+	\hline
+	The filtering option provided is not accepted & Returns a specific error. \\
+        \hline
+	The account identificator matches an existing account with no reservations associated & Returns a specific error. \\	
+	\hline
+	The list of reservations retrieved using the filter option is empty. & Returns a specific error. \\
+	\hline
+	The ordering option provided is not accepted & Returns a specific error. \\
+	\hline
+	The account identificator is associated to one registered account. The registered account has at least one reservation associated. The filtering option is accepted. The ordering option is accepted. The list of reservations retrieved using the filter option is not empty. & Returns a positive notification. Returns the details of all the reservations retrieved applying the filtering option in the order specified by the ordering option. The list is returned in a correctly encoded format. \\
+        \hline	
+\end{longtable}

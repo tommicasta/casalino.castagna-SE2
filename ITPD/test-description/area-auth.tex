@@ -1,0 +1,58 @@
+\subsubsection{Area Manager -> Authentication Manager}
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Insert a new area}} \\
+        \hline
+        \textbf{Parameter(s)} & Encoded area details \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	The encoded area details are not correctly encoded. & Returns a specific error. Nothing is recorded in the system.\\
+	\hline
+	The encoded area details are correcly encoded. & Returns a positive notification. The details are correctly recorded in the system.
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Delete an area}} \\
+        \hline
+        \textbf{Parameter(s)} & Area identificator\\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	The area identificator does not match any area registered in the system. & Returns a specific error. Nothing is removed from  the system.\\
+	\hline
+	The area identificator matches one registered area in the system. & Returns a positive notification. The details are correctly removed from the system.
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Update area details}} \\
+        \hline
+        \textbf{Parameter(s)} & Area identificator, encoded area details \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	The area identificator does not match any area registered in the system. & Returns a specific error. Nothing is removed from  the system.\\
+	\hline	
+	The encoded area details are not correctly encoded. & Returns a specific error. Nothing is recorded in the system.\\
+	\hline
+	The area identificator matches one registered area in the system. The encoded area details are correcly encoded. & Returns a positive notification. The details are correctly recorded in the system.
+\end{longtable}
+
+
+\begin{longtable}{ |p{5cm}|p{5cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Retrieve area details}} \\
+        \hline
+        \textbf{Parameter(s)} & Area identificator \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	The area identificator does not match any area registered in the system. & Returns a specific error. \\
+	\hline
+	The area identificator matches one registered area in the system. & Returns a positive notification. The matched-area details are returned in a correctly encoded format.
+\end{longtable}
