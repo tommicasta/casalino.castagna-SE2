@@ -1,0 +1,95 @@
+\subsection{Area Manager \textrightarrow{} Map Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Retrive the parking areas around a location}}\\
+	\hline
+	\textbf{Parameter(s)} & Location, Radius \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	Location or radius parameters are not encoded correctly.
+	&
+	Returns a specific error.\\
+	\hline
+	No areas are found in the specified location.
+	&
+	Returns a message prompting the user to change the parameters because there is
+	not an area that meets the specified parameters. \\
+	\hline
+	One or more parking areas meet the specified parameters.
+	&
+	Returns a list of all the areas found in the specified location with the
+	respective information.\\
+	\hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Retrive a specific parking area}} \\
+	\hline
+	\textbf{Parameters} & Area identificator \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The parameter doesn't match the area identificator design pattern.
+	&
+	Returns in an encoded form a specific error.\\
+	\hline
+	There is no area corresponding to the provided identificator.
+	&
+	Returns in an encoded form a specific error.\\
+	\hline
+	There is an area corresponding to the specified identificator.
+	&
+	Returns in an encoded form the information regarding the parking area. \\
+	\hline
+\end{longtable}
+
+\subsection{Vehicle Manager \textrightarrow{} Map Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Retrive the cars around a location}} \\
+	\hline
+	\textbf{Parameters} & Location, Radius \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	Location or radius parameters are not encoded correctly.
+	&
+	Returns a specific error.\\
+	\hline
+	No cars are found in the specified location.
+	&
+	Returns a message prompting the user to change the parameters because there is
+	not a car that meets the specified parameters. \\
+	\hline
+	One or more cars meet the specified parameters.
+	&
+	Returns a list of all the cars found in the specified location with the
+	relative information. \\
+	\hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Retrive a specific car}} \\
+	\hline
+	\textbf{Parameters} & Car identificator \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The parameter doesn't match the car identificator design pattern.
+	&
+	Returns a specific error.\\
+	\hline
+	There is no car associated to the provided identificator.
+	&
+	Returns a specific error.\\
+	\hline
+	There is a car corresponding to the specified identificator.
+	&
+	Returns the information regarding the car. \\
+	\hline
+\end{longtable}

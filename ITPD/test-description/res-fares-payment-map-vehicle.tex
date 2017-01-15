@@ -1,0 +1,248 @@
+\subsection{Fares And Policies Manager \textrightarrow{} Reservation Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Retrieve rule}} \\
+        \hline
+        \textbf{Parameter(s)} & Rule identificator. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The rule identificator does not respect the designed input patter.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      No rule is matched by the rule identificator.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+        A rule is matched by the rule identificator.
+        &
+        Returns a positive notification. The encoded rule mapped by the rule
+        identificator is returned. \\
+        \hline
+\end{longtable}
+
+\subsection{Payment Manager \textrightarrow{} Reservation Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Deduct the ride cost from the payment
+                                       account of the user}} \\
+        \hline
+        \textbf{Parameter(s)} & User's payment information, Ride cost. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The user's payment information or the ride cost does not respect the
+        designed input pattern.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      The user's payment information don't match a payment account in the
+        payment manager.
+        &
+        Returns a specific error. The corresponding user is marked as insolvent,
+        this prevents the user from reserving another car. \\
+        \hline
+        The user's payment account doesn't have sufficent money to pay the ride.
+        &
+        Returns a specific error. The payment account is drained of the
+        remaining money and the corresponding user is marked as insolvent,
+        this prevents the user from reserving another car. \\
+        \hline
+        The user's payment account have sufficent money to pay the ride.
+        &
+        Returns a positive notification and the ride's cost is deducted from the
+        payment account. \\
+        \hline
+\end{longtable}
+
+\subsection{Map Manager \textrightarrow{} Reservation Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Retrive the available cars and all the parking
+                                 areas around a location}}\\
+	\hline
+	\textbf{Parameters} & Location, Radius \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	Location or radius parameters are not encoded correctly.
+	&
+	Returns a specific error.\\
+	\hline
+	No cars that meet the specified requirements are found in the map cache
+  maintained by the map manager.
+	&
+	The map manager forwards the request to the vehicle manager and to the area
+  manager and awaits the response from those components. If the response is
+  positive the map manager returns a list of all the cars and areas found in the
+  specified location with the relative information, whereas if the response is
+  negative the map manager returns a message prompting the user to change the
+  parameters of the search. \\
+	\hline
+  One or more cars and zero or more parking areas that meet the specified
+  parameters are found in the map cache.
+	&
+	Returns a list of all the cars and areas found in the specified location with
+  the relative information. \\
+	\hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Retrive a specific car}} \\
+	\hline
+	\textbf{Parameters} & Car identificator \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The parameter doesn't match the car identificator design pattern.
+	&
+	Returns a specific error.\\
+	\hline
+	The parameter match the car identificator design pattern.
+	&
+	The map manager forwards the request to the vehicle manager and awaits for the
+  response. If the response is positive the map manager returns all the
+  information regarding the specified car, if the response is negative the map
+  manager returns a message that prompts the user to change the parameters of
+  the search.\\
+	\hline
+\end{longtable}
+
+\subsection{Vehicle manager \textrightarrow{} Reservation Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Enable the unlocking mechanism of a reserved
+                                 car}} \\
+	\hline
+	\textbf{Parameters} & User identificator, Car identificator \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The parameters do not match the design pattern.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+	The user identificator doesn't match any user in the system.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The car identificator doesn't match any car in the system.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified user hasn't reserved the specified car.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified car is alredy unlocked.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified car's unlocking system has alredy been enabled.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified user has an active reservation on the specified car, the car's
+  unlocking system is not enabled and the car is locked.
+	&
+	Returns a positive notification, enables the unlocking system and sets the
+  relative timer.\\
+	\hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Unlock a reserved car}} \\
+	\hline
+	\textbf{Parameters} & User identificator, Car identificator, Unlocking code \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The parameters do not match the design pattern.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+	The user identificator doesn't match any user in the system.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The car identificator doesn't match any car in the system.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified user hasn't reserved the specified car.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified car is alredy unlocked.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified car's unlocking system is not enabled.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified user has an active reservation on the specified car, the car is
+  locked, the unlocking system is enabled but the unlocking code is wrong.
+	&
+	Returns a message warning the user that the code is wrong, prompting him to
+  enter the correct code.\\
+	\hline
+  The specified user has an active reservation on the specified car, the car is
+  locked, the unlocking system is enabled and the unlocking code is correct.
+	&
+	Returns a positive notification, unlocks the car and starts the reservation.\\
+	\hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+	\hline
+	\multicolumn{2}{ |c| }{\textbf{Lock a reserved car}} \\
+	\hline
+	\textbf{Parameters} & User identificator, Car identificator \\
+	\hline
+	\textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+	\hline
+	The parameters do not match the design pattern.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+	The user identificator doesn't match any user in the system.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The car identificator doesn't match any car in the system.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified user hasn't reserved the specified car.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified car is alredy locked.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified car presernts at least one of the following features:
+  \begin{itemize}
+    \item The engine is turned on.
+    \item The key is not inserted in the car's panel.
+    \item There's a passenger inside the car.
+    \item The car has a door open.
+  \end{itemize}
+  thus can't be unlocked.
+	&
+	Returns a specific error and nothing changes in the system.\\
+	\hline
+  The specified user has an active reservation on the specified car and the car
+  can be unlocked (doesen't present any of the features listed above).
+	&
+	Returns a positive notification and locks the car.\\
+	\hline
+\end{longtable}

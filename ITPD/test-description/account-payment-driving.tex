@@ -1,0 +1,171 @@
+\subsection{Payment Manager \textrightarrow{} Account Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Check the payment information of a
+                                       registering user}} \\
+        \hline
+        \textbf{Parameter(s)} & Payment information. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The payment information does not respect the designed pattern.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      There's no payment account relatad to the specified information.
+        &
+        Returns a notification prompting the user to change the payment
+        information provided in the registration form. \\
+        \hline
+        There is a valid payment account related to the specified information.
+        &
+        Returns a positive notification and let the system proceed with the
+        registration function. \\
+        \hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Change the payment information of a
+                                       registered user}} \\
+        \hline
+        \textbf{Parameter(s)} & User information, Payment information. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The payment information or the user information do not respect the
+        designed pattern.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+        There's no user account relatad to the specified information.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      There's no payment account relatad to the specified information.
+        &
+        Returns a notification prompting the user to change the payment
+        information provided. \\
+        \hline
+        There is a valid payment account related to the specified information.
+        &
+        Returns a positive notification and changes the payment information of
+        the specified user. \\
+        \hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Retrieve the payment information of a
+                                       registered user}} \\
+        \hline
+        \textbf{Parameter(s)} & User information, Payment information. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The payment information or the user information do not respect the
+        designed pattern.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+        There's no user account relatad to the specified information.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      There's no payment account relatad to the specified information.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+        There is a user that meets the specified information.
+        &
+        Returns a positive notification and the information relative to the
+        specified payment account. \\
+        \hline
+\end{longtable}
+
+\subsection{Driving License Manager \textrightarrow{} Account Manager}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Check the driving license information of
+                                       a registering user}} \\
+        \hline
+        \textbf{Parameter(s)} & Driving license information. \\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The driving license information does not respect the designed pattern.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      There's no driving license relatad to the specified information.
+        &
+        Returns a notification prompting the user to change the driving license
+        information provided in the registration form. \\
+        \hline
+        There is a valid driving license related to the specified information.
+        &
+        Returns a positive notification and let the system proceed with the
+        registration function. \\
+        \hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Change the driving license information of
+                                       a registered user}} \\
+        \hline
+        \textbf{Parameter(s)} & User information, Driving license information.\\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The driving license information or the user information do not respect
+        the designed pattern.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+        There's no user account relatad to the specified information.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      There's no driving license relatad to the specified information.
+        &
+        Returns a notification prompting the user to change the driving license
+        information provided. \\
+        \hline
+        There is a valid driving license related to the specified information.
+        &
+        Returns a positive notification and changes the driving license
+        information of the specified user. \\
+        \hline
+\end{longtable}
+
+\begin{longtable}{ |p{6cm}|p{6cm}| }
+        \hline
+        \multicolumn{2}{ |c| }{\textbf{Retrieve the payment information of a
+                                       registered user}} \\
+        \hline
+        \textbf{Parameter(s)} & User information, Driving license information.\\
+        \hline
+        \textbf{Pre-condition(s)} & \textbf{Post-condition(s)} \\
+        \hline
+	      The driving license information or the user information do not respect
+        the designed pattern.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+        There's no user account relatad to the specified information.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+	      There's no driving license relatad to the specified information.
+        &
+        Returns a specific error. Nothing is changed in the system. \\
+        \hline
+        There is a user that meets the specified information.
+        &
+        Returns a positive notification and the information relative to the
+        specified driving license. \\
+        \hline
+\end{longtable}
