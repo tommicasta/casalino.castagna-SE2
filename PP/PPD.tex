@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{nameref}
+\usepackage{parskip}
+\usepackage{bold-extra}
+\usepackage{float}
+\usepackage{longtable}
+
+\hypersetup{
+        hidelinks
+}
+
+
+\begin{document}
+
+        \pagenumbering{gobble}
+
+        \include{./cover/main}
+
+        \tableofcontents
+
+        \clearpage
+	
+	\include{./introduction/main}
+	\include{./estimation/main}
+        \pagenumbering{arabic}
+\end{document}
