@@ -1,0 +1,53 @@
+\subsubsection{Scale Drivers}
+
+The scale drivers are five distinct factors used to translate directly in the effort estimation process specific characteristics that have a huge relevance and impact on the project development.
+
+To each scale driver can be assigned a value raging from \textit{very low} to \textit{very high}. The traslation in the effort estimation computation is performed associating to each scale driver's value a decimal value obtained through statistical analysis.
+
+These five scale drivers are:
+
+\begin{itemize}
+	\item \textbf{Precedentedness}: this factor measures the degree of familiarity that the development team has regarding the project under analysis.
+
+Our experience with this kind of projects is really limited, therefore a \textit{Low} value is assigned.
+	\item \textbf{Development flexibility}: this factor reflects the degree of flexibility allowed for the development of the project. This factor is computed taking in consideration the presence of pre-enstablished requirements and software conformance with external interface specification.
+
+Our projects involves some pre-defined requirements but no external interface specifications are required, hence the value of this scale driver is set to \textit{nominal}.
+	\item \textbf{Architecture/Risk resolution}: scale factor measuring the quality of the risk management plan and scheduling/budget compatibility with the latter.
+
+The risk management plan defined for this project embrace and define a recovery plan for almost every predictable risks, respecting the scheduling and the budget defined. \textit{High} value is assigned.
+	\item \textbf{Team cohesion}: scale factor measuring reflecting the degree of cooperation among the team members.
+Our team had divergence on project choices several time that brought a slow down in the project development. A \textit{Nominal} value is assigned.
+
+	\item \textbf{Process maturity}: factor measuring the degree of maturity reached by the organization's development processes.
+Since this is our first project, is quite hard to assess the maturity of our approach. Hence, even if the applied processes to the development could be typical of a level-3 organization, we set the factor's value to \textit{level 2}, typical of processes designed for specific projects. 
+\end{itemize}
+
+Refering to the scale drivers table, the following table is produced
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{ | c | c | c |}
+                \hline
+                \textbf{EO} & \textbf{Complexity} & \textbf{Weigth} \\
+                \hline\
+                Precedentedness & Low & 4.96 \\
+                Development flexibility & Nominal & 3.04 \\
+                Architecture/Risk resolution & High & 1.41 \\
+                Team cohesion & Nominal & 3.29 \\
+                Process maturity & Level 2 & 4.68 \\
+                \hline
+                Total value & \multicolumn{2}{c |}{17.38} \\
+                \hline
+        \end{tabular}
+\end{table}
+
+The \textit{total scale factor E} has a value computable by mean of the following equation
+
+\begin{displaymath}
+	E = B + 0.01 * \sum_{f} (SF_f) = 1,0838
+\end{displaymath}
+
+with $B = 0.91$ and $f$ representing one of the scale drivers.
+
+
