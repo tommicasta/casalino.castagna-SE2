@@ -1,0 +1,66 @@
+\subsubsection{External Input}
+
+\begin{itemize}
+	\item \textbf{Login}: elementary operation that involves the user account informations (or the operator account informations).
+
+	\item \textbf{Logout}: elementary operation that does not require the involvement of any internal or external file to achieve the result.
+
+	\item \textbf{Register account}: functionality that relies on the user account internal logic file.
+
+	\item \textbf{Delete account}: operation relying only on user account internal logic file.
+
+	\item \textbf{Update account informations}: this operation is more complex with respect to the last two since modification of a user information can involves other internal or external files. Indeed, for instance,
+the payment informations editing needs the intervention of the payment web service in order to verify the validity of the updated informations, hence the involvement of the payment system external file.
+This external input relies on the user account internal file, the payment system web service and driver license web service external files.
+
+	\item \textbf{Create reservation}: the creation of a reservation from a user is a quite simple operation, involving only the reservation and the vehicle information internal logic files.
+
+	\item \textbf{Delete current reservation}: simple operation relying only on the reservation informations internal file.
+
+	\item \textbf{Terminate reservation}: complex operation that need the support of the reservation informations, vehicle informations internal logic file and the payment web service external file.
+
+	\item \textbf{Update reservation}: as for the terminate reservation, this operation is quite complex and involves the reservation informations and vehicle informations.
+
+	\item \textbf{New vehicle insertion}: simple operation relying only on the vehicle informations internal logic file.
+
+	\item \textbf{Vehicle deletion}: simple operation relying only on the vehicle informations internal logic file.
+
+	\item \textbf{Vehicle informations update}: simple operation where vehicle informations internal file is used.
+
+	\item \textbf{Insert new policy rule}: operation through which the policy rules information file is modified.
+
+	\item \textbf{Remove policy rule}: elementary operation involving only the policy rules information file.
+
+	\item \textbf{Update policy rule}: complex opearation involving the policy internal file and the reservation internal file.
+
+	\item \textbf{Insert parking area}: the insertion of a new parking area, either a normal area or a safe area, is an operation which involves the parking area and the safe parking area internal files.
+
+	\item \textbf{Remove parking area}: basic operation involving the parking area and the safe parking area internal files.
+
+	\item \textbf{Update parking area informations}: same complexity and same internal files involved as for the previous two parking area-related functionalities.
+
+	\item \textbf{Insert new task}: new tasks to be assigned to an operator is a simple operation where only the mantainance task informations file is involved.
+
+	\item \textbf{Remove task}: simple functionality modifying the mantainance task information file.
+
+	\item \textbf{Update task}: simple operation involving solely the mantainance task information file.
+\end{itemize}
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{ | c | c | c |}
+                \hline
+         	Login & Low & 3 \\
+		Logout & Low & 3 \\
+		Register account & Low & 3 \\
+                Delete account & Low & 3 \\
+                Update account & Average & 4 \\
+                \hline
+                Partial Function Point & \multicolumn{2}{c |}{20} \\
+                \hline
+        \end{tabular}
+\end{table}
+
+
+
+

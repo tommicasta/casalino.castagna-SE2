@@ -1,0 +1,62 @@
+\subsubsection{Internal Logic File}
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{  c | c | c | c |}
+                \cline{2-4}
+                & \multicolumn{3}{ c |}{Data elements} \\
+                \cline{1-4}
+                \multicolumn{1}{ | c | }{RET} & 1 $\rightarrow$ 19 & 20 $\rightarrow$ 50 & 51+ \\
+                \hline
+                \multicolumn{1}{ | c | }{1} & Low & Low & Average \\ \hline
+                \multicolumn{1}{ | c | }{2 $\rightarrow$ 5} & Low & Average & High \\ \hline
+                \multicolumn{1}{ | c | }{6+} & Average & High & High \\
+                \hline
+        \end{tabular}
+\end{table}
+
+\begin{itemize}
+	\item \textbf{User account informations}: this file contains the informations that any user is asked to type at registration time to the service. 
+The informations (Name, surname, password, email, telephone number, postal code, city, birthday, driving license, payment informations) are recorded inside one type of record.
+
+	\item \textbf{Operator account informations}: the purpose is similar to the logic file storing the user account informations, but with the difference of not containing the driving license and the payment informations. Only one type of record is exploited.
+
+	\item \textbf{Priviledges}: to avoid the execution of actions not allowed to some category of users, this file is used to map the priviledge level associated to each account category. Only one record type is used.
+
+	\item \textbf{Parking area informations}: area informations, such as area identifier and coordinates describing the geographical boundaries of the parking area, are stored in this internal file, by means of one record type.
+
+	\item \textbf{Safe parking area informations}: extension of the previous internal logic file, which adds the presence of the total number of parking spots inside the area.
+
+	\item \textbf{Vehicle informations}: this file contains both the usual informations characterizing a vehicle (Plate number, frame number, model, matriculation date, fuel type, shift type) and the informations regarding the actual status of the vehicle (Fuel percentage, availability, position). Two records are used to store, respectively, the type of informations described above.
+
+	\item \textbf{Reservation informations}: the informations regarding each reservation is stored by the support of three records. The first record stores an identificator to the reservation, the begin and end date of the reservation, the identificator of the reserving user, the plate number of the reserved vehicle and the total charge.
+The second structure is used to keep track of events that trigger a policy rule. An identificator to the event, the identificator of the policy rule, event date, event condition and effect are stored.
+The third record is used to map a reservation to one or more event.
+
+	\item \textbf{Policy rules}: to implement the detection of good or bad behaviours, according to the policy adopted by the car sharing society, the rules are encoded and stored in an appropriated format.
+This logic file serves this purpose, using one record structure to store the rule identificator, the encoded conditions and encoded effects.
+
+	\item \textbf{Mantainance tasks}: mantainance tasks assigned to a certain operator are stored by this logic file, using two record type. The first used to store the identificator task and its description, while the second is used as a support, mapping tasks to a specific operator using his/her identificator.
+\end{itemize}
+
+Making reference to the ILF rating table, we can evaluate the partial function point value:
+
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{ | c | c | c |}
+		\hline
+		User account informations & Low & 7 \\
+		Operator account informations & Low & 7 \\
+		Priviledges & Low & 7 \\
+		Parking area informations & Low & 7 \\
+		Safe parking area informations & Low & 7 \\
+		Vehicle informations & Low & 7 \\
+		Reservation informations & Low & 7 \\
+		Policy rules & Low & 7 \\
+		Mantainance tasks & Low & 7 \\
+		\hline
+		Partial Function Point & \multicolumn{2}{c |}{63} \\
+		\hline
+        \end{tabular}
+\end{table}

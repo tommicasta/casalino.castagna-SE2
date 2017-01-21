@@ -1,50 +1,6 @@
 \subsection{Size Estimation}
 
-As explained in the introductory paragraph to this section, the size estimation effort is based on the estimation of the so-called \textit{Function Points}. Function points are a statistical method of estimate the size of a software project evaluating the different functionalities provided by the software product in exam.
-
-According to this approach, functionalities are divided into 5 \textbf{function types}, or category:
-
-\begin{itemize}
-	\item \textbf{Internal Logical File.}
-	\item \textbf{External Logical File.}
-	\item \textbf{External Input.}
-	\item \textbf{External Output.}
-	\item \textbf{External Inquiry.}
-\end{itemize}
-
-For each of these type, a \textbf{weight} is associated. These weights are statistically determinated and vary according to the \textbf{complexity} of the function type.
-The complexity of a function type can be derivided consulting the related \textit{rating tables}.
-
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{  c | c | c | c |}
-		\cline{2-4}
-		& \multicolumn{3}{ c |}{Data elements} \\
-		\cline{1-4}
-		\multicolumn{1}{ | c | }{RET} & 1 $\rightarrow$ 19 & 20 $\rightarrow$ 50 & 51+ \\
-		\hline
-		\multicolumn{1}{ | c | }{1} & Low & Low & Average \\ \hline
-		\multicolumn{1}{ | c | }{2 $\rightarrow$ 5} & Low & Average & High \\ \hline
-		\multicolumn{1}{ | c | }{6+} & Average & High & High \\
-		\hline
-	\end{tabular}
-\end{table}
-
-
-In order to retrieve the number of function points assigned to the software product given a specific function type, a simple equation is applied:
-
-\begin{displaymath}
-	%% add a subtitle for this equation
-	PFP_t = N_t * FP_t, t \in T = {[ILF, ELG, EI, EO, EINQ]}
-\end{displaymath}
-
-This equation returns the \textit{partial function points} obtained by multiplying the number of functionalities of a certain catergory for the weight associated to that category.
-
-The total number of function points assigned to the whole project is computed by the \textit{Unadjusted Function Points} equation, which
-simply compute the sum of each PFP previously calculated.
-
-\begin{displaymath}
-	UFP = \sum_{t} FPF_t, t \in T
-\end{displaymath}
-
-
+	\input{estimation/size-estimation/intro}
+	\input{estimation/size-estimation/internal-file}
+	\input{estimation/size-estimation/external-file}
+	\input{estimation/size-estimation/external-input}

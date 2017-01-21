@@ -6,4 +6,7 @@
 \BOOKMARK [2][-]{subsection.1.5}{Reference Documents}{section.1}% 6
 \BOOKMARK [1][-]{section.2}{Project Size, Effort and Cost Estimation}{}% 7
 \BOOKMARK [2][-]{subsection.2.1}{Size Estimation}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.2}{Effort and Cost Estimation}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Internal Logic File}{subsection.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.2}{External Interface File}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.1}{External Input}{subsection.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.3}{Effort and Cost Estimation}{section.2}% 12
