@@ -1,0 +1,55 @@
+\subsubsection{External Inquiries}
+
+\begin{itemize}
+	\item \textbf{Retrieve reservation history}: the retrieve of the full reservation history (or part of it) is an operation that involves only two internal logic files, namely the reservation informations and the vehicle informations ILF.
+
+	\item \textbf{Retrieve account informations}: operation involving either the user account informations ILF or the operator ILF.
+
+	\item \textbf{Retrieve vehicle list}: simple operation involving the vehicle informations ILF.
+
+	\item \textbf{Retrieve vehicle informations}: the characteristic informations regarding a vehicle are retrieved inquiring solely the vehicle informations ILF.
+
+	\item \textbf{Retrieve vehicle status}: the informations regarding the current status of a specific vehicle are stored into the vehicle informations ILF.
+
+	\item \textbf{Retrieve current reservation informations}: operation similar to the reservation history retrive operation. The same ILF are involvedo.
+
+	\item \textbf{Retrieve area list}: simple inquire involving the area informations ILF.
+
+	\item \textbf{Retrieve specific area informations}: as the previous operation, this one is simple as well and involves the same ILF.
+
+	\item \textbf{Retrieve mantainance operator list}: only the operator ILF is involved in this operation.
+
+	\item \textbf{Retrieve mantainance task list}: simple inquire operations regarding the mantainance task informations ILF.
+
+	\item \textbf{Retrieve policy list}: the retrieval of the total list of policy rules present into the system or part of them is a simple operation involving the policy ILF.
+
+	\item \textbf{Retrieve policy rule informations}: the informations regarding a specific policy rule involves the querying of the policy ILF.
+
+	\item \textbf{Retrieve vehicles in specific area}: the achievement of this operation is reached through the querying of the vehicle informations ILF. 
+\end{itemize}
+
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{ | c | c | c |}
+                \hline
+                \textbf{IQ} & \textbf{Complexity} & \textbf{Weigth} \\
+                \hline
+                Retrieve reservation history & Low & 3 \\
+                Retrieve account informations & Low & 3 \\
+                Retrieve vehicle list & Low & 3 \\
+                Retrieve vehicle status & Low & 3 \\
+                Retrieve current reservation info & Low & 3 \\
+                Retrieve area list & Low & 3 \\
+                Retrieve specific area info & Low & 3 \\
+		Retrieve mantainance operator list & Low & 3 \\
+		Retrieve mantainance task list & Low & 3 \\
+		Retrieve policy rule list & Low & 3 \\
+		Retrieve policy rule info & Low & 3 \\
+                Retrieve vehicle in specific area & Low & 3 \\
+                \hline
+                Partial Function Point & \multicolumn{2}{c |}{36} \\
+                \hline
+        \end{tabular}
+\end{table}
+

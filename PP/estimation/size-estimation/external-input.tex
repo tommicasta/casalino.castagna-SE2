@@ -5,21 +5,21 @@
 
 	\item \textbf{Logout}: elementary operation that does not require the involvement of any internal or external file to achieve the result.
 
-	\item \textbf{Register account}: functionality that relies on the user account internal logic file.
+	\item \textbf{Register account}: functionality that relies on the user account or the operator internal logic file.
 
-	\item \textbf{Delete account}: operation relying only on user account internal logic file.
+	\item \textbf{Delete account}: operation relying only on user account or operator account internal logic file.
 
-	\item \textbf{Update account informations}: this operation is more complex with respect to the last two since modification of a user information can involves other internal or external files. Indeed, for instance,
+	\item \textbf{Update user account informations}: this operation is more complex with respect to the last two since modification of a user information can involves other internal or external files. Indeed, for instance,
 the payment informations editing needs the intervention of the payment web service in order to verify the validity of the updated informations, hence the involvement of the payment system external file.
 This external input relies on the user account internal file, the payment system web service and driver license web service external files.
 
-	\item \textbf{Create reservation}: the creation of a reservation from a user is a quite simple operation, involving only the reservation and the vehicle information internal logic files.
+	\item \textbf{Update operator account informations}: with respect to the update operation regarding the user account informations, this process is simpler since only the operator informations ILF is involved.
 
-	\item \textbf{Delete current reservation}: simple operation relying only on the reservation informations internal file.
+	\item \textbf{Create reservation}: the creation of a reservation from a user is a quite simple operation, involving only the reservation and the vehicle informations internal logic files.
 
 	\item \textbf{Terminate reservation}: complex operation that need the support of the reservation informations, vehicle informations internal logic file and the payment web service external file.
 
-	\item \textbf{Update reservation}: as for the terminate reservation, this operation is quite complex and involves the reservation informations and vehicle informations.
+	\item \textbf{Update reservation}: updating the information regarding an already terminated reservation is a quite simple operation that involves the reservation informations.
 
 	\item \textbf{New vehicle insertion}: simple operation relying only on the vehicle informations internal logic file.
 
@@ -27,11 +27,15 @@ This external input relies on the user account internal file, the payment system
 
 	\item \textbf{Vehicle informations update}: simple operation where vehicle informations internal file is used.
 
+	\item \textbf{Vehicle unlock}: operation not involving any internal or external file.
+
+	\item \textbf{Rule policy activation}: whenever the driver performs a particular action described into the policy rules, the software system reacts applying the related effects to the reservation. Reservation informations and policy internal logic files are involved.
+
 	\item \textbf{Insert new policy rule}: operation through which the policy rules information file is modified.
 
 	\item \textbf{Remove policy rule}: elementary operation involving only the policy rules information file.
 
-	\item \textbf{Update policy rule}: complex opearation involving the policy internal file and the reservation internal file.
+	\item \textbf{Update policy rule}: simple operation involving the policy internal file.
 
 	\item \textbf{Insert parking area}: the insertion of a new parking area, either a normal area or a safe area, is an operation which involves the parking area and the safe parking area internal files.
 
@@ -50,13 +54,33 @@ This external input relies on the user account internal file, the payment system
         \centering
         \begin{tabular}{ | c | c | c |}
                 \hline
+		\textbf{EI} & \textbf{Complexity} & \textbf{Weigth} \\
+		\hline
          	Login & Low & 3 \\
 		Logout & Low & 3 \\
 		Register account & Low & 3 \\
                 Delete account & Low & 3 \\
-                Update account & Average & 4 \\
+                Update user account & Average & 4 \\
+		Update operator account & Low & 3 \\
+		Create reservation & Low & 3 \\
+		Terminate reservation & Average & 4 \\
+		Update reservation & Low & 3 \\
+		Vehicle insertion & Low & 3 \\
+		Vehicle deletion & Low & 3 \\
+		Vehicle update & Low & 3 \\
+		Vehicle unlock & Low & 3 \\
+		Rule policy activation & Average & 4 \\
+		Insert policy rule & Low & 3 \\
+		Remove policy rule & Low & 3 \\
+		Update policy rule & Low & 3 \\
+		Insert parking area & Low & 3 \\
+		Remove parking area & Low & 3 \\
+		Update parking area & Low & 3 \\
+		Insert task & Low & 3 \\
+		Remove task & Low & 3 \\
+		Update task & Low & 3 \\ 
                 \hline
-                Partial Function Point & \multicolumn{2}{c |}{20} \\
+                Partial Function Point & \multicolumn{2}{c |}{72} \\
                 \hline
         \end{tabular}
 \end{table}
