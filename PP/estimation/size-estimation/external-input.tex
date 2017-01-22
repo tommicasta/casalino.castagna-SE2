@@ -9,8 +9,10 @@
 
 	\item \textbf{Delete account}: operation relying only on user account or operator account internal logic file.
 
-	\item \textbf{Update user account informations}: this operation is more complex with respect to the last two since modification of a user information can involves other internal or external files. Indeed, for instance,
-the payment informations editing needs the intervention of the payment web service in order to verify the validity of the updated informations, hence the involvement of the payment system external file.
+	\item \textbf{Update user account informations}: this operation is more complex with respect to the last two since modification of a user information can involves other internal or external files. 
+
+Indeed, for instance, the payment informations editing needs the intervention of the payment web service in order to verify the validity of the updated informations, hence the involvement of the payment system external file.
+
 This external input relies on the user account internal file, the payment system web service and driver license web service external files.
 
 	\item \textbf{Update operator account informations}: with respect to the update operation regarding the user account informations, this process is simpler since only the operator informations ILF is involved.
@@ -29,7 +31,7 @@ This external input relies on the user account internal file, the payment system
 
 	\item \textbf{Vehicle unlock}: operation not involving any internal or external file.
 
-	\item \textbf{Rule policy activation}: whenever the driver performs a particular action described into the policy rules, the software system reacts applying the related effects to the reservation. Reservation informations and policy internal logic files are involved.
+	\item \textbf{Event comunication}: whenever the driver performs a particular action described into the policy rules, the car's central system react sending to software system the information about the event. The reservation ILF is involved.
 
 	\item \textbf{Insert new policy rule}: operation through which the policy rules information file is modified.
 
@@ -52,6 +54,23 @@ This external input relies on the user account internal file, the payment system
 
 \begin{table}[h!]
         \centering
+        \begin{tabular}{  c | c | c | c |}
+                \cline{2-4}
+                & \multicolumn{3}{ c |}{Data elements} \\
+                \cline{1-4}
+                \multicolumn{1}{ | c | }{FRT} & 1 $\rightarrow$ 4 & 5 $\rightarrow$ 15 & 16+ \\
+                \hline
+                \multicolumn{1}{ | c | }{0-1} & Low & Low & Average \\ \hline
+                \multicolumn{1}{ | c | }{2-3} & Low & Average & High \\ \hline
+                \multicolumn{1}{ | c | }{4+} & Average & High & High \\
+                \hline
+        \end{tabular}
+        \caption{EI's rating table}
+        \label{table:EIRT}
+\end{table}
+
+\begin{table}[h!]
+        \centering
         \begin{tabular}{ | c | c | c |}
                 \hline
 		\textbf{EI} & \textbf{Complexity} & \textbf{Weigth} \\
@@ -69,7 +88,7 @@ This external input relies on the user account internal file, the payment system
 		Vehicle deletion & Low & 3 \\
 		Vehicle update & Low & 3 \\
 		Vehicle unlock & Low & 3 \\
-		Rule policy activation & Average & 4 \\
+		Event comunication & Low & 3 \\
 		Insert policy rule & Low & 3 \\
 		Remove policy rule & Low & 3 \\
 		Update policy rule & Low & 3 \\
@@ -80,11 +99,9 @@ This external input relies on the user account internal file, the payment system
 		Remove task & Low & 3 \\
 		Update task & Low & 3 \\ 
                 \hline
-                Partial Function Point & \multicolumn{2}{c |}{72} \\
+                \textbf{Partial Function Points} & \multicolumn{2}{c |}{71} \\
                 \hline
         \end{tabular}
+	\caption{EI's PFP table}
+	\label{table:EIPFP}
 \end{table}
-
-
-
-

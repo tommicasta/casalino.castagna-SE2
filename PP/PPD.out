@@ -3,14 +3,21 @@
 \BOOKMARK [2][-]{subsection.1.2}{Purpose}{section.1}% 3
 \BOOKMARK [2][-]{subsection.1.3}{Scope}{section.1}% 4
 \BOOKMARK [2][-]{subsection.1.4}{Definitions, Acronyms and Abbreviations}{section.1}% 5
-\BOOKMARK [2][-]{subsection.1.5}{Reference Documents}{section.1}% 6
-\BOOKMARK [1][-]{section.2}{Project Size, Effort and Cost Estimation}{}% 7
-\BOOKMARK [2][-]{subsection.2.1}{Size Estimation}{section.2}% 8
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Internal Logic File}{subsection.2.1}% 9
-\BOOKMARK [3][-]{subsubsection.2.1.2}{External Interface File}{subsection.2.1}% 10
-\BOOKMARK [3][-]{subsubsection.2.1.3}{External Input}{subsection.2.1}% 11
-\BOOKMARK [3][-]{subsubsection.2.1.4}{External Inquiries}{subsection.2.1}% 12
-\BOOKMARK [3][-]{subsubsection.2.1.5}{External Output}{subsection.2.1}% 13
-\BOOKMARK [2][-]{subsection.2.2}{Effort and Cost Estimation}{section.2}% 14
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Scale Drivers}{subsection.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.3}{Cost Drivers}{section.2}% 16
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Definitions}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Acronyms}{subsection.1.4}% 7
+\BOOKMARK [2][-]{subsection.1.5}{Reference Documents}{section.1}% 8
+\BOOKMARK [1][-]{section.2}{Project Size, Effort and Cost Estimation}{}% 9
+\BOOKMARK [2][-]{subsection.2.1}{Size Estimation}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Internal Logic File}{subsection.2.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.2}{External Interface File}{subsection.2.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.3}{External Input}{subsection.2.1}% 13
+\BOOKMARK [3][-]{subsubsection.2.1.4}{External Inquiries}{subsection.2.1}% 14
+\BOOKMARK [3][-]{subsubsection.2.1.5}{External Output}{subsection.2.1}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.6}{Size evaluation}{subsection.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.2}{Effort and Cost Estimation}{section.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Scale Drivers}{subsection.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.3}{Cost Drivers}{section.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Effort evaluation}{subsection.2.3}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Project's duration evaluation}{subsection.2.3}% 21
+\BOOKMARK [1][-]{section.3}{Tasks schedule}{}% 22
+\BOOKMARK [1][-]{section.4}{Reseurces allocation}{}% 23

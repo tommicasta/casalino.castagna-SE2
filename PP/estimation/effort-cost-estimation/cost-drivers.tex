@@ -4,10 +4,16 @@ Similar to the scale factors, the cost drivers are a set of factors describing i
 Each cost driver has a impact level, raging from \textit{very low} to \textit{very high}, and each impact level has a statistical decimal value associated.
 
 The set of cost drivers vary according to the architectural state of the project, which may be in a\textit{Post-architectural} state or \textit{Early design} state.
-Post-architectural's cost drivers may rely on more precise and detailed informations about the project, producing more precise estimates. The early design model, instead, due to the lack of informations typical of early project provides less accurate figures regarding the effort estimation.
 
-As specified in the \textit{introductive paragraph} to this section, our project follow a early design model. The set of cost drivers used for the early design model is derived by the combinations of different cost drivers defined for the post-architectural model.
+Post-architectural's cost drivers may rely on more precise and detailed informations about the project, producing more precise estimates.
+
+The early design model, instead, due to the lack of informations typical of early project provides less accurate figures regarding the effort estimation.
+
+As specified in the introductory paragraph to this section, our project follow a \textbf{early design model}.
+The set of cost drivers used for the early design model is derived by the combinations of different cost drivers defined for the post-architectural model.
+
 In the following, the cost drivers for the post-architectural model are described along with the rationale for the assigned value.
+
 At the end of this analysis, the early design cost drivers values are computed and shown.
 
 \begin{table}[h!]
@@ -25,61 +31,192 @@ At the end of this analysis, the early design cost drivers values are computed a
 		Required Development Schedule & SCED \\
 		\hline
 	\end{tabular}
+	\caption{Early Design - Post-Architectural mapping}
+	\label{table:ED2PA}
 \end{table}
 
 \begin{itemize}
 	\item \textbf{Required Software Reliability [RELY]}: this cost driver is a measure of the reliability required for the software to be developed. The value is assigned according to the level of danger and/or damage the interruption of the service may cause.
+
 Since the software system is designed to support a car-sharing service, a malfunction can lead to important finantial losses for the society. Hence the assigned value is set to \textit{High}.
 
-	\item \textbf{Database Size [DATA]}: the dimension of test data required for the software testing has an impact on the cost of development for the test. In particular, the database size required to store these test data is taken in consideration, evaluating the derived impact on the costs as the ration between the database size \textit{D} and the LOSC \textit{P}.
+
+\begin{costdriverstable}{RELY Cost Drivers}
+	\costdescriptors{RELY Descriptors}{slightly inconvenience}{easily recoverable losses}{moderate recoverable losses}{high financial loss}{risk to human life}{}\hline
+	\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+	\effortmultipliers{0.82}{0.92}{1.00}{1.10}{1.26}{n/a}
+\end{costdriverstable}
+
+	\item \textbf{Database Size [DATA]}: the dimension of test data required for the software testing has an impact on the cost of development for the test. 
+
+In particular, the database size required to store these test data is taken in consideration, evaluating the derived impact on the costs as the ration between the database size \textit{D} and the LOSC \textit{P}.
 
 Being in an early stage phase of the development, it's not easy to estimate the dimension of the database. We can assume a minimal dimension of 1 gigabytes. Therefore, the value of this cost driver is set to \textit{Very High}.
+
+\begin{costdriverstable}{DATA Cost Drivers}
+	\costdescriptors{DATA Descriptors}{}{Testing DB bytes/pgm SLOC $<$ 10}{10$\le$D/P$\le$100}{100$\le$/P$\le$000}{DP $>$ 1000}{}\hline
+	\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+	\effortmultipliers{n/a}{0.90}{1.00}{1.14}{1.28}{n/a}
+\end{costdriverstable}
 
 	\item \textbf{Product Complexity [CPLX]}: this cost driver is divided into five area, shown in the table below, and its value is the average of the five area's values. %add the table
 The CPLX's value is set to \textit{High}.
 
+\begin{costdriverstable}{CPLX Cost Driver}
+	\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+	\effortmultipliers{0.73}{0.87}{1.00}{1.17}{1.34}{1.74}	
+\end{costdriverstable}
+
+
 	\item \textbf{Developed for reusability [RUSE]}: this driver reflect the degree of reusability adopted for the implementation of system's components.
+
 No reusability feature with other projects is expected to be adopted in the design and implementation of the components, hence the cost driver's values is equal to \textit{Nominal}.
 
+\begin{costdriverstable}{RUSE Cost Driver}
+	\costdescriptors{RUSE Descriptors}{}{None}{Across project}{Across program}{Across product line}{Across multiple product lines}\hline
+	\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+	\effortmultipliers{n/a}{0.95}{1.00}{1.07}{1.15}{1.24}		
+\end{costdriverstable}
+
 	\item \textbf{Documentation Match to Life-Cycle Needs [DOCU]}: this cost driver measure the degree of suitability of the required documentation to the project's life-cycle.
+
 Since we're following a precise model of development which requires the appropriate documentation for each step, the documentation is right-sized to the project's life-cycle. The value is set to \textit{Nominal}.
 
+	\begin{costdriverstable}{DOCU Cost Driver}
+		\costdescriptors{DOCU Descriptors}{Many life-cycle needs uncovered}{Some life-cycle needs uncovered}{Right-sized to life-cycle needs}{Excessive for life-cycle needs}{Very excessive for life-cycle needs}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{0.81}{0.91}{1.00}{1.11}{1.23}{n/a}		
+	\end{costdriverstable}
+
 	\item \textbf{Execution Time Constraints [TIME]}: this factor estimates the expected amount of execution time used by the software system.
+
 The software system is expected to be deployed in a highly concurrent environment, with several requests. Therefore, the value of this driver is set to \textit{Very High}.
 
+	\begin{costdriverstable}{TIME Cost Driver}
+		\costdescriptors{TIME Descriptors}{}{}{$\le$ 50\% use of available execution time}{70\% use of available execution time}{85\% use of available execution time} {95\% use of available execution time}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{n/a}{1.00}{1.11}{1.29}{1.63}	
+	\end{costdriverstable}
+
 	\item \textbf{Main Storage Constraints [STOR]}: this rating represent the percentual amount of main storage expected to be used by the system.
-We expect that the high number of generated and stored data won't take less than the 70\% of the total storage available in the system.
-The cost driver's value is set to \textit{High}.
+
+We expect that the high number of generated and stored data won't take more than the 50\% of the total storage available in the system.
+The cost driver's value is set to \textit{Nominal}.
+
+	\begin{costdriverstable}{STOR Cost Driver}
+		\costdescriptors{STOR Descriptors}{}{}{$\le$  50\% use of available storage}{70\% use of available storage}{85\% use of available storage} {95\% use of available storage}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{n/a}{1.00}{1.05}{1.17}{1.46}	
+	\end{costdriverstable}
 
 	\item \textbf{Platform Volatility [PVOL]}: this driver measures the average time of hardware/software replacement and update expected.
-The software system is supposed to be deployed on an external cloud computing service. Major changes are expected to be applied to the software part or to the hardware living in the vehicles and performed quite rarely.
+
+The software system is supposed to be deployed on an external cloud computing service. Major changes are expected to be applied to the software part or to the hardware living in the vehicles and performed quite rarely. Thus, the value of this driver is set to \textit{Low}.
+
+	\begin{costdriverstable}{PVOL Cost Driver}
+		\costdescriptors{PVOL Descriptors}{}{Major change every 12 mo., minor change every 1 mo.}{Major: 6mo; minor: 2wk.}{Major: 2mo, minor: 1wk}	{Major: 2wk; minor: 2 days}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{0.87}{1.00}{1.15}{1.30}{n/a}
+	\end{costdriverstable}
 
 	\item \textbf{Analyst Capability [ACAP]}: cost driver that measure the analysis and design ability of the team regarding the project in analysis.
-It's the first time we're faced with a project of this size and complexity. Therefore, the assigned value to this factor is \textit{Nominal}.
 
-	\item \textbf{Programmer Cability [PCAP]}: driver analyzing the efficiency and ability of the programmers involved in the project development.Since we are in a early stage phase, the project is not developed yet. Hence, we can only estimate this parameter with respect to our experience, which is quite limited with this kind of projects. The value of the driver is set to \textit{Nominal}.
+It's the first time we are facing with a project of this size and complexity. Therefore, the assigned value to this factor is \textit{Nominal}.
+
+	\begin{costdriverstable}{ACAP Cost Driver}
+		\costdescriptors{ACAP Descriptors}{15th percentile}{35th percentile}{55th percentile}{75th percentile}{90th percentile}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.42}{1.19}{1.00}{0.85}{0.71}{n/a}	
+	\end{costdriverstable}
+
+	\item \textbf{Programmer Cability [PCAP]}: driver analyzing the efficiency and ability of the programmers involved in the project development.
+
+Since we are in a early stage phase, the project is not developed yet. Hence, we can only estimate this parameter with respect to the feedbacks we received in our past projects. The value of the driver is set to \textit{High}.
+
+	\begin{costdriverstable}{PCAP Cost Driver}
+		\costdescriptors{PCAP Descriptors}{15th percentile}{35th percentile}{55th percentile}{75th percentile}{90th percentile}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.34}{1.15}{1.00}{0.88}{0.76}{n/a}	
+	\end{costdriverstable}
 
 	\item \textbf{Personnel Continuity [PCON]}: this driver measure the percentage of time that team members are unavailable for the project development.
+
 In our case, the driver is set to a \textit{Very Low} value due to limited time we can spent for the project.
 
+	\begin{costdriverstable}{PCON Cost Driver}
+		\costdescriptors{PCON Descriptors}{48\% / year}{24\% / year}{12\% / year}{6\% / year}{3\% / year}{}\hline	
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.29}{1.12}{1.00}{0.90}{0.81}{n/a}
+	\end{costdriverstable}
+
 	\item \textbf{Application Experience [APEX]}: rating describing the experience of whole team with this kind of projects.
-As stated in the \textit{PCAP driver} description, our experience is quite limited, hence the value for this driver is \textit{Very Low}.
+
+Our experience with this category of projects is quite limited, hence the value for this driver is \textit{Low}.
+
+	\begin{costdriverstable}{APEX Cost Driver}
+		\costdescriptors{APEX Descriptors}{$\le$ 2 months}{6 months}{1 year}{3 years}{6 years}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.22}{1.10}{1.00}{0.88}{0.81}{n/a}
+	\end{costdriverstable}
 
 	\item \textbf{Platform Experience [PLEX]}: cost driver assessing the experience of the team with the platform used for the development.
-The project is in a early stage development, therefore the development platform is not decided yet. However, due to our limited experience with any development platform, we can assign a value of \textit{Low} to this driver.
 
-	\item \textbf{Language and Tool Experience[LTEX]}: experience and familiarity of the development team with he technology used, both languages and software tools, are describe by this driver.
-Most of the technologies and frameworks needed to achieve the goals of each step of the project's life cycle are quite unknown. Therefore, the set value for this driver is \textit{Low}.
+The project is in a early stage development, therefore the development platform is not decided yet. However, in our past projects we dealt with some important software applications that are part of the most important and used development platform, hence we can assign a value of \textit{Nominal} to this driver.
+
+	\begin{costdriverstable}{PLEX Cost Driver}
+		\costdescriptors{PLEX Descriptors}{$\le$ 2 months}{6 months}{1 year}{3 years}{6 years}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.19}{1.09}{1.00}{0.91}{0.85}{n/a}
+	\end{costdriverstable}
+
+	\item \textbf{Language and Tool Experience [LTEX]}: experience and familiarity of the development team with he technology used, both languages and software tools, are describe by this driver.
+
+Some of the technologies and frameworks suppose to be used to achieve the goals of each step of the project's life cycle are quite unknown. Therefore, the set value for this driver is \textit{Nominal}.
+
+	\begin{costdriverstable}{LTEX Cost Driver}
+		\costdescriptors{LTEX Descriptors}{$\le$ 2 months}{6 months}{1 year}{3 years}{6 years}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.20}{1.09}{1.00}{0.91}{0.84}{n/a}
+	\end{costdriverstable}
 
 	\item \textbf{Use of Software Tools [TOOL]}: this driver attempts to assess the kind of tools used and their integration.
 The tools we expect to use are quite integrated and support quite well the project's life-cycle. The driver's value is set to \textit{High}.
 
+	\begin{costdriverstable}{TOOL Cost Driver}
+		\costdescriptors{TOOL Descriptors}{edit, code, debug}{simple, frontend, backend CASE, little integration}{basic life-cycle tools, moderately integrated}{strong, mature life-cycle tools, moderately integrated}{strong, mature, proactive life-cycle tools, well integrated with processes, methods, reuse}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.17}{1.09}{1.00}{0.90}{0.78}{n/a}	
+	\end{costdriverstable}
+
 	\item \textbf{Multisite Development [SITE]}: the characteristics evaluated by this driver are the collocation of the site development and the communication channels used to manage the development activity.
-Our team is collocated in two different cities (Multi-city collocation) and uses several communication channels (VoIP technologies, text messages, emails etc...). Hence, the rating of this driver is set to \textit{High}.
+
+Our team is collocated in two different cities (Multi-city collocation) and uses several communication channels (VoIP technologies, text messages, emails etc...). Hence, the rating of this driver is set to \textit{Very High}.
+
+	\begin{costdriverstable}{SITE Cost Driver}
+		\costdescriptors{SITE Collocation Descriptors}{Intern-ational}{Multi-city and multi-company}{Multi-city or multi-company}{Same city or metro area}{Same building or complex}{Fully collocated}
+		\costdescriptors{SITE Communications Descriptors}{Some phone, mail}{Individual phone, fax}{Narrow band email}{Wideband electronic communication}{Wideband elect. comm., occasional video conf.}{Interactive multimedia}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.22}{1.09}{1.00}{0.93}{0.86}{0.80}		
+	\end{costdriverstable}
 
 	\item \textbf{Required Development Schedule [SCED]}: this cost driver aims to rate the impact that the time constraints imposed to the project's team has on the whole project.
- this cost driver aims to rate the impact that the time constraints imposed to the project's team has on the whole project.
+
 The schedule assigned for this project is felt slightly compressed by the project's team, therefore the rate of this driver is set to \textit{Low}.
+
+	\begin{costdriverstable}{SCED Cost Driver}
+		\costdescriptors{SCED Descriptors}{75\% of nominal}{85\% of nominal}{100\% of nominal}{130\% of nominal}{160\% of nominal}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.43}{1.14}{1.00}{1.00}{1.00}{n/a}	
+	\end{costdriverstable}
+
+\end{itemize}
+The total effort multipler derived from each cost driver is computed as follows:
+
+\begin{equation}
+	TEM = \prod_{C} W_{c}
+\end{equation}
+
+with $C$ representing the set of all cost drivers, and $W_{c}$ the weigth associated to the cost driver $c$.
 
 \begin{table}[h!]
 	\centering
@@ -87,24 +224,75 @@ The schedule assigned for this project is felt slightly compressed by the projec
 		\hline
 		\textbf{Early design cost drivers} & \textbf{Rating level} & \textbf{Effort multiplier} \\
 		\hline
-		PERS & Low & 1.26 \\
+		PERS & Nomial & 1.00 \\
 		RCPX & Very High & 1.91 \\
 		RUSE & Nominal & 1.00 \\ 
 		PDIF & High & 1.29 \\
-		PREX & Very Low & 1.33 \\
-		FCIL & High & 0.87 \\
+		PREX & Low & 1.22 \\
+		FCIL & High & 0.73 \\
 		SCED & Low & 1.14 \\
 		\hline
-		\multicolumn{2}{| c |}{\textbf{Total Effort Multiplier}} & \multicolumn{1}{ | c |}{4.095} \\
+		\multicolumn{2}{| c |}{\textbf{Total Effort Multiplier}} & \multicolumn{1}{ | c |}{2.5015} \\
 		\hline
 	\end{tabular}
+	\caption{Total effort mulitplier table}
+	\label{table:TEM}
 \end{table}
 
+\subsubsection{Effort evaluation}
 
-The PM's lower bound is 108.559 ~ 109.
-The PM's upper bound is 135.957 ~ 136.
+The evaluation of the estimated effort for the development of this project is computed by mean of the following equation:
 
-The scheduling activity has a lower bound = $3.67 * 108^0.31476$ = 16.02 months
-and an upper bound = $3.67 * 136^0.31476$ = 17.23 months. 
+\begin{equation}
+	PM = A * Size^{E} * TEM
+\end{equation} 
 
+\begin{itemize}
+	\item A: statistical coefficient. It's current value is \textit {2.94}.
+	\item Size: the estimated size of the project in KSLOC.
+	\item E: the total scale factor computed in the \textit{Scale Drivers} section.
+	\item TEM: the total effort multipler.
 \end{itemize}
+
+Using the lower bound and upper bound values computed for the project's size, we get as:
+ 
+\begin{displaymath}
+        Lower-PM = 2.94 * 10.192^{1.0838} * 2.5015 \approx = 92 
+\end{displaymath}
+
+\begin{displaymath}
+       Upper-PM = 2.94 * 12.544^{1.0838} * 2.5015 \approx = 114
+\end{displaymath}
+
+\subsubsection{Project's duration evaluation}
+
+The estimated duration of the project can be derived by the following equation:
+
+\begin{equation}
+        Duration = 3.67 * PM^{F} 
+\end{equation}
+
+\begin{equation}
+        F = 0.28 + 0.2 * (E - B)
+\end{equation} 
+
+\begin{itemize}
+        \item PM: the estimated effort required for the project development in person per month.
+	\item E: the total scale factor computed in the \textit{Scale Drivers} section.
+	\item B: statistical coeffiecient with value \textit{0.91}.
+\end{itemize}
+
+With the lower bound and upper bound values of the project's size we get as lower bound and upper bound of the project's duration in months:
+
+\begin{displaymath}
+        F = 0.28 + 0.2 * (1.0838 - 0.91) = 0.31476
+\end{displaymath}
+
+\begin{displaymath}
+        Lower-Duration = 3.67 * 92^{0.31476} = 15.23
+\end{displaymath}
+
+\begin{displaymath}
+        Upper-Duration = 3.67 * 115^{0.31476} = 16.34
+\end{displaymath}
+

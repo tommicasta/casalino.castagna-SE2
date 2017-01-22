@@ -3,14 +3,21 @@
 \contentsline {subsection}{\numberline {1.2}Purpose}{1}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Scope}{1}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Definitions, Acronyms and Abbreviations}{2}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Definitions}{2}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Acronyms}{2}{subsubsection.1.4.2}
 \contentsline {subsection}{\numberline {1.5}Reference Documents}{2}{subsection.1.5}
 \contentsline {section}{\numberline {2}Project Size, Effort and Cost Estimation}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Size Estimation}{3}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Internal Logic File}{4}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}External Interface File}{5}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}External Input}{6}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.2}External Interface File}{6}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}External Input}{7}{subsubsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.4}External Inquiries}{8}{subsubsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.5}External Output}{9}{subsubsection.2.1.5}
-\contentsline {subsection}{\numberline {2.2}Effort and Cost Estimation}{10}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Scale Drivers}{10}{subsubsection.2.2.1}
-\contentsline {subsection}{\numberline {2.3}Cost Drivers}{12}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.1.5}External Output}{10}{subsubsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.6}Size evaluation}{11}{subsubsection.2.1.6}
+\contentsline {subsection}{\numberline {2.2}Effort and Cost Estimation}{12}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Scale Drivers}{12}{subsubsection.2.2.1}
+\contentsline {subsection}{\numberline {2.3}Cost Drivers}{14}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Effort evaluation}{21}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Project's duration evaluation}{22}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Tasks schedule}{23}{section.3}
+\contentsline {section}{\numberline {4}Reseurces allocation}{28}{section.4}

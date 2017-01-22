@@ -11,7 +11,7 @@
 
 	\item \textbf{Retrieve vehicle status}: the informations regarding the current status of a specific vehicle are stored into the vehicle informations ILF.
 
-	\item \textbf{Retrieve current reservation informations}: operation similar to the reservation history retrive operation. The same ILF are involvedo.
+	\item \textbf{Retrieve current reservation informations}: operation similar to the reservation history retrive operation. The same ILF are involved.
 
 	\item \textbf{Retrieve area list}: simple inquire involving the area informations ILF.
 
@@ -28,12 +28,28 @@
 	\item \textbf{Retrieve vehicles in specific area}: the achievement of this operation is reached through the querying of the vehicle informations ILF. 
 \end{itemize}
 
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{  c | c | c | c |}
+                \cline{2-4}
+                & \multicolumn{3}{ c |}{Data elements} \\
+                \cline{1-4}
+                \multicolumn{1}{ | c | }{FRT} & 1 $\rightarrow$ 5 & 6 $\rightarrow$ 19 & 20+ \\
+                \hline
+                \multicolumn{1}{ | c | }{0-1} & Low & Low & Average \\ \hline
+                \multicolumn{1}{ | c | }{2-3} & Low & Average & High \\ \hline
+                \multicolumn{1}{ | c | }{4+} & Average & High & High \\
+                \hline
+        \end{tabular}
+        \caption{EQ and EO's rating table}
+        \label{table:EQRT}
+\end{table}
 
 \begin{table}[h!]
         \centering
         \begin{tabular}{ | c | c | c |}
                 \hline
-                \textbf{IQ} & \textbf{Complexity} & \textbf{Weigth} \\
+                \textbf{EQ} & \textbf{Complexity} & \textbf{Weigth} \\
                 \hline
                 Retrieve reservation history & Low & 3 \\
                 Retrieve account informations & Low & 3 \\
@@ -48,8 +64,10 @@
 		Retrieve policy rule info & Low & 3 \\
                 Retrieve vehicle in specific area & Low & 3 \\
                 \hline
-                Partial Function Point & \multicolumn{2}{c |}{36} \\
+                \textbf{Partial Function Point} & \multicolumn{2}{c |}{36} \\
                 \hline
         \end{tabular}
+	\caption{EQ's PFP table}
+	\label{table:EQPFP}
 \end{table}
 

@@ -1,37 +1,28 @@
 \subsubsection{External Output}
 
+In certain circumstances, the software system is required to comunicate to the final user outside the context of either an inquire or an external input.
+
+These situations are very few in our projects and are the following:
+
 \begin{itemize}
-	\item \textbf{Notify reservation expired}.
-	\item \textbf{Notify policy rule(s) application}.
-	\item \textbf{Notify registration result}.
-	\item \textbf{Notify login result}.
-	\item \textbf{Notify logout result}.
-	\item \textbf{Notify insertion result}.
-	\item \textbf{Notify deletion result}.
-	\item \textbf{Notify update result}.
-	\item \textbf{Notify reservation request result}.
-	\item \textbf{Notify unlock request result}.
+	\item Notify the user of reservation expiration.
+	\item Notify the user of policy rule(s) application.
 \end{itemize}
 
+Both of these external outputs refer to a single ILF, respectively the reservation ILF and policy rules ILF, while the data elements carried are one for the former (a simple message) and three for the latter (policy rule, event and effect).
+
+According to the rating table \ref{table:EQRT}, both these EOs are classifiable as \textit{Low}.
 
 \begin{table}[h!]
         \centering
         \begin{tabular}{ | c | c | c |}
                 \hline
-                \textbf{EO} & \textbf{Complexity} & \textbf{Weigth} \\
+                \textbf{EO} & \textbf{Complexity} & \textbf{Weight} \\
                 \hline
-                Notify reservation expired & Low & 3 \\
-                Notify policy rule(s) application & Low & 3 \\
-                Notify registration result & Low & 3 \\
-                Notify login result & Low & 3 \\
-		Notify logout result & Low & 3 \\
-                Notify insertion result & Low & 3 \\
-                Notify deletion result & Low & 3 \\
-                Notify update result & Low & 3 \\
-                Notify reservation request result & Low & 3 \\
-                Notify unlock request result & Low & 3 \\
+                Reservation expiration notification & Low & 3 \\
+                Policy rule(s) application notification & Low & 3 \\
                 \hline
-                Partial Function Point & \multicolumn{2}{c |}{30} \\
+                \textbf{Partial Function Points} & \multicolumn{2}{c |}{6} \\
                 \hline
         \end{tabular}
 \end{table}

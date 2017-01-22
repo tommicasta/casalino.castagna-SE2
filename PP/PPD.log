@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  22 JAN 2017 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  23 JAN 2017 00:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,7 +22,7 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
+) (./cmd.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
@@ -294,45 +294,133 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen110
-) (./PPD.aux
-(./cover/main.aux) (./introduction/main.aux) (./estimation/main.aux))
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen111
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count105
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count106
+\leftroot@=\count107
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count108
+\DOTSCASE@=\count109
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count110
+\c@MaxMatrixCols=\count111
+\dotsspace@=\muskip11
+\c@parentequation=\count112
+\dspbrk@lvl=\count113
+\tag@help=\toks19
+\row@=\count114
+\column@=\count115
+\maxfields@=\count116
+\andhelp@=\toks20
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks21
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (./PPD.aux
+(./cover/main.aux) (./introduction/main.aux) (./estimation/main.aux
+
+LaTeX Warning: Label `table:UFPT' multiply defined.
+
+) (./tasks/main.aux
+
+LaTeX Warning: Label `fig:tasks-2' multiply defined.
+
+
+LaTeX Warning: Label `fig:tasks-2' multiply defined.
+
+) (./resources/main.aux
+
+LaTeX Warning: Label `fig:tasks-1' multiply defined.
+
+
+LaTeX Warning: Label `fig:tasks-1' multiply defined.
+
+
+LaTeX Warning: Label `fig:tasks-1' multiply defined.
+
+
+LaTeX Warning: Label `fig:tasks-1' multiply defined.
+
+))
 \openout1 = `PPD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen111
-\scratchbox=\box32
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen112
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count117
+\scratchdimen=\dimen120
+\scratchbox=\box34
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen121
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -348,11 +436,11 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 18.
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring OFF on input line 21.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./PPD.out) (./PPD.out)
 \@outlinefile=\write3
@@ -361,7 +449,7 @@ LaTeX Info: Redefining \nameref on input line 18.
 \openout2 = `./cover/main.aux'.
 
  (./cover/main.tex
-<../Datas/images/polimi.png, id=68, 803.0pt x 501.875pt>
+<../Datas/images/polimi.png, id=96, 803.0pt x 501.875pt>
 File: ../Datas/images/polimi.png Graphic file (type png)
 
 <use ../Datas/images/polimi.png>
@@ -376,12 +464,7 @@ Overfull \hbox (6.31378pt too wide) in paragraph at lines 3--4
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../Datas/images/polimi.png
->]) (./PPD.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-)
+>]) (./PPD.toc)
 \tf@toc=\write4
 \openout4 = `PPD.toc'.
 
@@ -389,7 +472,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26         \clearpage
+l.29         \clearpage
                         [1
 
 ]
@@ -401,11 +484,14 @@ Underfull \vbox (badness 10000) detected at line 11
  []
 
 ) (./introduction/purpose.tex) (./introduction/scope.tex)
-(./introduction/def-acr-abbr/main.tex) (./introduction/ref-doc.tex)) [1
+(./introduction/def-acr-abbr/main.tex
+(./introduction/def-acr-abbr/definitions.tex)
+(./introduction/def-acr-abbr/acronyms.tex)
+(./introduction/def-acr-abbr/abbreviations.tex)) (./introduction/ref-doc.tex))
+[1
 
 
-]
-[2]
+] [2]
 \openout2 = `./estimation/main.aux'.
 
  (./estimation/main.tex (./estimation/size-estimation/main.tex
@@ -413,67 +499,1360 @@ Underfull \vbox (badness 10000) detected at line 11
 
 
 ])
-(./estimation/size-estimation/internal-file.tex [4])
-(./estimation/size-estimation/external-file.tex
+(./estimation/size-estimation/internal-file.tex [4]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5]) (./estimation/size-estimation/external-input.tex [6] [7])
-(./estimation/size-estimation/external-inquiries.tex [8])
-(./estimation/size-estimation/external-output.tex [9])
-(./estimation/size-estimation/epilogue.tex))
-(./estimation/effort-cost-estimation/main.tex
+) (./estimation/size-estimation/external-file.tex [5pdfTeX warning (ext4): dest
+ination with the same identifier (name{table.2}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.4 
+    ]) (./estimation/size-estimation/external-input.tex [6pdfTeX warning (ext4)
+: destination with the same identifier (name{table.3}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.6 	\item \textbf
+                  {Logout}: elementary operation that does not require the i...
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.6 	\item \textbf
+                  {Logout}: elementary operation that does not require the i...
+] [7]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./estimation/size-estimation/external-inquiries.tex [8pdfTeX warning (ext4):
+ destination with the same identifier (name{table.5}) has been already used, du
+plicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.9 
+    ] [9pdfTeX warning (ext4): destination with the same identifier (name{table
+.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\item \textbf
+                   {Retrieve policy list}: the retrieval of the total list o...
+]) (./estimation/size-estimation/external-output.tex [10pdfTeX warning (ext4): 
+destination with the same identifier (name{table.7}) has been already used, dup
+licate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.13 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.8}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.13 
+     ]) (./estimation/size-estimation/epilogue.tex [11pdfTeX warning (ext4): de
+stination with the same identifier (name{table.9}) has been already used, dupli
+cate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.55 \end{displaymath}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{table.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.55 \end{displaymath}
+                      ])) (./estimation/effort-cost-estimation/main.tex
 (./estimation/effort-cost-estimation/intro.tex)
-(./estimation/effort-cost-estimation/scale-drivers.tex [10])
-(./estimation/effort-cost-estimation/cost-drivers.tex [11]
-Overfull \hbox (14.3684pt too wide) in paragraph at lines 6--8
-\OT1/cmr/m/n/10 which may be in a\OT1/cmr/m/it/10 Post-architectural \OT1/cmr/m
-/n/10 state or \OT1/cmr/m/it/10 Early de-sign \OT1/cmr/m/n/10 state. Post-archi
-tectural's
+(./estimation/effort-cost-estimation/scale-drivers.tex [12]
+Underfull \hbox (badness 1783) in paragraph at lines 27--27
+[]|\T1/cmr/bx/n/10 Scale Fac-
  []
 
 
-Overfull \hbox (22.1774pt too wide) in paragraph at lines 15--28
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\T1/cmr/bx/n/10 Very
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\T1/cmr/bx/n/10 Extra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10 thoroughly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/cmr/m/n/10 un-prece-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10 largely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/cmr/m/n/10 un-prece-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10 somewhat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/cmr/m/n/10 un-prece-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10 generally
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10 largely fa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+[]|\T1/cmr/m/n/10 thoroughly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\T1/cmr/m/n/10 occasional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\T1/cmr/m/n/10 some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\T1/cmr/m/n/10 general
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 30--30
+[]|\T1/cmr/m/n/10 some con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+[]|\T1/cmr/m/n/10 general
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\T1/cmr/m/n/10 little
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\T1/cmr/m/n/10 some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\T1/cmr/m/n/10 often
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\T1/cmr/m/n/10 generally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\T1/cmr/m/n/10 mostly
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 34--34
+[]|\T1/cmr/m/n/10 very dif-fi-
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 34--34
+\T1/cmr/m/n/10 cult in-ter-
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 34--34
+\T1/cmr/m/n/10 cult in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\T1/cmr/m/n/10 basically
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/cmr/m/n/10 co-op-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/cmr/m/n/10 er-a-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/cmr/m/n/10 in-ter-ac-
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 34--34
+[]|\T1/cmr/m/n/10 highly co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+[]|\T1/cmr/m/n/10 seamless
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+\T1/cmr/m/n/10 in-ter-ac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]|\T1/cmr/m/n/10 Level 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]|\T1/cmr/m/n/10 Level 1
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 26--38
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 38
+ []
+
+) (./estimation/effort-cost-estimation/cost-drivers.tex [13pdfTeX warning (ext4
+): destination with the same identifier (name{table.12}) has been already used,
+ duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \subsection
+               {Cost Drivers}]
+Overfull \hbox (22.094pt too wide) in paragraph at lines 21--34
  [][] 
  []
 
-[12] [13]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 44--45
+[]|\T1/cmr/m/n/10 |=======|
+ []
 
-))) [14] [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
- (./PPD.aux (./cover/main.aux) (./introduction/main.aux)
-(./estimation/main.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/cmr/m/n/10 RELY De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/10 slightly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/cmr/m/n/10 in-con-ve-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/10 easily re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/cmr/m/n/10 cov-er-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/10 moderate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/cmr/m/n/10 re-cov-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/cmr/m/n/10 er-able
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 44--48
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 48
+ []
+
+[14pdfTeX warning (ext4): destination with the same identifier (name{table.13})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.48 \end{costdriverstable}
+                           ]
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 56--57
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\T1/cmr/m/n/10 DATA De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\T1/cmr/m/n/10 Testing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/cmr/m/n/10 DB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/cmr/m/n/10 bytes/pgm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/cmr/m/n/10 SLOC $\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (11.6894pt too wide) in paragraph at lines 57--57
+[]|\T1/cmr/m/n/10 10$\OMS/cmsy/m/n/10 ^^T$\T1/cmr/m/n/10 D/P$\OMS/cmsy/m/n/10 ^
+^T$\T1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (9.05116pt too wide) in paragraph at lines 57--57
+[]|\T1/cmr/m/n/10 100$\OMS/cmsy/m/n/10 ^^T$\T1/cmr/m/n/10 /P$\OMS/cmsy/m/n/10 ^
+^T$\T1/cmr/m/n/10 000| 
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 56--60
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 60
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 65--66
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 65--68
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 68
+ []
+
+[15]
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 75--76
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\T1/cmr/m/n/10 RUSE De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]|\T1/cmr/m/n/10 Across
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]|\T1/cmr/m/n/10 Across
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]|\T1/cmr/m/n/10 Across
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\T1/cmr/m/n/10 prod-uct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]|\T1/cmr/m/n/10 Across
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\T1/cmr/m/n/10 mul-ti-ple
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\T1/cmr/m/n/10 prod-uct
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 75--79
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 79
+ []
+
+
+Overfull \hbox (2.90868pt too wide) in paragraph at lines 81--82
+[]\T1/cmr/bx/n/10 Documentation Match to Life-Cycle Needs [DOCU]\T1/cmr/m/n/10 
+: this cost driver
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 85--86
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 85--86
+\T1/cmr/m/n/10 DOCU De-
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 86--86
+[]|\T1/cmr/m/n/10 Many life-
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 86--86
+[]|\T1/cmr/m/n/10 Some life-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[]|\T1/cmr/m/n/10 Right-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\T1/cmr/m/n/10 sized to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\T1/cmr/m/n/10 life-cycle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[]|\T1/cmr/m/n/10 Excessive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\T1/cmr/m/n/10 for life-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[]|\T1/cmr/m/n/10 Very ex-
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 86--86
+\T1/cmr/m/n/10 ces-sive for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\T1/cmr/m/n/10 life-cycle
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 85--89
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 95--96
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+\T1/cmr/m/n/10 TIME De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/10 ex-e-cu-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/10 avail-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/10 ex-e-cu-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/10 avail-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/10 ex-e-cu-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/10 avail-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/10 ex-e-cu-tion
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 95--99
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 99
+ []
+
+[16]
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 106--107
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+\T1/cmr/m/n/10 STOR De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+\T1/cmr/m/n/10 avail-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+\T1/cmr/m/n/10 avail-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+\T1/cmr/m/n/10 avail-able
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 106--110
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 116--117
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+\T1/cmr/m/n/10 PVOL De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]|\T1/cmr/m/n/10 Major
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/cmr/m/n/10 change
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/cmr/m/n/10 ev-ery 12
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/cmr/m/n/10 change
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/cmr/m/n/10 ev-ery 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]|\T1/cmr/m/n/10 Major:
+ []
+
+
+Underfull \hbox (badness 5345) in paragraph at lines 117--117
+\T1/cmr/m/n/10 6mo; mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]|\T1/cmr/m/n/10 Major:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/cmr/m/n/10 2mo, mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]|\T1/cmr/m/n/10 Major:
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 117--117
+\T1/cmr/m/n/10 2wk; mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/cmr/m/n/10 nor: 2
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 116--120
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 120
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 126--127
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+\T1/cmr/m/n/10 ACAP De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\T1/cmr/m/n/10 15th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\T1/cmr/m/n/10 35th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\T1/cmr/m/n/10 55th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\T1/cmr/m/n/10 75th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\T1/cmr/m/n/10 90th per-
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 126--130
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 130
+ []
+
+[17]
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 136--137
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+\T1/cmr/m/n/10 PCAP De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]|\T1/cmr/m/n/10 15th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]|\T1/cmr/m/n/10 35th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]|\T1/cmr/m/n/10 55th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]|\T1/cmr/m/n/10 75th per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]|\T1/cmr/m/n/10 90th per-
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 136--140
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 140
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 146--147
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 146--147
+\T1/cmr/m/n/10 PCON De-
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 146--150
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 150
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 156--157
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+\T1/cmr/m/n/10 APEX De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+[]|$\OMS/cmsy/m/n/10 ^^T$ \T1/cmr/m/n/10 2
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 156--160
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 160
+ []
+
+
+Overfull \vbox (6.05591pt too high) has occurred while \output is active []
+
+
+[18]
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 166--167
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+\T1/cmr/m/n/10 PLEX De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[]|$\OMS/cmsy/m/n/10 ^^T$ \T1/cmr/m/n/10 2
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 166--170
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 170
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 176--177
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+\T1/cmr/m/n/10 LTEX De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]|$\OMS/cmsy/m/n/10 ^^T$ \T1/cmr/m/n/10 2
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 176--180
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 180
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 185--186
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+\T1/cmr/m/n/10 TOOL De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]|\T1/cmr/m/n/10 simple,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 fron-tend,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 back-end
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 CASE,
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 186--186
+\T1/cmr/m/n/10 lit-tle in-te-
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 186--186
+[]|\T1/cmr/m/n/10 basic life-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 er-ately
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]|\T1/cmr/m/n/10 strong,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 ma-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 life-cycle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 tools,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 er-ately
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]|\T1/cmr/m/n/10 strong,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 ma-ture,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 proac-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 life-cycle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 in-te-grated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 with pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 cesses,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\T1/cmr/m/n/10 meth-ods,
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 185--189
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 189
+ []
+
+[19]
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 195--196
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+\T1/cmr/m/n/10 SITE Col-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+\T1/cmr/m/n/10 lo-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/10 Intern-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/10 Multi-city
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/10 Multi-city
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/10 or multi-
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/10 Same city
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/10 or metro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/10 Same
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/10 SITE Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 mu-ni-ca-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/10 Some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 phone,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/10 Individual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/10 Narrow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/10 Wideband
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 elec-tronic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 com-mu-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/10 Wideband
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 elect.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 comm.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 oc-ca-sional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/10 Interactive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\T1/cmr/m/n/10 mul-ti-me-
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 195--200
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 200
+ []
+
+
+Overfull \hbox (4.78409pt too wide) in paragraph at lines 206--207
+[]|\T1/cmr/m/n/10 |=======|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+\T1/cmr/m/n/10 SCED De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[]|\T1/cmr/m/n/10 75% of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[]|\T1/cmr/m/n/10 85% of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[]|\T1/cmr/m/n/10 100% of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[]|\T1/cmr/m/n/10 130% of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[]|\T1/cmr/m/n/10 160% of
+ []
+
+
+Overfull \hbox (44.0pt too wide) in alignment at lines 206--210
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 210
+ []
+
+[20] [21pdfTeX warning (ext4): destination with the same identifier (name{table
+.31}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.265 \end{displaymath}
+                       ]))) [22]
+\openout2 = `./tasks/main.aux'.
+
+ (./tasks/main.tex
+<../Datas/images/tasks-schedule-1.png, id=282, 798.73407pt x 931.22906pt>
+File: ../Datas/images/tasks-schedule-1.png Graphic file (type png)
+
+<use ../Datas/images/tasks-schedule-1.png>
+Package pdftex.def Info: ../Datas/images/tasks-schedule-1.png used on input lin
+e 24.
+(pdftex.def)             Requested size: 501.87683pt x 585.1286pt.
+ [23
+
+
+]
+Overfull \vbox (59.07257pt too high) has occurred while \output is active []
+
+
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.28 
+      <../Datas/images/tasks-schedule-1.png>]
+<../Datas/images/tasks-schedule-2.png, id=298, 809.27344pt x 326.72063pt>
+File: ../Datas/images/tasks-schedule-2.png Graphic file (type png)
+
+<use ../Datas/images/tasks-schedule-2.png>
+Package pdftex.def Info: ../Datas/images/tasks-schedule-2.png used on input lin
+e 32.
+(pdftex.def)             Requested size: 501.87683pt x 202.61952pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.37 \newpage
+              <../Datas/images/tasks-schedule-2.png>]
+
+pdfTeX warning: pdflatex (file ../Datas/schedule-dates-1.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<../Datas/schedule-dates-1.pdf, id=304, 597.55246pt x 845.07724pt>
+File: ../Datas/schedule-dates-1.pdf Graphic file (type pdf)
+
+<use ../Datas/schedule-dates-1.pdf>
+Package pdftex.def Info: ../Datas/schedule-dates-1.pdf used on input line 43.
+(pdftex.def)             Requested size: 372.39261pt x 526.66328pt.
+
+
+pdfTeX warning: pdflatex (file ../Datas/schedule-dates-2.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<../Datas/schedule-dates-2.pdf, id=305, 597.55246pt x 845.07724pt>
+File: ../Datas/schedule-dates-2.pdf Graphic file (type pdf)
+
+<use ../Datas/schedule-dates-2.pdf>
+Package pdftex.def Info: ../Datas/schedule-dates-2.pdf used on input line 50.
+(pdftex.def)             Requested size: 401.50146pt x 567.82356pt.
+) [26 <../Datas/schedule-dates-1.pdf>]
+Overfull \vbox (17.82356pt too high) has occurred while \output is active []
+
+
+[27 <../Datas/schedule-dates-2.pdf>]
+\openout2 = `./resources/main.aux'.
+
+ (./resources/main.tex
+<../Datas/images/resource-tommaso-1.png, id=316, 813.0375pt x 779.16093pt>
+File: ../Datas/images/resource-tommaso-1.png Graphic file (type png)
+
+<use ../Datas/images/resource-tommaso-1.png>
+Package pdftex.def Info: ../Datas/images/resource-tommaso-1.png used on input l
+ine 14.
+(pdftex.def)             Requested size: 501.87683pt x 480.95854pt.
+ [28
+
+
+]
+<../Datas/images/resource-tommaso-2.png, id=321, 811.53188pt x 779.91376pt>
+File: ../Datas/images/resource-tommaso-2.png Graphic file (type png)
+
+<use ../Datas/images/resource-tommaso-2.png>
+Package pdftex.def Info: ../Datas/images/resource-tommaso-2.png used on input l
+ine 22.
+(pdftex.def)             Requested size: 501.87683pt x 482.33958pt.
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.26 
+      <../Datas/images/resource-tommaso-1.png>]
+<../Datas/images/resource-lorenzo-1.png, id=328, 810.02625pt x 853.68938pt>
+File: ../Datas/images/resource-lorenzo-1.png Graphic file (type png)
+
+<use ../Datas/images/resource-lorenzo-1.png>
+Package pdftex.def Info: ../Datas/images/resource-lorenzo-1.png used on input l
+ine 30.
+(pdftex.def)             Requested size: 501.87683pt x 528.94327pt.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.34 
+      <../Datas/images/resource-tommaso-2.png>]
+Overfull \vbox (2.88724pt too high) has occurred while \output is active []
+
+
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.34 
+      <../Datas/images/resource-lorenzo-1.png>]
+<../Datas/images/resource-lorenzo-2.png, id=339, 810.02625pt x 855.195pt>
+File: ../Datas/images/resource-lorenzo-2.png Graphic file (type png)
+
+<use ../Datas/images/resource-lorenzo-2.png>
+Package pdftex.def Info: ../Datas/images/resource-lorenzo-2.png used on input l
+ine 38.
+(pdftex.def)             Requested size: 501.87683pt x 529.87616pt.
+)
+Overfull \vbox (3.82013pt too high) has occurred while \output is active []
+
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.37 	\include{./resources/main}
+                                 <../Datas/images/resource-lorenzo-2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+
+(./PPD.aux (./cover/main.aux) (./introduction/main.aux) (./estimation/main.aux)
+(./tasks/main.aux) (./resources/main.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `PPD.out' has not changed.
-(rerunfilecheck)             Checksum: F88D17212645FD80B4A795F2B49DAEDA;1116.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
+(rerunfilecheck)             Checksum: 72879AC5FB0B9F5CFAC060E2C6ED3847;1602.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 5793 strings out of 493029
- 87403 string characters out of 6136233
- 171985 words of memory out of 5000000
- 9178 multiletter control sequences out of 15000+600000
- 7051 words of font info for 25 fonts, out of 8000000 for 9000
+ 6774 strings out of 493029
+ 98885 string characters out of 6136233
+ 202940 words of memory out of 5000000
+ 10024 multiletter control sequences out of 15000+600000
+ 12828 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,30p,550b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on PPD.pdf (17 pages, 296137 bytes).
+ 29i,8n,30p,527b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfti1000.pfb>
+Output written on PPD.pdf (34 pages, 968650 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

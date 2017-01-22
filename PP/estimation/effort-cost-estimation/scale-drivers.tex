@@ -23,13 +23,27 @@ Our team had divergence on project choices several time that brought a slow down
 Since this is our first project, is quite hard to assess the maturity of our approach. Hence, even if the applied processes to the development could be typical of a level-3 organization, we set the factor's value to \textit{level 2}, typical of processes designed for specific projects. 
 \end{itemize}
 
+\begin{scaledriverstable}{Scale Factor weigth SF$_s$s for COCOMO II Models}
+	\textbf{Scale Factors} & \textbf{Very Low} & \textbf{Low} & \textbf{Nominal} & \textbf{High} & \textbf{Very High} & \textbf{Extra High} \\ \hline
+	\addfactor{PREC}{thoroughly unprecedented}{largely unprecedented}{somewhat unprecedented}{generally familiar}{largely familiar}{thoroughly familiar}
+	\addfactorvalues{6.20}{4.96}{3.72}{2.48}{1.24}{0.00}
+	\addfactor{FLEX}{rigorous}{occasional relaxation}{some relaxation}{general conformity}{some conformity}{general goals}
+	\addfactorvalues{5.07}{4.05}{3.04}{2.03}{1.01}{0.00}
+	\addfactor{RESL}{little (20\%)}{some (40\%)}{often (60\%)}{generally (75\%)}{mostly (90\%)}{full (100\%)}
+	\addfactorvalues{7.07}{5.65}{4.24}{2.83}{1.41}{0.00}
+	\addfactor{TEAM}{very difficult interactions}{some difficult interactions}{basically cooperative interactions}{largely cooperative}{highly cooperative}{seamless interactions}
+	\addfactorvalues{5.48}{4.38}{3.29}{2.19}{1.10}{0.00}
+	\addfactor{PMAT}{Level 1 Lower}{Level 1 Upper}{Level 2}{Level 3}{Level 4}{Level 5}
+	\addfactorvalues{7.80}{6.24}{4.68}{3.12}{1.56}{0.00}
+\end{scaledriverstable}
+
 Refering to the scale drivers table, the following table is produced
 
 \begin{table}[h!]
         \centering
         \begin{tabular}{ | c | c | c |}
                 \hline
-                \textbf{EO} & \textbf{Complexity} & \textbf{Weigth} \\
+                \textbf{Scale Driver} & \textbf{Complexity} & \textbf{SF} \\
                 \hline\
                 Precedentedness & Low & 4.96 \\
                 Development flexibility & Nominal & 3.04 \\
@@ -40,14 +54,14 @@ Refering to the scale drivers table, the following table is produced
                 Total value & \multicolumn{2}{c |}{17.38} \\
                 \hline
         \end{tabular}
+	\caption{Scale drivers summary}
+	\label{table:SDS}
 \end{table}
 
-The \textit{total scale factor E} has a value computable by mean of the following equation
+The \textbf{total scale factor} \textit{E} has a value computable by mean of the following equation
 
-\begin{displaymath}
-	E = B + 0.01 * \sum_{f} (SF_f) = 1,0838
-\end{displaymath}
+\begin{equation}
+	E = B + 0.01 * \sum_{s \in S} (SF_s) = 1,0838
+\end{equation}
 
-with $B = 0.91$ and $f$ representing one of the scale drivers.
-
-
+with $B = 0.91$ and $S$ representing the set of scale drivers.

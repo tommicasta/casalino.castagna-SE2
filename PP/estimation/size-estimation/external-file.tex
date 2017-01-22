@@ -1,28 +1,16 @@
 \subsubsection{External Interface File}
 
-\begin{table}[h!]
-        \centering
-        \begin{tabular}{  c | c | c | c |}
-                \cline{2-4}
-                & \multicolumn{3}{ c |}{Data elements} \\
-                \cline{1-4}
-                \multicolumn{1}{ | c | }{RET} & 1 $\rightarrow$ 4 & 5 $\rightarrow$ 15 & 15+ \\
-                \hline
-                \multicolumn{1}{ | c | }{< 2} & Low & Low & Average \\ \hline
-                \multicolumn{1}{ | c | }{2} & Low & Average & High \\ \hline
-                \multicolumn{1}{ | c | }{> 2} & Average & High & High \\
-                \hline
-        \end{tabular}
-\end{table}
-
 The external services used by our system are developed by third parts. Consequently, it's quite hard to understand how many record types and data elements of each external file are used.
-In order to perform a meaningful estimations, the following assumptions about the external services are taken in consideration.
+
+In order to perform meaningful estimations, the following assumptions about the external services are taken in consideration.
 
 \begin{itemize}
-	\item \textbf{Driver licenses validator web service files}: we assume that the web service needs only to use informations regarding stored driver licenses and drivers informations, hence use of two record structure types.
+	\item \textbf{Driver licenses validator web service files}: we assume that the web service needs only informations regarding stored driver licenses and drivers informations, hence use of two record element types.
 	\item \textbf{Payment system web service files}: as for the previous web service, it's reasonable think that the payment web service relies only the payment informations and payment service's customers informations.
-	\item \textbf{Google maps web service files}: the kind of informations needed by this service are unknown to us, but we assume that the operations performed for map plotting and so on involves a complex external file.
+	\item \textbf{Google maps web service files}: the kind of informations needed by this service are unknown to us, but we assume that the operations performed for map and vehicle positions representation involves a complex external file.
 \end{itemize}
+
+The weigths associated to each of the above EIF can be retrieved in the table \ref{table:ILFRT}.
 
 \begin{table}[h!]
         \centering
@@ -34,8 +22,9 @@ In order to perform a meaningful estimations, the following assumptions about th
                 Payment system web service & Low & 5 \\
                 Google maps web service & High & 10 \\
                 \hline
-                Partial Function Point & \multicolumn{2}{c |}{20} \\
+                \textbf{Partial Function Point} & \multicolumn{2}{c |}{20} \\
                 \hline
         \end{tabular}
+	\caption{EIF's PFP table}
+	\label{table:EIFPFP}
 \end{table}
-
