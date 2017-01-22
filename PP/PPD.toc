@@ -21,3 +21,8 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Project's duration evaluation}{22}{subsubsection.2.3.2}
 \contentsline {section}{\numberline {3}Tasks schedule}{23}{section.3}
 \contentsline {section}{\numberline {4}Reseurces allocation}{28}{section.4}
+\contentsline {section}{\numberline {5}Risk Management}{33}{section.5}
+\contentsline {subsection}{\numberline {5.1}Project Risks}{33}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Technical Risks}{33}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Business Risks}{34}{subsection.5.3}
+\contentsline {section}{\numberline {6}Effort Spent}{36}{section.6}

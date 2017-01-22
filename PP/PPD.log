@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  23 JAN 2017 00:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  23 JAN 2017 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1683,18 +1683,18 @@ l.265 \end{displaymath}
 \openout2 = `./tasks/main.aux'.
 
  (./tasks/main.tex
-<../Datas/images/tasks-schedule-1.png, id=282, 798.73407pt x 931.22906pt>
+<../Datas/images/tasks-schedule-1.png, id=282, 804.00375pt x 1005.7575pt>
 File: ../Datas/images/tasks-schedule-1.png Graphic file (type png)
 
 <use ../Datas/images/tasks-schedule-1.png>
 Package pdftex.def Info: ../Datas/images/tasks-schedule-1.png used on input lin
 e 24.
-(pdftex.def)             Requested size: 501.87683pt x 585.1286pt.
+(pdftex.def)             Requested size: 501.87683pt x 627.81422pt.
  [23
 
 
 ]
-Overfull \vbox (59.07257pt too high) has occurred while \output is active []
+Overfull \vbox (101.7582pt too high) has occurred while \output is active []
 
 
 [24pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
@@ -1704,13 +1704,13 @@ Overfull \vbox (59.07257pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.28 
       <../Datas/images/tasks-schedule-1.png>]
-<../Datas/images/tasks-schedule-2.png, id=298, 809.27344pt x 326.72063pt>
+<../Datas/images/tasks-schedule-2.png, id=298, 806.26219pt x 252.19218pt>
 File: ../Datas/images/tasks-schedule-2.png Graphic file (type png)
 
 <use ../Datas/images/tasks-schedule-2.png>
 Package pdftex.def Info: ../Datas/images/tasks-schedule-2.png used on input lin
 e 32.
-(pdftex.def)             Requested size: 501.87683pt x 202.61952pt.
+(pdftex.def)             Requested size: 501.87683pt x 156.98477pt.
  [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
@@ -1745,24 +1745,24 @@ Overfull \vbox (17.82356pt too high) has occurred while \output is active []
 \openout2 = `./resources/main.aux'.
 
  (./resources/main.tex
-<../Datas/images/resource-tommaso-1.png, id=316, 813.0375pt x 779.16093pt>
+<../Datas/images/resource-tommaso-1.png, id=316, 809.27344pt x 781.41937pt>
 File: ../Datas/images/resource-tommaso-1.png Graphic file (type png)
 
 <use ../Datas/images/resource-tommaso-1.png>
 Package pdftex.def Info: ../Datas/images/resource-tommaso-1.png used on input l
 ine 14.
-(pdftex.def)             Requested size: 501.87683pt x 480.95854pt.
+(pdftex.def)             Requested size: 501.87683pt x 484.60617pt.
  [28
 
 
 ]
-<../Datas/images/resource-tommaso-2.png, id=321, 811.53188pt x 779.91376pt>
+<../Datas/images/resource-tommaso-2.png, id=321, 800.23969pt x 779.91376pt>
 File: ../Datas/images/resource-tommaso-2.png Graphic file (type png)
 
 <use ../Datas/images/resource-tommaso-2.png>
 Package pdftex.def Info: ../Datas/images/resource-tommaso-2.png used on input l
 ine 22.
-(pdftex.def)             Requested size: 501.87683pt x 482.33958pt.
+(pdftex.def)             Requested size: 501.87683pt x 489.13478pt.
  [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
 ) has been already used, duplicate ignored
 
@@ -1770,13 +1770,13 @@ ine 22.
                                                   \fi \fi 
 l.26 
       <../Datas/images/resource-tommaso-1.png>]
-<../Datas/images/resource-lorenzo-1.png, id=328, 810.02625pt x 853.68938pt>
+<../Datas/images/resource-lorenzo-1.png, id=328, 808.52063pt x 853.68938pt>
 File: ../Datas/images/resource-lorenzo-1.png Graphic file (type png)
 
 <use ../Datas/images/resource-lorenzo-1.png>
 Package pdftex.def Info: ../Datas/images/resource-lorenzo-1.png used on input l
 ine 30.
-(pdftex.def)             Requested size: 501.87683pt x 528.94327pt.
+(pdftex.def)             Requested size: 501.87683pt x 529.92024pt.
  [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
 ) has been already used, duplicate ignored
 
@@ -1784,7 +1784,7 @@ ine 30.
                                                   \fi \fi 
 l.34 
       <../Datas/images/resource-tommaso-2.png>]
-Overfull \vbox (2.88724pt too high) has occurred while \output is active []
+Overfull \vbox (3.86421pt too high) has occurred while \output is active []
 
 
 [31pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
@@ -1794,15 +1794,15 @@ Overfull \vbox (2.88724pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.34 
       <../Datas/images/resource-lorenzo-1.png>]
-<../Datas/images/resource-lorenzo-2.png, id=339, 810.02625pt x 855.195pt>
+<../Datas/images/resource-lorenzo-2.png, id=340, 800.9925pt x 854.44218pt>
 File: ../Datas/images/resource-lorenzo-2.png Graphic file (type png)
 
 <use ../Datas/images/resource-lorenzo-2.png>
 Package pdftex.def Info: ../Datas/images/resource-lorenzo-2.png used on input l
 ine 38.
-(pdftex.def)             Requested size: 501.87683pt x 529.87616pt.
+(pdftex.def)             Requested size: 501.87683pt x 535.38098pt.
 )
-Overfull \vbox (3.82013pt too high) has occurred while \output is active []
+Overfull \vbox (9.32495pt too high) has occurred while \output is active []
 
 
 [32pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
@@ -1812,26 +1812,88 @@ Overfull \vbox (3.82013pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.37 	\include{./resources/main}
                                  <../Datas/images/resource-lorenzo-2.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+\openout2 = `./risk/main.aux'.
 
-(./PPD.aux (./cover/main.aux) (./introduction/main.aux) (./estimation/main.aux)
-(./tasks/main.aux) (./resources/main.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
-Package rerunfilecheck Info: File `PPD.out' has not changed.
-(rerunfilecheck)             Checksum: 72879AC5FB0B9F5CFAC060E2C6ED3847;1602.
 
+(./risk/main.tex (./risk/project-risks.tex) (./risk/technical-risks.tex
+[33
+
+
+]
+Overfull \hbox (12.2862pt too wide) in paragraph at lines 21--27
+[]\T1/cmr/m/n/10 This is an-other un-pre-dictable
+ []
+
+
+Overfull \hbox (7.9553pt too wide) in paragraph at lines 27--33
+[]\T1/cmr/m/n/10 Any change to the
+ []
+
+) (./risk/business-risks.tex
+Overfull \hbox (1.54437pt too wide) in paragraph at lines 10--14
+[]\T1/cmr/m/n/10 This prob-lem can be avoided in some mea-
+ []
+
+
+Overfull \hbox (25.2497pt too wide) in paragraph at lines 14--20
+[]\T1/cmr/m/n/10 This prob-lem should
+ []
+
+[34])
+Underfull \vbox (badness 10000) detected at line 54
+ []
+
+
+Overfull \hbox (15.99013pt too wide) in alignment at lines 56--97
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 97
+ []
+
+
+Overfull \hbox (37.12386pt too wide) in alignment at lines 99--122
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 122
+ []
+
+) [35]
+\openout2 = `./effort/main.aux'.
+
+ (./effort/main.tex) [36
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+ (./PPD.aux (./cover/main.aux)
+(./introduction/main.aux) (./estimation/main.aux) (./tasks/main.aux)
+(./resources/main.aux) (./risk/main.aux) (./effort/main.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+
+
+Package rerunfilecheck Warning: File `PPD.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `PPD.out':
+(rerunfilecheck)             Before: 72879AC5FB0B9F5CFAC060E2C6ED3847;1602
+(rerunfilecheck)             After:  D326EF44C89C205453BD80D9401C6FE7;1893.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 6774 strings out of 493029
- 98885 string characters out of 6136233
+ 6809 strings out of 493029
+ 99350 string characters out of 6136233
  202940 words of memory out of 5000000
- 10024 multiletter control sequences out of 15000+600000
+ 10027 multiletter control sequences out of 15000+600000
  12828 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,8n,30p,527b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1849,10 +1911,10 @@ ype1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfti1000.pfb>
-Output written on PPD.pdf (34 pages, 968650 bytes).
+Output written on PPD.pdf (38 pages, 964128 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 119 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
