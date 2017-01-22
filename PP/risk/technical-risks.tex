@@ -1,0 +1,33 @@
+\subsection{Technical Risks}
+
+Following is a list of possible technical risks in which we may incur during the
+realization of the project.
+
+\begin{description}
+	\item [Losing source code: ] This problem is easily resolved due to the large
+    amount and high reliability of versioning systems available on the market.
+  \item [Infrastructure downtime: ] The availability of the system is strictly
+    related to the company we rely on for the cloud infrastructure, an in depth
+    search of the different proposals on the market can avoid this problem.
+  \item [Failure on component integration: ] The failure of an integration test
+    on a component can force the team to rewrite a large amount of code with a
+    consequent loss of time. In order to avoid this kind of problems we need to
+    precisely specify the interface of each component and we should also run
+    integration test in an early stage of the creation of the component using
+    stubs and drivers.
+  \item [Code unreadability: ] This problem may often occur in a young and
+    unexperienced team. To avoid this to happen is sufficent to apply the rules
+    of good coding and to regularly inspect your work.
+  \item [Delays in the delivery of external resources: ] This is another
+    unpredictable problem that may occur, in our case, if the society providing
+    the cars for our service cannot deliver the cars in time. A reactive action
+    to this problem will be of no use, in fact the only solution is to
+    preventively take into account this problem and schedule the delivery of the
+    cars with enough room to compensate any problem.
+  \item [Changes in the external services used in the project: ] Any change to
+    the external services used inside our project can lead to a substantial
+    review of the implementation of the whole system. This problem does not
+    depend in any way from our company, and the only solution we have is to
+    preventively search in the market of backup solutions for each of the
+    external service used, and to write portable and reusable code.
+\end{description}
