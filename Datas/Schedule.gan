@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-10-01" view-index="0" gantt-divider-location="321" resource-divider-location="300" version="2.7.2" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-01-01" view-index="1" gantt-divider-location="222" resource-divider-location="284" version="2.7.2" locale="en">
     <description/>
-    <view zooming-state="default:9" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="62" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="19" order="1"/>
-        <field id="tpd5" name="Data di fine" width="18" order="2"/>
+    <view zooming-state="default:10" id="gantt-chart">
+        <field id="tpd3" name="Name" width="60" order="0"/>
+        <field id="tpd4" name="Begin date" width="20" order="1"/>
+        <field id="tpd5" name="End date" width="19" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="100" order="0"/>
+        <field id="0" name="Name" width="100" order="0"/>
     </view>
     <!-- -->
     <calendars>
@@ -32,7 +32,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="13" name="RASD" color="#8cb6ce" meeting="false" start="2016-10-17" duration="20" complete="0" expand="true">
+        <task id="13" name="RASD" color="#8cb6ce" meeting="false" start="2016-10-17" duration="20" complete="0" expand="false">
             <task id="18" name="Meeting with stakeholders" color="#8cb6ce" meeting="false" start="2016-10-17" duration="1" complete="0" expand="true"/>
             <task id="19" name="Document introduction" color="#8cb6ce" meeting="false" start="2016-10-18" duration="1" complete="0" expand="true"/>
             <task id="20" name="First draft of overall description" color="#8cb6ce" meeting="false" start="2016-10-19" duration="3" complete="0" expand="true"/>
@@ -55,7 +55,7 @@
             <task id="38" name="Presentation to stakeholders" color="#8cb6ce" meeting="false" start="2016-11-11" duration="1" complete="0" expand="true"/>
             <task id="39" name="Final document refinements" color="#8cb6ce" meeting="false" start="2016-11-11" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="5" name="DD" color="#8cb6ce" meeting="false" start="2016-11-25" duration="19" complete="0" expand="true">
+        <task id="5" name="DD" color="#8cb6ce" meeting="false" start="2016-11-25" duration="19" complete="0" expand="false">
             <task id="40" name="Introduction" color="#8cb6ce" meeting="false" start="2016-11-25" duration="1" complete="0" expand="true"/>
             <task id="45" name="First draft of overview" color="#8cb6ce" meeting="false" start="2016-11-28" duration="1" complete="0" expand="true"/>
             <task id="46" name="First draft of high level component interaction" color="#8cb6ce" meeting="false" start="2016-11-29" duration="2" complete="0" expand="true"/>
@@ -77,7 +77,7 @@
             <task id="64" name="Presentation to stakeholders" color="#8cb6ce" meeting="false" start="2016-12-20" duration="1" complete="0" expand="true"/>
             <task id="41" name="Final refinements" color="#8cb6ce" meeting="false" start="2016-12-21" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="9" name="ITPD" color="#8cb6ce" meeting="false" start="2016-12-27" duration="14" complete="0" expand="true">
+        <task id="9" name="ITPD" color="#8cb6ce" meeting="false" start="2016-12-27" duration="14" complete="0" expand="false">
             <task id="65" name="Introduction" color="#8cb6ce" meeting="false" start="2016-12-27" duration="1" complete="0" expand="true"/>
             <task id="70" name="Entry criteria" color="#8cb6ce" meeting="false" start="2016-12-28" duration="1" complete="0" expand="true"/>
             <task id="76" name="Elements to be integrated" color="#8cb6ce" meeting="false" start="2016-12-29" duration="1" complete="0" expand="true"/>
@@ -90,21 +90,21 @@
             <task id="83" name="Presentation to stakeholders" color="#8cb6ce" meeting="false" start="2017-01-12" duration="1" complete="0" expand="true"/>
             <task id="66" name="Final refinements" color="#8cb6ce" meeting="false" start="2017-01-13" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="16" name="PPD" color="#8cb6ce" meeting="false" start="2017-01-16" duration="5" complete="0" expand="true">
+        <task id="16" name="PPD" color="#8cb6ce" meeting="false" start="2017-01-16" duration="5" complete="0" expand="false">
             <task id="84" name="Introduction" color="#8cb6ce" meeting="false" start="2017-01-16" duration="1" complete="0" expand="true"/>
             <task id="87" name="Project size, effort and cost estimation" color="#8cb6ce" meeting="false" start="2017-01-17" duration="2" complete="0" expand="true"/>
             <task id="89" name="Schedule and resource allocation" color="#8cb6ce" meeting="false" start="2017-01-17" duration="2" complete="0" expand="true"/>
             <task id="90" name="Risk associated to the project" color="#8cb6ce" meeting="false" start="2017-01-19" duration="1" complete="0" expand="true"/>
             <task id="85" name="Presentation to stakeholders" color="#8cb6ce" meeting="false" start="2017-01-20" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="91" name="Development" color="#8cb6ce" meeting="false" start="2017-01-23" duration="95" complete="0" expand="true">
-            <task id="93" name="Web tier" color="#8cb6ce" meeting="false" start="2017-01-23" duration="10" complete="0" expand="true"/>
-            <task id="94" name="Database tier" color="#8cb6ce" meeting="false" start="2017-02-06" duration="10" complete="0" expand="true"/>
-            <task id="96" name="Business logic" color="#8cb6ce" meeting="false" start="2017-02-20" duration="30" complete="0" expand="true"/>
-            <task id="95" name="Client app" color="#8cb6ce" meeting="false" start="2017-04-03" duration="20" complete="0" expand="true"/>
-            <task id="97" name="Integration testing" color="#8cb6ce" meeting="false" start="2017-05-01" duration="14" complete="0" expand="true"/>
-            <task id="98" name="Final presentation" color="#8cb6ce" meeting="false" start="2017-05-19" duration="1" complete="0" expand="true"/>
-            <task id="99" name="Final refinements and testing" color="#8cb6ce" meeting="false" start="2017-05-22" duration="10" complete="0" expand="true"/>
+        <task id="91" name="Development" color="#8cb6ce" meeting="false" start="2017-01-23" duration="275" complete="0" expand="true">
+            <task id="93" name="Web tier" color="#8cb6ce" meeting="false" start="2017-01-23" duration="35" complete="0" expand="true"/>
+            <task id="94" name="Database tier" color="#8cb6ce" meeting="false" start="2017-03-13" duration="35" complete="0" expand="true"/>
+            <task id="96" name="Business logic" color="#8cb6ce" meeting="false" start="2017-05-01" duration="90" complete="0" expand="true"/>
+            <task id="95" name="Client app" color="#8cb6ce" meeting="false" start="2017-09-04" duration="40" complete="0" expand="true"/>
+            <task id="97" name="Integration testing" color="#8cb6ce" meeting="false" start="2017-10-30" duration="54" complete="0" expand="true"/>
+            <task id="98" name="Final presentation" color="#8cb6ce" meeting="false" start="2018-01-12" duration="1" complete="0" expand="true"/>
+            <task id="99" name="Final refinements and testing" color="#8cb6ce" meeting="false" start="2018-01-15" duration="20" complete="0" expand="true"/>
         </task>
     </tasks>
     <resources>
@@ -216,9 +216,9 @@
         <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="188" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="58" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="56" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="131" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="44" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="43" visible="true"/>
         <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>
