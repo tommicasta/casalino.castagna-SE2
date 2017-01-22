@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  21 JAN 2017 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  22 JAN 2017 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,7 +361,7 @@ LaTeX Info: Redefining \nameref on input line 18.
 \openout2 = `./cover/main.aux'.
 
  (./cover/main.tex
-<../Datas/images/polimi.png, id=64, 803.0pt x 501.875pt>
+<../Datas/images/polimi.png, id=68, 803.0pt x 501.875pt>
 File: ../Datas/images/polimi.png Graphic file (type png)
 
 <use ../Datas/images/polimi.png>
@@ -405,45 +405,61 @@ Underfull \vbox (badness 10000) detected at line 11
 
 
 ]
+[2]
 \openout2 = `./estimation/main.aux'.
 
-
-(./estimation/main.tex (./estimation/size-estimation/main.tex
-(./estimation/size-estimation/prologue.tex [2
+ (./estimation/main.tex (./estimation/size-estimation/main.tex
+(./estimation/size-estimation/prologue.tex [3
 
 
 ])
-(./estimation/size-estimation/internal-file.tex [3])
+(./estimation/size-estimation/internal-file.tex [4])
 (./estimation/size-estimation/external-file.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]) (./estimation/size-estimation/external-input.tex [5] [6])
-(./estimation/size-estimation/external-inquiries.tex [7])
-(./estimation/size-estimation/external-output.tex [8])
+[5]) (./estimation/size-estimation/external-input.tex [6] [7])
+(./estimation/size-estimation/external-inquiries.tex [8])
+(./estimation/size-estimation/external-output.tex [9])
 (./estimation/size-estimation/epilogue.tex))
 (./estimation/effort-cost-estimation/main.tex
 (./estimation/effort-cost-estimation/intro.tex)
-(./estimation/effort-cost-estimation/scale-drivers.tex [9]))) [10] [11]
+(./estimation/effort-cost-estimation/scale-drivers.tex [10])
+(./estimation/effort-cost-estimation/cost-drivers.tex [11]
+Overfull \hbox (14.3684pt too wide) in paragraph at lines 6--8
+\OT1/cmr/m/n/10 which may be in a\OT1/cmr/m/it/10 Post-architectural \OT1/cmr/m
+/n/10 state or \OT1/cmr/m/it/10 Early de-sign \OT1/cmr/m/n/10 state. Post-archi
+tectural's
+ []
+
+
+Overfull \hbox (22.1774pt too wide) in paragraph at lines 15--28
+ [][] 
+ []
+
+[12] [13]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+))) [14] [15]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
-
-(./PPD.aux (./cover/main.aux) (./introduction/main.aux) (./estimation/main.aux)
-)
+ (./PPD.aux (./cover/main.aux) (./introduction/main.aux)
+(./estimation/main.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `PPD.out' has not changed.
-(rerunfilecheck)             Checksum: D29E45731A5EBC3B2188E38589BB5D00;1054.
+(rerunfilecheck)             Checksum: F88D17212645FD80B4A795F2B49DAEDA;1116.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 5784 strings out of 493029
- 87231 string characters out of 6136233
+ 5793 strings out of 493029
+ 87403 string characters out of 6136233
  171985 words of memory out of 5000000
- 9177 multiletter control sequences out of 15000+600000
+ 9178 multiletter control sequences out of 15000+600000
  7051 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,30p,528b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,30p,550b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -451,12 +467,13 @@ t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on PPD.pdf (13 pages, 275532 bytes).
+nts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on PPD.pdf (17 pages, 296137 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

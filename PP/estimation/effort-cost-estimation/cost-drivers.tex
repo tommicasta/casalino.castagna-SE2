@@ -1,0 +1,110 @@
+\subsection{Cost Drivers}
+
+Similar to the scale factors, the cost drivers are a set of factors describing in terms of cost the impact that they have on the whole project.
+Each cost driver has a impact level, raging from \textit{very low} to \textit{very high}, and each impact level has a statistical decimal value associated.
+
+The set of cost drivers vary according to the architectural state of the project, which may be in a\textit{Post-architectural} state or \textit{Early design} state.
+Post-architectural's cost drivers may rely on more precise and detailed informations about the project, producing more precise estimates. The early design model, instead, due to the lack of informations typical of early project provides less accurate figures regarding the effort estimation.
+
+As specified in the \textit{introductive paragraph} to this section, our project follow a early design model. The set of cost drivers used for the early design model is derived by the combinations of different cost drivers defined for the post-architectural model.
+In the following, the cost drivers for the post-architectural model are described along with the rationale for the assigned value.
+At the end of this analysis, the early design cost drivers values are computed and shown.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Early design cost drivers} & \textbf{Post-architecture cost drivers} \\
+		\hline
+		Personell Capability [PERS] & ACAP PCAP PCOPN \\
+		Product Reliability and Complexity [RCPX] & RELY DATA CPLX DOCU \\
+		Developed for Reusability [RUSE] & RUSE \\ 
+		Platform Difficulty [PDIF] & TIME STOR PVOL \\
+		Personnel Experience [PREX] & APEX PLEX LTEX \\
+		Facilities [FCIL] & TOOL SITE \\
+		Required Development Schedule & SCED \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{itemize}
+	\item \textbf{Required Software Reliability [RELY]}: this cost driver is a measure of the reliability required for the software to be developed. The value is assigned according to the level of danger and/or damage the interruption of the service may cause.
+Since the software system is designed to support a car-sharing service, a malfunction can lead to important finantial losses for the society. Hence the assigned value is set to \textit{High}.
+
+	\item \textbf{Database Size [DATA]}: the dimension of test data required for the software testing has an impact on the cost of development for the test. In particular, the database size required to store these test data is taken in consideration, evaluating the derived impact on the costs as the ration between the database size \textit{D} and the LOSC \textit{P}.
+
+Being in an early stage phase of the development, it's not easy to estimate the dimension of the database. We can assume a minimal dimension of 1 gigabytes. Therefore, the value of this cost driver is set to \textit{Very High}.
+
+	\item \textbf{Product Complexity [CPLX]}: this cost driver is divided into five area, shown in the table below, and its value is the average of the five area's values. %add the table
+The CPLX's value is set to \textit{High}.
+
+	\item \textbf{Developed for reusability [RUSE]}: this driver reflect the degree of reusability adopted for the implementation of system's components.
+No reusability feature with other projects is expected to be adopted in the design and implementation of the components, hence the cost driver's values is equal to \textit{Nominal}.
+
+	\item \textbf{Documentation Match to Life-Cycle Needs [DOCU]}: this cost driver measure the degree of suitability of the required documentation to the project's life-cycle.
+Since we're following a precise model of development which requires the appropriate documentation for each step, the documentation is right-sized to the project's life-cycle. The value is set to \textit{Nominal}.
+
+	\item \textbf{Execution Time Constraints [TIME]}: this factor estimates the expected amount of execution time used by the software system.
+The software system is expected to be deployed in a highly concurrent environment, with several requests. Therefore, the value of this driver is set to \textit{Very High}.
+
+	\item \textbf{Main Storage Constraints [STOR]}: this rating represent the percentual amount of main storage expected to be used by the system.
+We expect that the high number of generated and stored data won't take less than the 70\% of the total storage available in the system.
+The cost driver's value is set to \textit{High}.
+
+	\item \textbf{Platform Volatility [PVOL]}: this driver measures the average time of hardware/software replacement and update expected.
+The software system is supposed to be deployed on an external cloud computing service. Major changes are expected to be applied to the software part or to the hardware living in the vehicles and performed quite rarely.
+
+	\item \textbf{Analyst Capability [ACAP]}: cost driver that measure the analysis and design ability of the team regarding the project in analysis.
+It's the first time we're faced with a project of this size and complexity. Therefore, the assigned value to this factor is \textit{Nominal}.
+
+	\item \textbf{Programmer Cability [PCAP]}: driver analyzing the efficiency and ability of the programmers involved in the project development.Since we are in a early stage phase, the project is not developed yet. Hence, we can only estimate this parameter with respect to our experience, which is quite limited with this kind of projects. The value of the driver is set to \textit{Nominal}.
+
+	\item \textbf{Personnel Continuity [PCON]}: this driver measure the percentage of time that team members are unavailable for the project development.
+In our case, the driver is set to a \textit{Very Low} value due to limited time we can spent for the project.
+
+	\item \textbf{Application Experience [APEX]}: rating describing the experience of whole team with this kind of projects.
+As stated in the \textit{PCAP driver} description, our experience is quite limited, hence the value for this driver is \textit{Very Low}.
+
+	\item \textbf{Platform Experience [PLEX]}: cost driver assessing the experience of the team with the platform used for the development.
+The project is in a early stage development, therefore the development platform is not decided yet. However, due to our limited experience with any development platform, we can assign a value of \textit{Low} to this driver.
+
+	\item \textbf{Language and Tool Experience[LTEX]}: experience and familiarity of the development team with he technology used, both languages and software tools, are describe by this driver.
+Most of the technologies and frameworks needed to achieve the goals of each step of the project's life cycle are quite unknown. Therefore, the set value for this driver is \textit{Low}.
+
+	\item \textbf{Use of Software Tools [TOOL]}: this driver attempts to assess the kind of tools used and their integration.
+The tools we expect to use are quite integrated and support quite well the project's life-cycle. The driver's value is set to \textit{High}.
+
+	\item \textbf{Multisite Development [SITE]}: the characteristics evaluated by this driver are the collocation of the site development and the communication channels used to manage the development activity.
+Our team is collocated in two different cities (Multi-city collocation) and uses several communication channels (VoIP technologies, text messages, emails etc...). Hence, the rating of this driver is set to \textit{High}.
+
+	\item \textbf{Required Development Schedule [SCED]}: this cost driver aims to rate the impact that the time constraints imposed to the project's team has on the whole project.
+ this cost driver aims to rate the impact that the time constraints imposed to the project's team has on the whole project.
+The schedule assigned for this project is felt slightly compressed by the project's team, therefore the rate of this driver is set to \textit{Low}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		\textbf{Early design cost drivers} & \textbf{Rating level} & \textbf{Effort multiplier} \\
+		\hline
+		PERS & Low & 1.26 \\
+		RCPX & Very High & 1.91 \\
+		RUSE & Nominal & 1.00 \\ 
+		PDIF & High & 1.29 \\
+		PREX & Very Low & 1.33 \\
+		FCIL & High & 0.87 \\
+		SCED & Low & 1.14 \\
+		\hline
+		\multicolumn{2}{| c |}{\textbf{Total Effort Multiplier}} & \multicolumn{1}{ | c |}{4.095} \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+The PM's lower bound is 108.559 ~ 109.
+The PM's upper bound is 135.957 ~ 136.
+
+The scheduling activity has a lower bound = $3.67 * 108^0.31476$ = 16.02 months
+and an upper bound = $3.67 * 136^0.31476$ = 17.23 months. 
+
+\end{itemize}
