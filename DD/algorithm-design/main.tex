@@ -87,17 +87,17 @@ one user. To do so we decided to use a lock-like pattern.
       \State $ reservationLock = \Call {getReservationLock}{carId, user} $
       \State $ car = \Call {getCar}{carId} $
       \If {$ !car.isAvailable() $}
-        \State {\textbf{Throw} carNotAvailableException}
+        \State {\textbf{Throw} CarNotAvailableException}
       \EndIf
       \If {$ user.hasActiveReservation() $}
-        \State {\textbf{Throw} multipleReservationException}
+        \State {\textbf{Throw} MultipleReservationException}
       \EndIf
       \State $ reservationTimer = Timer $(\textsc{reservation\textunderscore timer})
       \State \Call {createReservation}{carId, user, reservationTimer}{$ $}
       \State $ ReservationLock.releaseLock() $
-    \catch {(LockTimeoutException, carNotAvailableException)}
+    \catch {(LockTimeoutException)}
       \State {\textbf{return} ReservationError}
-    \catch{(CarNotFoundException, multipleReservationException)}
+    \catch{(CarNotFoundException, CarNotAvailableException, MultipleReservationException)}
       \State $ reservationLock.releaseLock() $
       \State {\textbf{return} ReservationError}
     \endtry
