@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  23 JAN 2017 00:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  3 FEB 2017 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,7 +384,7 @@ LaTeX Warning: Label `fig:tasks-1' multiply defined.
 
 LaTeX Warning: Label `fig:tasks-1' multiply defined.
 
-))
+) (./risk/main.aux) (./effort/main.aux))
 \openout1 = `PPD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -401,7 +401,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -449,7 +450,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 \openout2 = `./cover/main.aux'.
 
  (./cover/main.tex
-<../Datas/images/polimi.png, id=96, 803.0pt x 501.875pt>
+<../Datas/images/polimi.png, id=116, 803.0pt x 501.875pt>
 File: ../Datas/images/polimi.png Graphic file (type png)
 
 <use ../Datas/images/polimi.png>
@@ -480,37 +481,41 @@ l.29         \clearpage
 
  (./introduction/main.tex
 (./introduction/revision.tex
-Underfull \vbox (badness 10000) detected at line 11
+Underfull \vbox (badness 10000) detected at line 13
  []
 
 ) (./introduction/purpose.tex) (./introduction/scope.tex)
 (./introduction/def-acr-abbr/main.tex
-(./introduction/def-acr-abbr/definitions.tex)
-(./introduction/def-acr-abbr/acronyms.tex)
-(./introduction/def-acr-abbr/abbreviations.tex)) (./introduction/ref-doc.tex))
-[1
+(./introduction/def-acr-abbr/definitions.tex [1
 
 
-] [2]
+]
+Overfull \hbox (4.92068pt too wide) in paragraph at lines 17--18
+[]\T1/cmr/bx/n/10 Total Scale Driver\T1/cmr/m/n/10 : the to-tal scale driver fa
+c-tor im-pact-ing on the project's
+ []
+
+) (./introduction/def-acr-abbr/acronyms.tex [2])) (./introduction/ref-doc.tex))
+[3]
 \openout2 = `./estimation/main.aux'.
 
  (./estimation/main.tex (./estimation/size-estimation/main.tex
-(./estimation/size-estimation/prologue.tex [3
+(./estimation/size-estimation/prologue.tex [4
 
 
 ])
-(./estimation/size-estimation/internal-file.tex [4]
+(./estimation/size-estimation/internal-file.tex [5]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./estimation/size-estimation/external-file.tex [5pdfTeX warning (ext4): dest
+) (./estimation/size-estimation/external-file.tex [6pdfTeX warning (ext4): dest
 ination with the same identifier (name{table.2}) has been already used, duplica
 te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.4 
-    ]) (./estimation/size-estimation/external-input.tex [6pdfTeX warning (ext4)
+    ]) (./estimation/size-estimation/external-input.tex [7pdfTeX warning (ext4)
 : destination with the same identifier (name{table.3}) has been already used, d
 uplicate ignored
 
@@ -525,25 +530,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
                                                   \fi \fi 
 l.6 	\item \textbf
                   {Logout}: elementary operation that does not require the i...
-] [7]
+] [8]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./estimation/size-estimation/external-inquiries.tex [8pdfTeX warning (ext4):
+) (./estimation/size-estimation/external-inquiries.tex [9pdfTeX warning (ext4):
  destination with the same identifier (name{table.5}) has been already used, du
 plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.9 
-    ] [9pdfTeX warning (ext4): destination with the same identifier (name{table
-.6}) has been already used, duplicate ignored
+    ] [10pdfTeX warning (ext4): destination with the same identifier (name{tabl
+e.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.24 	\item \textbf
                    {Retrieve policy list}: the retrieval of the total list o...
-]) (./estimation/size-estimation/external-output.tex [10pdfTeX warning (ext4): 
+]) (./estimation/size-estimation/external-output.tex [11pdfTeX warning (ext4): 
 destination with the same identifier (name{table.7}) has been already used, dup
 licate ignored
 
@@ -556,7 +561,7 @@ l.13
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.13 
-     ]) (./estimation/size-estimation/epilogue.tex [11pdfTeX warning (ext4): de
+     ]) (./estimation/size-estimation/epilogue.tex [12pdfTeX warning (ext4): de
 stination with the same identifier (name{table.9}) has been already used, dupli
 cate ignored
 
@@ -571,7 +576,7 @@ er (name{table.10}) has been already used, duplicate ignored
 l.55 \end{displaymath}
                       ])) (./estimation/effort-cost-estimation/main.tex
 (./estimation/effort-cost-estimation/intro.tex)
-(./estimation/effort-cost-estimation/scale-drivers.tex [12]
+(./estimation/effort-cost-estimation/scale-drivers.tex [13]
 Underfull \hbox (badness 1783) in paragraph at lines 27--27
 []|\T1/cmr/bx/n/10 Scale Fac-
  []
@@ -750,7 +755,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 26--38
 Underfull \vbox (badness 10000) detected at line 38
  []
 
-) (./estimation/effort-cost-estimation/cost-drivers.tex [13pdfTeX warning (ext4
+) (./estimation/effort-cost-estimation/cost-drivers.tex [14pdfTeX warning (ext4
 ): destination with the same identifier (name{table.12}) has been already used,
  duplicate ignored
 
@@ -760,16 +765,6 @@ l.1 \subsection
                {Cost Drivers}]
 Overfull \hbox (22.094pt too wide) in paragraph at lines 21--34
  [][] 
- []
-
-
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 44--45
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-\T1/cmr/m/n/10 RELY De-
  []
 
 
@@ -816,23 +811,13 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 44--48
 Underfull \vbox (badness 10000) detected at line 48
  []
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{table.13})
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.13})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.48 \end{costdriverstable}
                            ]
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 56--57
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-\T1/cmr/m/n/10 DATA De-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 57--57
 []|\T1/cmr/m/n/10 Testing
  []
@@ -874,8 +859,8 @@ Underfull \vbox (badness 10000) detected at line 60
  []
 
 
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 65--66
-[]|\T1/cmr/m/n/10 |=======|
+Underfull \hbox (badness 3049) in paragraph at lines 65--66
+[]|   \T1/cmr/m/n/10 Rat-ing
  []
 
 
@@ -887,17 +872,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 65--68
 Underfull \vbox (badness 10000) detected at line 68
  []
 
-[15]
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 75--76
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\T1/cmr/m/n/10 RUSE De-
- []
-
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 76--76
 []|\T1/cmr/m/n/10 Across
  []
@@ -945,16 +920,6 @@ Underfull \vbox (badness 10000) detected at line 79
 Overfull \hbox (2.90868pt too wide) in paragraph at lines 81--82
 []\T1/cmr/bx/n/10 Documentation Match to Life-Cycle Needs [DOCU]\T1/cmr/m/n/10 
 : this cost driver
- []
-
-
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 85--86
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 5475) in paragraph at lines 85--86
-\T1/cmr/m/n/10 DOCU De-
  []
 
 
@@ -1017,16 +982,6 @@ Underfull \vbox (badness 10000) detected at line 89
  []
 
 
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 95--96
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-\T1/cmr/m/n/10 TIME De-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 96--96
 \T1/cmr/m/n/10 ex-e-cu-tion
  []
@@ -1070,17 +1025,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 95--99
 Underfull \vbox (badness 10000) detected at line 99
  []
 
-[16]
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 106--107
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-\T1/cmr/m/n/10 STOR De-
- []
-
-
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \T1/cmr/m/n/10 avail-able
  []
@@ -1102,16 +1047,6 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 106--110
 
 
 Underfull \vbox (badness 10000) detected at line 110
- []
-
-
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 116--117
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-\T1/cmr/m/n/10 PVOL De-
  []
 
 
@@ -1184,16 +1119,6 @@ Underfull \vbox (badness 10000) detected at line 120
  []
 
 
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 126--127
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
-\T1/cmr/m/n/10 ACAP De-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 127--127
 []|\T1/cmr/m/n/10 15th per-
  []
@@ -1227,17 +1152,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 126--130
 Underfull \vbox (badness 10000) detected at line 130
  []
 
-[17]
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 136--137
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-\T1/cmr/m/n/10 PCAP De-
- []
-
-
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 137--137
 []|\T1/cmr/m/n/10 15th per-
  []
@@ -1272,32 +1187,12 @@ Underfull \vbox (badness 10000) detected at line 140
  []
 
 
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 146--147
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 7944) in paragraph at lines 146--147
-\T1/cmr/m/n/10 PCON De-
- []
-
-
 Overfull \hbox (44.0pt too wide) in alignment at lines 146--150
  [] [] [] [] [] [] [] 
  []
 
 
 Underfull \vbox (badness 10000) detected at line 150
- []
-
-
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 156--157
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-\T1/cmr/m/n/10 APEX De-
  []
 
 
@@ -1314,21 +1209,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 156--160
 Underfull \vbox (badness 10000) detected at line 160
  []
 
-
-Overfull \vbox (6.05591pt too high) has occurred while \output is active []
-
-
-[18]
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 166--167
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-\T1/cmr/m/n/10 PLEX De-
- []
-
-
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 167--167
 []|$\OMS/cmsy/m/n/10 ^^T$ \T1/cmr/m/n/10 2
  []
@@ -1343,16 +1224,6 @@ Underfull \vbox (badness 10000) detected at line 170
  []
 
 
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 176--177
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-\T1/cmr/m/n/10 LTEX De-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 177--177
 []|$\OMS/cmsy/m/n/10 ^^T$ \T1/cmr/m/n/10 2
  []
@@ -1364,16 +1235,6 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 176--180
 
 
 Underfull \vbox (badness 10000) detected at line 180
- []
-
-
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 185--186
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-\T1/cmr/m/n/10 TOOL De-
  []
 
 
@@ -1495,22 +1356,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 185--189
 Underfull \vbox (badness 10000) detected at line 189
  []
 
-[19]
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 195--196
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-\T1/cmr/m/n/10 SITE Col-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-\T1/cmr/m/n/10 lo-ca-tion
- []
-
-
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 196--196
 []|\T1/cmr/m/n/10 Intern-
  []
@@ -1630,16 +1476,6 @@ Underfull \vbox (badness 10000) detected at line 200
  []
 
 
-Overfull \hbox (4.78409pt too wide) in paragraph at lines 206--207
-[]|\T1/cmr/m/n/10 |=======|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-\T1/cmr/m/n/10 SCED De-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 207--207
 []|\T1/cmr/m/n/10 75% of
  []
@@ -1673,139 +1509,140 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 206--210
 Underfull \vbox (badness 10000) detected at line 210
  []
 
-[20] [21pdfTeX warning (ext4): destination with the same identifier (name{table
+[21] [22pdfTeX warning (ext4): destination with the same identifier (name{table
 .31}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.265 \end{displaymath}
-                       ]))) [22]
+l.281 	\item E
+              : the total scale factor computed in the \textit{Scale Drivers...
+]))) [23]
 \openout2 = `./tasks/main.aux'.
 
  (./tasks/main.tex
-<../Datas/images/tasks-schedule-1.png, id=282, 804.00375pt x 1005.7575pt>
+<../Datas/images/tasks-schedule-1.png, id=312, 804.00375pt x 1005.7575pt>
 File: ../Datas/images/tasks-schedule-1.png Graphic file (type png)
 
 <use ../Datas/images/tasks-schedule-1.png>
 Package pdftex.def Info: ../Datas/images/tasks-schedule-1.png used on input lin
-e 24.
+e 25.
 (pdftex.def)             Requested size: 501.87683pt x 627.81422pt.
- [23
+ [24
 
 
 ]
 Overfull \vbox (101.7582pt too high) has occurred while \output is active []
 
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.28 
+l.29 
       <../Datas/images/tasks-schedule-1.png>]
-<../Datas/images/tasks-schedule-2.png, id=298, 806.26219pt x 252.19218pt>
+<../Datas/images/tasks-schedule-2.png, id=327, 806.26219pt x 252.19218pt>
 File: ../Datas/images/tasks-schedule-2.png Graphic file (type png)
 
 <use ../Datas/images/tasks-schedule-2.png>
 Package pdftex.def Info: ../Datas/images/tasks-schedule-2.png used on input lin
-e 32.
+e 33.
 (pdftex.def)             Requested size: 501.87683pt x 156.98477pt.
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+ [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.37 \newpage
+l.38 \newpage
               <../Datas/images/tasks-schedule-2.png>]
 
 pdfTeX warning: pdflatex (file ../Datas/schedule-dates-1.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<../Datas/schedule-dates-1.pdf, id=304, 597.55246pt x 845.07724pt>
+<../Datas/schedule-dates-1.pdf, id=333, 597.55246pt x 845.07724pt>
 File: ../Datas/schedule-dates-1.pdf Graphic file (type pdf)
 
 <use ../Datas/schedule-dates-1.pdf>
-Package pdftex.def Info: ../Datas/schedule-dates-1.pdf used on input line 43.
+Package pdftex.def Info: ../Datas/schedule-dates-1.pdf used on input line 45.
 (pdftex.def)             Requested size: 372.39261pt x 526.66328pt.
 
 
 pdfTeX warning: pdflatex (file ../Datas/schedule-dates-2.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<../Datas/schedule-dates-2.pdf, id=305, 597.55246pt x 845.07724pt>
+<../Datas/schedule-dates-2.pdf, id=334, 597.55246pt x 845.07724pt>
 File: ../Datas/schedule-dates-2.pdf Graphic file (type pdf)
 
 <use ../Datas/schedule-dates-2.pdf>
-Package pdftex.def Info: ../Datas/schedule-dates-2.pdf used on input line 50.
+Package pdftex.def Info: ../Datas/schedule-dates-2.pdf used on input line 52.
 (pdftex.def)             Requested size: 401.50146pt x 567.82356pt.
-) [26 <../Datas/schedule-dates-1.pdf>]
+) [27 <../Datas/schedule-dates-1.pdf>]
 Overfull \vbox (17.82356pt too high) has occurred while \output is active []
 
 
-[27 <../Datas/schedule-dates-2.pdf>]
+[28 <../Datas/schedule-dates-2.pdf>]
 \openout2 = `./resources/main.aux'.
 
  (./resources/main.tex
-<../Datas/images/resource-tommaso-1.png, id=316, 809.27344pt x 781.41937pt>
+<../Datas/images/resource-tommaso-1.png, id=345, 809.27344pt x 781.41937pt>
 File: ../Datas/images/resource-tommaso-1.png Graphic file (type png)
 
 <use ../Datas/images/resource-tommaso-1.png>
 Package pdftex.def Info: ../Datas/images/resource-tommaso-1.png used on input l
-ine 14.
+ine 13.
 (pdftex.def)             Requested size: 501.87683pt x 484.60617pt.
- [28
+ [29
 
 
 ]
-<../Datas/images/resource-tommaso-2.png, id=321, 800.23969pt x 779.91376pt>
+<../Datas/images/resource-tommaso-2.png, id=351, 800.23969pt x 779.91376pt>
 File: ../Datas/images/resource-tommaso-2.png Graphic file (type png)
 
 <use ../Datas/images/resource-tommaso-2.png>
 Package pdftex.def Info: ../Datas/images/resource-tommaso-2.png used on input l
-ine 22.
+ine 21.
 (pdftex.def)             Requested size: 501.87683pt x 489.13478pt.
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.26 
+l.25 
       <../Datas/images/resource-tommaso-1.png>]
-<../Datas/images/resource-lorenzo-1.png, id=328, 808.52063pt x 853.68938pt>
+<../Datas/images/resource-lorenzo-1.png, id=357, 808.52063pt x 853.68938pt>
 File: ../Datas/images/resource-lorenzo-1.png Graphic file (type png)
 
 <use ../Datas/images/resource-lorenzo-1.png>
 Package pdftex.def Info: ../Datas/images/resource-lorenzo-1.png used on input l
-ine 30.
+ine 29.
 (pdftex.def)             Requested size: 501.87683pt x 529.92024pt.
- [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.34 
+l.33 
       <../Datas/images/resource-tommaso-2.png>]
 Overfull \vbox (3.86421pt too high) has occurred while \output is active []
 
 
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.34 
+l.33 
       <../Datas/images/resource-lorenzo-1.png>]
-<../Datas/images/resource-lorenzo-2.png, id=340, 800.9925pt x 854.44218pt>
+<../Datas/images/resource-lorenzo-2.png, id=369, 800.9925pt x 854.44218pt>
 File: ../Datas/images/resource-lorenzo-2.png Graphic file (type png)
 
 <use ../Datas/images/resource-lorenzo-2.png>
 Package pdftex.def Info: ../Datas/images/resource-lorenzo-2.png used on input l
-ine 38.
+ine 37.
 (pdftex.def)             Requested size: 501.87683pt x 535.38098pt.
 )
 Overfull \vbox (9.32495pt too high) has occurred while \output is active []
 
 
-[32pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1816,7 +1653,7 @@ l.37 	\include{./resources/main}
 
 
 (./risk/main.tex (./risk/project-risks.tex) (./risk/technical-risks.tex
-[33
+[34
 
 
 ]
@@ -1839,7 +1676,7 @@ Overfull \hbox (25.2497pt too wide) in paragraph at lines 14--20
 []\T1/cmr/m/n/10 This prob-lem should
  []
 
-[34])
+[35])
 Underfull \vbox (badness 10000) detected at line 54
  []
 
@@ -1861,10 +1698,10 @@ Overfull \hbox (37.12386pt too wide) in alignment at lines 99--122
 Underfull \vbox (badness 10000) detected at line 122
  []
 
-) [35]
+) [36]
 \openout2 = `./effort/main.aux'.
 
- (./effort/main.tex) [36
+ (./effort/main.tex) [37
 
 
 ]
@@ -1875,25 +1712,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
 (./resources/main.aux) (./risk/main.aux) (./effort/main.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+Package rerunfilecheck Info: File `PPD.out' has not changed.
+(rerunfilecheck)             Checksum: 19CE39DB57DA74CAA4DB24D824764537;1893.
 
-
-Package rerunfilecheck Warning: File `PPD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `PPD.out':
-(rerunfilecheck)             Before: 72879AC5FB0B9F5CFAC060E2C6ED3847;1602
-(rerunfilecheck)             After:  D326EF44C89C205453BD80D9401C6FE7;1893.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 6809 strings out of 493029
- 99350 string characters out of 6136233
- 202940 words of memory out of 5000000
- 10027 multiletter control sequences out of 15000+600000
+ 6818 strings out of 493029
+ 99420 string characters out of 6136233
+ 203849 words of memory out of 5000000
+ 10034 multiletter control sequences out of 15000+600000
  12828 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,8n,30p,527b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1911,10 +1742,10 @@ ype1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfti1000.pfb>
-Output written on PPD.pdf (38 pages, 964128 bytes).
+Output written on PPD.pdf (39 pages, 966443 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
- 119 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

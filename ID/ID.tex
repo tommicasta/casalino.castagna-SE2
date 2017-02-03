@@ -1,0 +1,36 @@
+\documentclass{article}
+
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{nameref}
+\usepackage{parskip}
+\usepackage{bold-extra}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\hypersetup{
+        hidelinks
+}
+
+
+\begin{document}
+
+        \pagenumbering{gobble}
+
+        \include{./cover/main}
+
+        \tableofcontents
+
+        \clearpage
+
+
+        \pagenumbering{arabic}
+
+        \include{./introduction/main}
+        \include{./role/main}
+        \include{./issues/main}
+        \include{./others/main}
+\end{document}
