@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Functional Role}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Class Under Inspection}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Functional Role}{1}{subsection.1.2}
+\contentsline {paragraph}{The OFBIz's: Overview}{1}{section*.2}
+\contentsline {paragraph}{The Components:}{1}{section*.3}
+\contentsline {paragraph}{The party:}{2}{section*.4}
+\contentsline {paragraph}{The role of the human resources application:}{2}{section*.5}
+\contentsline {paragraph}{HumanResEvents class: overview}{3}{section*.6}
+\contentsline {paragraph}{getChildHRCategoryTree:}{3}{section*.7}
+\contentsline {paragraph}{getCurrentEmployeeDetails:}{4}{section*.8}
