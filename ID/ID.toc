@@ -1,10 +1,14 @@
 \contentsline {section}{\numberline {1}Functional Role}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Class Under Inspection}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Functional Role}{1}{subsection.1.2}
-\contentsline {paragraph}{The OFBIz's: Overview}{1}{section*.2}
-\contentsline {paragraph}{The Components:}{1}{section*.3}
-\contentsline {paragraph}{The party:}{2}{section*.4}
-\contentsline {paragraph}{The role of the human resources application:}{2}{section*.5}
-\contentsline {paragraph}{HumanResEvents class: overview}{3}{section*.6}
-\contentsline {paragraph}{getChildHRCategoryTree:}{3}{section*.7}
-\contentsline {paragraph}{getCurrentEmployeeDetails:}{4}{section*.8}
+\contentsline {subsubsection}{\numberline {1.2.1}OFBIz overview}{1}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Entities and Services}{1}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Project's architecture}{1}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Parties}{3}{subsubsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.2.5}Human Resource Entities}{3}{subsubsection.1.2.5}
+\contentsline {subsubsection}{\numberline {1.2.6}Employee Position}{3}{subsubsection.1.2.6}
+\contentsline {subsubsection}{\numberline {1.2.7}Internal Organization}{5}{subsubsection.1.2.7}
+\contentsline {subsubsection}{\numberline {1.2.8}Human resource application:}{6}{subsubsection.1.2.8}
+\contentsline {paragraph}{The HumanResEvents class}{6}{section*.2}
+\contentsline {paragraph}{getChildHRCategoryTree:}{6}{section*.3}
+\contentsline {paragraph}{getCurrentEmployeeDetails:}{7}{section*.4}
