@@ -1,38 +1,47 @@
-\subsection{getEmployeeInComp}
+\subsection{\textcolor{blue}{getEmployeeInComp} Method}
 
 \begin{enumerate}
-	\item \textbf{C1} The method's name is quite misleading since it does not suggest that the function returns informations about currently active employee positions authorized by the party group identified by the partyId passed as parameter.
+	\item \textbf{C1} The method's name is quite misleading since it does not suggest that the function returns informations about currently active employee positions authorized by the party group identified by the \textcolor{blue}{partyId} passed as parameter.
 
-	\item \textbf{C1} \textit{isEmpls} variable's name does not suggest to store the list of employee positions authorized by the party group.
+	\item \textbf{C1} \textcolor{blue}{isEmpls} variable's name does not suggest to store the list of employee positions authorized by the party group.
 
-	\item \textbf{C1} \textit{childOfEmpl} variable's name does not suggest to store the current employee position visited through the for cycle at L.269.
+	\item \textbf{C1} \textcolor{blue}{childOfEmpl} variable's name does not suggest to store the current employee position visited through the \textcolor{blue}{for} cycle at \textbf{L.269}.
 
-	\item \textbf{C1} \textit{emlpfCtxs} variable's name does not suggest to store the list of fulfillment for a certain employee position.
+	\item \textbf{C1} \textcolor{blue}{emlpfCtxs} variable's name does not suggest to store the list of fulfillment for a certain employee position.
 
-	\item \textbf{C1} \textit{emplContext} variable's name does not suggest to store a GenericValue object initialized with the informations concerning the EmplPositionType instance related to the employee position currently analyzed through the for cycle at L.269.
+	\item \textbf{C1} \textcolor{blue}{emplContext} variable's name does not suggest to store a \textcolor{blue}{GenericValue} object initialized with the informations concerning the \textcolor{blue}{EmplPositionType} instance related to the employee position currently analyzed through the for cycle at \textbf{L.269}.
 
-	\item \textbf{C13} At L.263, the \textit{EntityCondition.makeCondition()} method invocation exceeds the suggested maximum length of 80 characters per line. Possible to break after the first comma.
+	\item \textbf{C13} At \textbf{L.263}, the \textcolor{blue}{EntityCondition.makeCondition()} method invocation exceeds the suggested maximum length of 80 characters per line. Possible to break after the first comma.
 
-	\item \textbf{C13} At L.264, the \textit{EntityCondition.makeCondition()} method invocation exceeds the suggested maximum length of 80 characters per line. Possible to break after the first comma.
-	
-	\item \textbf{C13} At L.279, the statement exceeds the suggested maximum length of 80 characters per line. Possible to break after the second chain operator.
+	\item \textbf{C13} At \textbf{L.264}, the \textcolor{blue}{EntityCondition.makeCondition()} method invocation exceeds the suggested maximum length of 80 characters per line. Possible to break after the first comma.
 
-	\item \textbf{C13} At L.289, the statement exceeds the suggested maximum lenght of 80 characters per line. Possible to break after the second "+" operator.
+	\item \textbf{C13} At \textbf{L.279}, the statement exceeds the suggested maximum length of 80 characters per line. Possible to break after the second chain operator.
 
-	\item \textbf{C13} At L.294, the statement exceeds the suggested maximum lenght of 80 characters per line. Possible to break after the second "+" operator.
+	\item \textbf{C13} At \textbf{L.289}, the statement exceeds the suggested maximum lenght of 80 characters per line. Possible to break after the second "+" operator.
 
-	\item \textbf{C14} The method signature at L.254 exceeds the maximum legal length of 120 characters per line. Possible to break it before the \textit{throws} keyword.
+	\item \textbf{C13} At \textbf{L.294}, the statement exceeds the suggested maximum lenght of 80 characters per line. Possible to break after the second "+" operator.
 
-	\item \textbf{C14} The statement at L.286 exceeds the maximum legal length of 120 characters per line. Possible to break it after the second chain operator.
+	\item \textbf{C14} The method signature at \textbf{L.254} exceeds the maximum legal length of 120 characters per line. Possible to break it before the \textcolor{blue}{throws} keyword.
 
-\textbf{NB:} applying this correction another \textbf{C14} issue is created at L.287, where the rest of the statement at L.286 is placed. To solve it is possible to break after the first chain operator at L.287.
+	\item \textbf{C14} The statement at \textbf{L.286} exceeds the maximum legal length of 120 characters per line. Possible to break it after the second chain operator.
 
-	\item \textbf{C33} Variables at L.286-287 are not declared at the beginning of the for block at L.269.
+	\textbf{NB:} applying this correction another \textbf{C14} issue is created at \textbf{L.287}, where the rest of the statement at \textbf{L.286} is placed. To solve it is possible to break after the first chain operator at \textbf{L.287}.
 
-	\item \textbf{C52} \textit{EntityCondition.makeCondition()} methods invoked at L.263-264 may throw an \textit{IllegalArgumentException} due to the \textit{EntityExpr} constructor called by the makeCondition method itself. No try/catch block managed this exception and no throws is used to pass the exception to higher levels.
+	\item \textbf{C29} At \textbf{L.255}, the variable
+		\textcolor{blue}{isEmpls} can be declared inside the following
+		\textcolor{blue}{try} block since it is the only place where the variable is
+		used. Doing so we can directly initialize the variable with the proper value
+		instead of \textbf{null}.
 
-	\item \textbf{C53} The \textit{Debug.logError()} method does not log any useful information about the error. 
-Indeed, the logError calls the \textit{Debug.log()} method, which has a "null" value as message. 
+	\item \textbf{C33} Variables at \textbf{L.286-287} are not declared at the beginning of the for block at \textbf{L.269}.
 
-Then it calls another version of \textit{Debug.log()}, which simply get a logger and stores the level danger of the error, the msg, which is "null" and the informations about the exception. 
+	\item \textbf{C52} The \textcolor{blue}{EntityQuery.queryOne()} method invoked at \textbf{L.286} may throw an \textcolor{blue}{IllegalArgumentException} when the list passed to the \textcolor{blue}{EntityUtil.getOnly()} method has more than one argument.
+		None of the previously mentioned methods, nor the method under inspection, specify this expection in a \textbf{try/catch} block.
+
+	\item \textbf{C52} \textcolor{blue}{EntityCondition.makeCondition()} methods invoked at \textbf{L.263-264} may throw an \textcolor{blue}{IllegalArgumentException} due to the \textcolor{blue}{EntityExpr} constructor called by the \textcolor{blue}{makeCondition} method itself. No \textbf{try/catch} block managed this exception and no \textcolor{blue}{throws} is used to pass the exception to higher levels.
+
+	\item \textbf{C53} The \textcolor{blue}{Debug.logError()} method does not log any useful information about the error.
+		Indeed, the logError calls the \textcolor{blue}{Debug.log()} method, which has a \textbf{"null"} value as message.
+
+		Then it calls another version of \textcolor{blue}{Debug.log()}, which simply get a logger and stores the level danger of the error, the msg, which is \textbf{"null"} and the informations about the exception.
 \end{enumerate}

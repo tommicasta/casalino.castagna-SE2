@@ -1,4 +1,4 @@
-\subsection{getCurrentEmployeeDetails}
+\subsection{\textcolor{blue}{getCurrentEmployeeDetails} Method}
 
 % The varibles \textit{emlpfillCtxs} and \textit{emlpfillCtx} does not the camel-case naming convention for attributes.
 
@@ -6,26 +6,26 @@
 	\item \textbf{C1} The function's behaviour consists in gathering the informations of the employee or group parties fulfilling a given employee position.
 The function's name is quite misleading since it indicates the retrieving of the details about the employee whose partyId is passed to the method.
 
-	\item \textbf{C1} The \textit{emlpfillCtxs} variable has a name not clear and it does not suggest that the variable contains a list of fulfillment for a position.
+	\item \textbf{C1} The \textcolor{blue}{emlpfillCtxs} variable has a name not clear and it does not suggest that the variable contains a list of fulfillment for a position.
 
-	\item \textbf{C1} The \textit{emlpfillCtx} variable has a name not clear and it does not suggest that the variable contains a fulfillment for a position.
+	\item \textbf{C1} The \textcolor{blue}{emlpfillCtx} variable has a name not clear and it does not suggest that the variable contains a fulfillment for a position.
 
-	\item \textbf{C1} The \textit{memCtx} variable has a name not clear and it does not suggest that the variable contains a GenericValue object initialized with the information of a person fulfilling a certain position.
+	\item \textbf{C1} The \textcolor{blue}{memCtx} variable has a name not clear and it does not suggest that the variable contains a GenericValue object initialized with the information of a person fulfilling a certain position.
 
-	\item \textbf{C1} The \textit{memGroupCtx} variable has a name not clear and it does not suggest that the variable contains a GenericValue object initialized with the information of a party group fulfilling a certain position.
+	\item \textbf{C1} The \textcolor{blue}{memGroupCtx} variable has a name not clear and it does not suggest that the variable contains a \textcolor{blue}{GenericValue} object initialized with the information of a party group fulfilling a certain position.
 
-	\item \textbf{C13} The statements at line L.102, L.108, L.121 and L.131 exceed the length of 80 characters per line, while it's possible to break them on different lines.
+	\item \textbf{C13} The statements at line \textbf{L.102}, \textbf{L.108}, \textbf{L.121} and \textbf{L.131} exceed the length of 80 characters per line, while it's possible to break them on different lines.
 
-	\item \textbf{C14} The method's signature at L.85 exceed the maximum legal length of 120 characters per line, while it's possible to break it before the throws keyword.
+	\item \textbf{C14} The method's signature at \textbf{L.85} exceed the maximum legal length of 120 characters per line, while it's possible to break it before the \textcolor{blue}{throws} keyword.
 
 	\item \textbf{C18} The method is not documented in anyway. Only with the documentation, not related to the code, found on the project's wiki is possible to understand the purpose,  behaviour and attributes of the method.
 
-	\item \textbf{C18} The IF and FOR blocks located at lines L.100, L.105, L106, L.110, L.122 and L.134 are not commented.
+	\item \textbf{C18} The \textcolor{blue}{if} and \textcolor{blue}{for} blocks located at lines \textbf{L.100}, \textbf{L.105}, \textbf{L.106}, \textbf{L.110}, \textbf{L.122} and \textbf{L.134} are not commented.
 
-	\item \textbf{C33} \textit{memGroupCtx} at L.121, map objects in the block L.126-129 and \textit{hrefStr} at L.133 not declared at the beginning of FOR block at L.106.
+	\item \textbf{C33} \textcolor{blue}{memGroupCtx} at \textbf{L.121}, map objects in the block \textbf{L.126-129} and \textcolor{blue}{hrefStr} at \textbf{L.133} not declared at the beginning of \textcolor{blue}{for} block at \textbf{L.106}.
 
-	\item \textbf{C42} The error message returned in the exception at L.153 specify solely the stack trace, without providing any guidance on how to correct the problem.
+	\item \textbf{C42} The error message returned in the exception at \textbf{L.153} specify solely the stack trace, without providing any guidance on how to correct the problem.
 
-	\item \textbf{C52} The \textit{EntityQuery.queryOne()} method invoked at L.108 and L.121 may throw an \textit{IllegalArgumentException} when the list passed to the \textit{EntityUtil.getOnly()} method has more than one argument.
-None of the previously mentioned methods, nor the method under inspection, specify this expection in a try/catch block.
+	\item \textbf{C52} The \textcolor{blue}{EntityQuery.queryOne()} method invoked at \textbf{L.108} and \textbf{L.121} may throw an \textcolor{blue}{IllegalArgumentException} when the list passed to the \textcolor{blue}{EntityUtil.getOnly()} method has more than one argument.
+None of the previously mentioned methods, nor the method under inspection, specify this expection in a \textbf{try/catch} block.
 \end{enumerate}

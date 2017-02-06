@@ -1,0 +1,50 @@
+\subsection{\textcolor{blue}{getChildHRCategoryTree} Method}
+
+\begin{enumerate}
+
+  \item \textbf{C10} Declaration of method \textcolor{blue}{getChildHRCategoryTree}
+    has an inconsistent bracing style. A space before the first brace is
+    missing, unlike all the other opening blocks.
+
+  \item \textbf{C13} There are many lines that exceed the
+    character limit: \textbf{L.41}, \textbf{L.57} and \textbf{L.68}
+
+    \begin{itemize}
+
+      \item At \textbf{L.41} the signature of the method
+        \textcolor{blue}{getChildHRCategoryTree} can be split after the first
+        parameter though it's not very readble.
+
+      \item At \textbf{L.57} the declaration of the variable
+        \textcolor{blue}{categoryList} exceeeds the 80 character libit only by
+        4, it could be split after the \textbf{=} operator. Due to the fact that
+        the character limit is exceeded only by 4 characters, this separation
+        could be avoided to benefit readability.
+
+      \item At \textbf{L.68} the chain method invocation can be split before the
+        \textcolor{blue}{from()} method is called.
+
+    \end{itemize}
+
+  \item \textbf{27} The \textcolor{blue}{try-catch} blocks at \textbf{L.62} and
+    at \textbf{L.77} have the same catch block, they could be merged into one.
+
+  \item \textbf{C33} The declaration of the variable
+    \textcolor{blue}{List<Map<String,Object>> categoryList} at \textbf{L.57}
+    does not appear at the beginning of the block.
+
+  \item \textbf{C40} At \textbf{L.69} the object \textcolor{blue}{partyGroup} is
+    compared with \textbf{null} using the \textbf{!=} operator instead of the
+    \textcolor{blue}{isNotEmpty()} helper function.
+
+  \item \textbf{C42} At \textbf{L.62} and \textbf{L.77} the \textcolor{blue}{catch}
+    blocks only provide the stack trace when catching an exception, not providing
+    any guidance on how to correct the problem.
+
+  \item \textbf{C52} The \textcolor{blue}{EntityQuery.queryOne()} method invoked
+    at L.68 may throw an \textit{IllegalArgumentException} when the list passed
+    to the \textcolor{blue}{EntityUtil.getOnly()} method has more than one
+    argument. None of the previously mentioned methods, nor the method under
+    inspection, specify this expection in a \textbf{try/catch} block.
+
+\end{enumerate}

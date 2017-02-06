@@ -1,0 +1,125 @@
+\subsection{\textcolor{blue}{getEmployeeInComp} Method}
+
+\begin{enumerate}
+
+  \item \textbf{C1} The variable \textcolor{blue}{catId} at \textbf{L.180} has a
+    name that does not suggest that it contains the ID of the party in which is
+    contained the node that we're inspecting.
+
+  \item \textbf{C1} The variable \textcolor{blue}{catNameField} at
+    \textbf{L.181} has a name that does not suggest that it contains the
+    name of the \textit{PartyGroup} related to the node we're inspecting.
+
+  \item \textbf{C1} The variable \textcolor{blue}{childContext} at
+    \textbf{L.192} has a name that does not suggest that it contains the
+    information of the \textit{PartyGroup} related to the node we're inspecting.
+
+  \item \textbf{C1} The variable \textcolor{blue}{childOfSubComs} at
+    \textbf{L.200} has a name that does not immediatly suggest that it contains
+    the list of child nodes related to the node we're inspecting.
+
+  \item \textbf{C1} The variable \textcolor{blue}{isPosition} at
+    \textbf{L.205} has a name that does not immediatly suggest that is used to
+    check if the node that we are inspecting has an employment position related
+    to it.
+
+  \item \textbf{C1} The variable \textcolor{blue}{emContext} at
+    \textbf{L.211} has a name that does not immediatly suggest that it contains
+    the information of an eployee related to the node we are inspecting, instead
+    it could be named \textcolor{blue}{employeeContext} to make things more
+    clear.
+
+  \item \textbf{C10} Declaration of method \textcolor{blue}{getChildComps} has
+    an inconsistent bracing style. A space before the first brace is missing,
+    unlike all the other opening blocks.
+
+  \item \textbf{C13} There are many lines that exceed the
+    character limit: \textbf{L.160}, \textbf{L.168}, \textbf{L.169},
+    \textbf{L.184}, \textbf{L.186}, \textbf{L.192}, \textbf{L.200},
+    \textbf{L.205}, \textbf{L.206}, \textbf{L.211} and \textbf{L.224}
+
+    \begin{itemize}
+
+      \item At \textbf{L.60} the signature of the method
+        \textcolor{blue}{getChildComps} can be split after the first parameter
+        to srictly maintain the 80 character limit though it's not very
+        readble. A better solution that maintain readability could be to split
+        before the \textbf{throws} keyword and exceeding the limit by only 6
+        characters.
+
+      \item At \textbf{L.168} the declaration of the variable
+        \textcolor{blue}{partyGroup} exceeeds the 80 character libit only by
+        8, it could be split after the \textbf{=} operator. Due to the fact
+        that the character limit is exceeded only by a small amount, this
+        separation could be avoided.
+
+      \item At \textbf{L.169} the declaration of the variable
+        \textcolor{blue}{resultList} exceeeds the 80 character libit only by
+        3, it could be split after the \textbf{=} operator. Due to the fact
+        that the character limit is exceeded only by a small amount, this
+        separation could be avoided.
+
+      \item At \textbf{L.184} the declaration of the variable
+        \textcolor{blue}{josonMap} exceeeds the 80 character libit only by
+        1, it could be split after the \textbf{=} operator. Due to the fact
+        that the character limit is exceeded only by a small amount, this
+        separation could be avoided.
+
+      \item At \textbf{L.186} the declaration of the variable
+        \textcolor{blue}{dataAttrMap} exceeeds the 80 character libit only by
+        4, it could be split after the \textbf{=} operator. Due to the fact
+        that the character limit is exceeded only by a small amount, this
+        separation could be avoided.
+
+      \item At \textbf{L.192} the chain method invocation can be split before
+        the \textcolor{blue}{from()} method is called.
+
+      \item At \textbf{L.200} the line could be split after the \textbf{=}
+        operator to follow the 80 characters limit, though losing some
+        readability.
+
+      \item At \textbf{L.205} the chain method invocation can be split before
+        the \textcolor{blue}{from()} method is called.
+
+      \item At \textbf{L.206} the concatenated conditions could be split after
+        the \textbf{||} operator.
+
+      \item At \textbf{L.211} the chain method invocation can be split before
+        the \textcolor{blue}{from()} method is called.
+
+      \item At \textbf{L.224} line could be split after the comma.
+
+    \end{itemize}
+
+  \item \textbf{C29} At \textbf{L.168} and \textbf{L.170}, the variables
+    \textcolor{blue}{partyGroup} \textcolor{blue}{childOfComs} can be declared
+    inside the following \textcolor{blue}{try} block since it is the only place
+    where the variables are used. Doing so we can directly initialize the
+    variables with the proper value instead of \textbf{null}.
+
+  \item \textbf{C29} At \textbf{L.181}, the variable
+    \textcolor{blue}{catNameField} can be declared inside the following
+    \textcolor{blue}{if} block since it is the only place where the variable is
+    used. Doing so we can directly initialize the variable with the proper value
+    instead of \textbf{null}.
+
+  \item \textbf{C33} The declarations at \textbf{L.184-187}, \textbf{L.192},
+    \textbf{L.200}, \textbf{L.205}, \textbf{L.211} and \textbf{L.226} are not
+    made at the beginning of the block.
+
+  \item \textbf{C42} At \textbf{L.245} the \textcolor{blue}{catch} block only
+    provides the stack trace when catching an exception, not providing any
+    guidance on how to correct the problem.
+
+  \item \textbf{C52} The \textcolor{blue}{EntityQuery.queryOne()} method invoked
+    at \textbf{L.192} and \textbf{L.211} may throw an
+    \textit{IllegalArgumentException} when the list passed to the
+    \textcolor{blue}{EntityUtil.getOnly()} method has more than one argument.
+    None of the previously mentioned methods, nor the method under inspection,
+    specify this expection in a \textbf{try/catch} block.
+
+  \item \textbf{53} The \textcolor{blue}{catch} block at \textbf{L.245}
+    generates a new exception of the same type of the one caught, without
+    adding any information to it. A better solution could be to throw the same
+    exception caught, or to decorate the new exception with more informations.
+\end{enumerate}

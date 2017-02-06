@@ -1,14 +1,69 @@
 \section{Other issues}
 
+We're not enirely sure about the following mistakes we found, the following list
+could be submitted to the writers of the code in order to better understand the
+behavior of the application and possibly fix it.
+
 \begin{enumerate}
-	\item It possible the creation of a tree with nodes containing both infomations about a position and party group.
+	\item It possible the creation of a tree with nodes containing both
+	infomations about a position and party group.
 
-This bug may be triggered whenever the \textit{getChildHRCategoryTree} method is invoked passing as one of the parameter of the POST request a partyId matching both an employee position with at least one employee fulfillment related to it and matching a party group.
+	This bug may be triggered whenever the
+	\textcolor{blue}{getChildHRCategoryTree} method is invoked passing as one of
+	the parameter of the \textbf{POST} request a \textcolor{blue}{partyId}
+	matching both an employee position with at least one employee fulfillment
+	related to it and matching a party group.
 
-When the \textit{getCurrentEmployeeDetails()} method is invoked, it will end returning a list containing at least one map structure of a fulfillment related to the employee position.
+	When the \textcolor{blue}{getCurrentEmployeeDetails()} method is invoked, it
+	will end returning a list containing at least one map structure of a
+	fulfillment related to the employee position.
 
-Since the identificator matches a party group too, information about it are gathered.
-In the end, the main method will return a list with both informations about the position and the party group.
+	Since the identificator matches a party group too, information about it are
+	gathered. In the end, the main method will return a list with both
+	informations about the position and the party group.
 
-The main cause of this behaviour is the use of the same partyId to indentify both employee positions and party group, and in the data model there's no evidence about the uniqueness of primary keys between the PartyGroup entity and the EmplPosition entity. 
+	The main cause of this behaviour is the use of the same
+	\textcolor{blue}{partyId} to indentify both employee positions and party
+	group, and in the data model there's no evidence about the uniqueness of
+	primary keys between the PartyGroup entity and the EmplPosition entity.
+
+	\item At \textbf{L.194} there is a suspect block of code:
+		\begin{algorithm}
+		\begin{algorithmic}[1]
+		\setcounter{ALG@line}{193}
+
+			\State $ catNameField = (String) childContext.get("groupName"); $
+			\State $ title = catNameField; $
+			\State $ josonMap.put("title",title); $
+
+		\end{algorithmic}
+		\end{algorithm}
+
+		Particularly the use of the variable \textcolor{blue}{title} is unnecessary if
+		we directly associate the key \textit{"title"} to the value of the variable
+		\textcolor{blue}{catNameField}.
+
+\item At \textbf{L.206} there's a suspect \textcolor{blue}{if} statement:
+
+	\begin{algorithm}
+	\begin{algorithmic}[1]
+	\setcounter{ALG@line}{205}
+
+		\State  if (UtilValidate.isNotEmpty(childOfSubComs) ||
+		\State\hspace{13em}  UtilValidate.isNotEmpty(isPosition)) \{
+		\State\hspace{0.5em}  josonMap.put("state", "closed");
+		\State  \}
+
+	\end{algorithmic}
+	\end{algorithm}
+
+	This piece of code sets the \textit{"state"} attribute of a node to
+	\textit{"closed"} when either there is a child node or there is a employment
+	position for the specified node.
+
+	Just by looking at this class we can assume that this is an incorrect
+	implementation since is logic to think that a node is considered
+	\textit{"closed"} when it has no child and it doesn't have any employment
+	position related to it.
+
 \end{enumerate}

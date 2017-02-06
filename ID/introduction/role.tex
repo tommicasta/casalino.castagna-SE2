@@ -98,7 +98,7 @@ The data model\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Data+M
 \end{figure}
 
 \begin{itemize}
-	\item \textbf{EmplPosition}: entity used to represent an employee position inside the Human Resource Application. 
+	\item \textbf{EmplPosition}: entity used to represent an employee position inside the Human Resource Application.
 
 	Each entity is characterized by several. The most relevant for our analysis are:
 
@@ -107,7 +107,7 @@ The data model\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Data+M
 		\item \textbf{emplPositionId:} an \textbf{unique} identifier used to distinguish a position from another one.
 		\item \textbf{statusId:} a string identifying the status of the position.
 
-		Actually, the documentation and the data model of the emplPosition entity diverge about the content of this field. 
+		Actually, the documentation and the data model of the emplPosition entity diverge about the content of this field.
 
 		The former specifies that it is used to state if the position is \textbf{Active/Open}, \textbf{Inactive/Closed} or \textbf{Planned for}, while the data model diagram report is as a field specifying the type of position: \textbf{full time}, \textbf{part time} or \textbf{contractor}.
 
@@ -122,8 +122,8 @@ The data model\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Data+M
 		\item \textbf{emplPositionTypeId:} unique identifier used to discern between position types.
 		\item \textbf{partyId:}
 		\item \textbf{description:} a description of the type of position.
-		\item \textbf{EmplPosition:} identifier of the employee position having this specific type. 
-	\end{itemize}  
+		\item \textbf{EmplPosition:} identifier of the employee position having this specific type.
+	\end{itemize}
 \end{itemize}
 
 \begin{figure}[H]
@@ -147,7 +147,7 @@ The data model\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Data+M
 
 \subsubsection{Human resource application}
 
-The human resource application comes with a predefined set of functionalities that can be used to perform HR tasks or to provide a support for the creation of more complex HR applications.\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Human+Resources+Guide} 
+The human resource application comes with a predefined set of functionalities that can be used to perform HR tasks or to provide a support for the creation of more complex HR applications.\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Human+Resources+Guide}
 
 According to the documentation of the human Resources application\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Human+Resources+-+Main+Window}:
 
@@ -167,7 +167,7 @@ Furthermore, as stated by the documentation, from the main screen of the applica
 
 \subsubsection{Tree and HumanResEvents class}
 
-In the previous paragraph the important role played by the tree has been discussed, showing how several important actions may be performed only through the tree itself. 
+In the previous paragraph the important role played by the tree has been discussed, showing how several important actions may be performed only through the tree itself.
 
 This tree is created each time the main screen of the human resources application is visited. The generation is performed thanks to a jquery script named \textit{createTree} and located in the \textit{humanres/template/category/CategoryTree.ftl} template file.
 The script is executed each time the main screen is loaded, sending an asynchronous POST request to the resource located at \textit{getHRChild}.
@@ -207,13 +207,13 @@ In both cases in which no employee position matches the partyId or no fulfillmen
 
 The retrieving of child departments informations is handled by two different methods.
 
-The first one, \textit{getChildCompos}, retrieves the informations concerning the children of the partyGroup: querying the \textit{PartyRelationship} entity, it looks for parties that are in a father-child relationship with the partyGroup.
+The first one, \textit{getChildComps}, retrieves the informations concerning the children of the partyGroup: querying the \textit{PartyRelationship} entity, it looks for parties that are in a father-child relationship with the partyGroup.
 
 For each of the matching parties, the informations are retrieved and the html attributes built and stored in map structures, whichi are put in a list returned to the caller.
 
 The informations are the same collected by the \textit{getCurrentEmployeeDetails}.
 
-The second method, \textit{getChildInComp}, queries the \textit{EmplPosition} in order to find employee position currently active and authorized by the partyGroup. These informations are:
+The second method, \textit{getEmployeeInComp}, queries the \textit{EmplPosition} in order to find employee position currently active and authorized by the partyGroup. These informations are:
 
 \begin{itemize}
 	\item \textbf{emplPositionId:} the employee position identificator.
@@ -226,4 +226,3 @@ As always, the required html attributes are built and stored in map structures, 
 Maybe for an error, the comment preceding the invocation of this function in the public method states that it retrieves the informations of the employees working in the partyGroup, which is contrast with the behaviour of the method.
 
 In the end, the \textit{getChildHRCategoryTree} method returns to the jquery script the concatenation of lists of maps created retrieving informations about positions and child departments.
- 
