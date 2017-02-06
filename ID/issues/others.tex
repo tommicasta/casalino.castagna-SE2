@@ -1,0 +1,14 @@
+\section{Other issues}
+
+\begin{enumerate}
+	\item It possible the creation of a tree with nodes containing both infomations about a position and party group.
+
+This bug may be triggered whenever the \textit{getChildHRCategoryTree} method is invoked passing as one of the parameter of the POST request a partyId matching both an employee position with at least one employee fulfillment related to it and matching a party group.
+
+When the \textit{getCurrentEmployeeDetails()} method is invoked, it will end returning a list containing at least one map structure of a fulfillment related to the employee position.
+
+Since the identificator matches a party group too, information about it are gathered.
+In the end, the main method will return a list with both informations about the position and the party group.
+
+The main cause of this behaviour is the use of the same partyId to indentify both employee positions and party group, and in the data model there's no evidence about the uniqueness of primary keys between the PartyGroup entity and the EmplPosition entity. 
+\end{enumerate}

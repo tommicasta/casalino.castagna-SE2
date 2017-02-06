@@ -1,6 +1,8 @@
 \subsection{Functional Role}
 
-Before analyzing in detail the functional role covered by the java class assigned us for code inspection, a brief description of the context and explanation of the most relevant elements is provided.  
+The analysis of functional role covered by the java class under inspection would be quite superficial and with more arising questions than answers if a worthful overview of the most important elements of the project would not be taken in consideration.
+
+Thus, before meeting the goal of this section, a glance to the relevant concept for our analysis is given.
 
 \subsubsection{OFBIz overview}
 The Open For Business project is an enterprise-oriented suite of applications developed to support most of the aspects that an enterprise application has to take care of.
@@ -62,6 +64,15 @@ According to the party's data model, each party, either a person, a group and so
 According to the \textit{OFBIz project overview}:
 
 \textit{The Human Resources entities are used to keep track of positions, responsibilities, skills, employment, termination, benefits, training, pay grades and payroll preferences, performance reviews, resumes and applications, and other Human Resources related information.}
+
+\subsubsection{Internal Organization}
+Quoting the \textit{human resource glossary}\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Human+Resources+Glossary}:
+
+\textit{Internal organization is the name of a relationship between a party group and your company.}
+
+\textit{This relationship is used to filter party groups as being part of your company to distinguish them from other groups which are external.}
+
+\textit{For example your marketing department is an internal organization while a suppliers sales department is not.}
 
 \subsubsection{Employee Position}
 
@@ -134,16 +145,7 @@ The data model\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Data+M
 		\end{itemize}
 \end{itemize}
 
-\subsubsection{Internal Organization}
-Quoting the \textit{human resource glossary}\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Human+Resources+Glossary}:
-
-\textit{Internal organization is the name of a relationship between a party group and your company.}
-
-\textit{This relationship is used to filter party groups as being part of your company to distinguish them from other groups which are external.}
-
-\textit{For example your marketing department is an internal organization while a suppliers sales department is not.}
-
-\subsubsection{Human resource application:}
+\subsubsection{Human resource application}
 
 The human resource application comes with a predefined set of functionalities that can be used to perform HR tasks or to provide a support for the creation of more complex HR applications.\footnote{https://cwiki.apache.org/confluence/display/OFBIZ/Human+Resources+Guide} 
 
@@ -163,48 +165,65 @@ Furthermore, as stated by the documentation, from the main screen of the applica
 	\item If an item is a position, you can add a person to fulfill the position.
 \end{itemize}
 
-\paragraph{The HumanResEvents class}:
+\subsubsection{Tree and HumanResEvents class}
 
-Despite the misleading namename given to this class, the main purpose of this class is to support the building of the company tree, 
-% 7h:30min
-This class is supposed to support all the functionalities that the humanres application backbone has to provide. This has been already listed in the previous paragraph.
+In the previous paragraph the important role played by the tree has been discussed, showing how several important actions may be performed only through the tree itself. 
 
-Up to these release, the class presents 4 methods: one public and the rest private.
-The private methods are used as helper functions by the public one.
+This tree is created each time the main screen of the human resources application is visited. The generation is performed thanks to a jquery script named \textit{createTree} and located in the \textit{humanres/template/category/CategoryTree.ftl} template file.
+The script is executed each time the main screen is loaded, sending an asynchronous POST request to the resource located at \textit{getHRChild}.
 
-In the following the methods composing the class are described in details.
+According to the \textit{controller.xml} file, located in \textit{webapp/humanres/WEB-INF} folder, the \textit{getHRChild} resource is mapped to the only public method provided by the HumanResEvents class: \textbf{getChildHRCategoryTree}.
 
-\paragraph{getChildHRCategoryTree:}
+In the light of this premise and the concepts introduced before, it's quite easy and straigthforward understand the role of this class: help in the construction of the company tree by
 
-Only public method exposed by the HumanResEvents class. It's functional role is to manage the request of visualization of a given node of the tree describing the enterprise hierarchy.
+\begin{itemize}
+	\item Collecting the necessary informations of each party and position in the company.
+	\item Using the collected informations to build the html attributes needed to enable the action performable through the tree (viewing departements, open profiles...).
+\end{itemize}
 
-The method retrieves the informations regarding the child requested. This, according to the party definition, may be an employee or the company or a department (partyGroup).
+The html attributes built for each party or position are returned in a \textbf{Map}, which structure follow the design of the json implementation of the tree, as stated by the comment on line 40.
 
-If the former is the case, the informations of the employee selected are returned. If the latter is the case, the departments that are child of the department selected or of the company, in the case the root of the tree has been selected, are returned, along with the informations about the employees that work in the selected department or company
+As soon as the \textit{getChildHRCategoryTree} is invoked, the informations gathering begins. The driver is the \textbf{partyId} identificator passed as a parameter to the class method.
 
-% This can be infered both from the informations in the xml files presented before and the few comments in the method.
+Since a company or a department may have positions or child departments, the public method manages the retriving of positions and child departments informations separatly.
 
+The gathering of positions informations is performed invoking the \textit{getCurrentEmployeeDetails}, which queries the database about the presence of a employee position instance identified by the partyId identificator.
 
-\paragraph{getCurrentEmployeeDetails:}
+If positive, the computation goes on, verifying the presence of parties fulfilling that position. The check is made through a query against the \textit{EmplPositionFulfillment}.
 
-Helper method used to retrieve the informations of an employee that currently is covering a specific position.
-The position is identified by the "partyID" parameter.
-First retrieve the presence of a position matching the ID passed as parameter.
-Then, retrieves the list of employment fulfillments regarding that position. Indeed, more than an employee can cover that position at the same time.
-The filter returns only the current fulfillment.
-The query count is used, but the interval is [0, 1].
+In presence of parties fulfilling that position, the following informations are collected:
 
-% A position can be fulfilled at the same time by different persons!
-% https://cwiki.apache.org/confluence/display/OFBIZ/Employee+Position
-% As reported by the documentation (link line above), the position
-% may be fulfilled either by a person or an organization.
-% NB: the person is not necessary an employee of out company.
-% People may be employees of your Company, a company you do business with, or unaffiliated contract employees
+\begin{itemize}
+	\item Name \& Surname of the employee.
+	\item Group name of the departments and companies.
+\end{itemize}
 
-For each fulfillment, the employee name and surname is retrieved.
-Maybe the fulfillment is covered by a company or organization.
-The informations retrieved are the Name and Surnamen of the employee.
+For each party, html attributes necessary to show the informations and create links to their profile are built and stored inside map structure.
+After iterating over all the parties, the method ends and returns the list of map structures containing the informations of each party.
 
+In both cases in which no employee position matches the partyId or no fulfillment is related to the position, the method ends returning an empty list.
 
-% l.107: maybe this is done by l.101
-% l.264: EMPL_POS_INACTIVE is a status code not reported in the official documentation
+\textbf{NB:} actually, the implementation of the \textit{getCurrentEmployeeDetails} provides the retrieving of informations of only one employee position, since each EmplPosition entity is identified by a unique identifier.
+
+The retrieving of child departments informations is handled by two different methods.
+
+The first one, \textit{getChildCompos}, retrieves the informations concerning the children of the partyGroup: querying the \textit{PartyRelationship} entity, it looks for parties that are in a father-child relationship with the partyGroup.
+
+For each of the matching parties, the informations are retrieved and the html attributes built and stored in map structures, whichi are put in a list returned to the caller.
+
+The informations are the same collected by the \textit{getCurrentEmployeeDetails}.
+
+The second method, \textit{getChildInComp}, queries the \textit{EmplPosition} in order to find employee position currently active and authorized by the partyGroup. These informations are:
+
+\begin{itemize}
+	\item \textbf{emplPositionId:} the employee position identificator.
+	\item \textbf{description:} description of the position type.
+\end{itemize}
+
+As always, the required html attributes are built and stored in map structures, in turn placed into a list returned to the caller
+.
+
+Maybe for an error, the comment preceding the invocation of this function in the public method states that it retrieves the informations of the employees working in the partyGroup, which is contrast with the behaviour of the method.
+
+In the end, the \textit{getChildHRCategoryTree} method returns to the jquery script the concatenation of lists of maps created retrieving informations about positions and child departments.
+ 
