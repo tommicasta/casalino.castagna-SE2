@@ -35,9 +35,9 @@
 
 (5.3) End active reservation for cars left without passengers and lock them.
 
-(10.1.1) Notify user overcoming city boundaries.
+(9.1.1) Notify user overcoming city boundaries.
 
-(10.2.1) Not allow reservation end if the vehicle's doors are not properly closed.
+(9.2.1) Not allow reservation end if the vehicle's doors are not properly closed.
 \\ \hline
 
 	Reservation Manager & (2.1) Comunication of informations of cars nearby user's position.
@@ -76,19 +76,17 @@
 
 (5.6) Verify enough money on payment system and deduct. Otherwise, forbid further reservation.
 
-(8.2) Car's conditions reports are stored.
+(8.1) Record cars' status changes and trggering avent.
 
-(9.1) Record cars' status changes and trggering avent.
+(8.2) Link cars' status changes to driver.
 
-(9.2) Link cars' status changes to driver.
+(9.1.1) Notify user overcoming city boundaries.
 
-(10.1.1) Notify user overcoming city boundaries.
+(9.1.2) Special fare applied to user that overcame the city boundaries.
 
-(10.1.2) Special fare applied to user that overcame the city boundaries.
+(9.2.1) Not allow reservation end if the vehicle's doors are not properly closed.
 
-(10.2.1) Not allow reservation end if the vehicle's doors are not properly closed.
-
-(10.3.1) Notify user trying to end reservation outside parking areas.
+(9.3.1) Notify user trying to end reservation outside parking areas.
 \\ \hline
 
 	Map Manager & (2.1)  Comunication of nformations of cars nearby user's position.
@@ -102,9 +100,9 @@
 
 (5.3) End active reservation for cars left without passengers and lock them.
 
-(10.1.1) Notify user overcoming city boundaries.
+(9.1.1) Notify user overcoming city boundaries.
 
-(10.2.1) Not allow reservation end if the vehicle's doors are not properly closed.
+(9.2.1) Not allow reservation end if the vehicle's doors are not properly closed.
 \\ \hline
 
 	Area Manager & (2.10) Retrieve position of special parking areas.
@@ -116,7 +114,7 @@
 
 (5.5) Computation of ride's cost according to reservation time and special condition.
 
-(10.1.2) Special fare applied to user that overcame the city boundaries.
+(9.1.2) Special fare applied to user that overcame the city boundaries.
 \\ \hline
 
 	Payment Manager & (5.6) Verify enough money on payment system and deduct. Otherwise, forbid further reservation.
@@ -126,8 +124,6 @@
 
 (7.1) Users' informations registration.
 
-(8.2) Car's conditions reports are stored.
-
-(9.1) Record cars' status changes.
+(8.1) Record cars' status changes.
 \\ \hline
 \end{longtable}
