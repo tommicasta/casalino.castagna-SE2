@@ -248,25 +248,25 @@ The evaluation of the estimated effort for the development of this project is co
 \end{equation} 
 
 \begin{itemize}
-	\item A: statistical coefficient. It's current value is \textit {2.94}.
-	\item Size: the estimated size of the project in KSLOC.
+	\item A: statistical coefficient. The COCOMO II manual sets its current value to \textit {2.94}.
+	\item Size: the estimated size of the project in KSLOC computed in the \textit{Size Estimation} section.
 	\item E: the total scale factor computed in the \textit{Scale Drivers} section.
 	\item TEM: the total effort multipler.
 \end{itemize}
 
-Using the lower bound and upper bound values computed for the project's size, we get as:
+Using the lower bound and upper bound values computed for the project's size, we get, respectively:
  
 \begin{displaymath}
-        Lower-PM = 2.94 * 10.192^{1.0838} * 2.5015 \approx = 92 
+        PM^- = 2.94 * 10.192^{1.0838} * 2.5015 \approx 92 
 \end{displaymath}
 
 \begin{displaymath}
-       Upper-PM = 2.94 * 12.544^{1.0838} * 2.5015 \approx = 114
+       PM^+ = 2.94 * 12.544^{1.0838} * 2.5015 \approx 114
 \end{displaymath}
 
 \subsubsection{Project's duration evaluation}
 
-The estimated duration of the project can be derived by the following equation:
+The estimated duration of the project can be derived by the following pair of equations, provided by the COCOMO II manual:
 
 \begin{equation}
         Duration = 3.67 * PM^{F} 
@@ -279,7 +279,7 @@ The estimated duration of the project can be derived by the following equation:
 \begin{itemize}
         \item PM: the estimated effort required for the project development in person per month.
 	\item E: the total scale factor computed in the \textit{Scale Drivers} section.
-	\item B: statistical coeffiecient with value \textit{0.91}.
+	\item B: statistical coeffiecient. The COCOMO II manual sets its value to \textit{0.91}.
 \end{itemize}
 
 With the lower bound and upper bound values of the project's size we get as lower bound and upper bound of the project's duration in months:
@@ -289,10 +289,9 @@ With the lower bound and upper bound values of the project's size we get as lowe
 \end{displaymath}
 
 \begin{displaymath}
-        Lower-Duration = 3.67 * 92^{0.31476} = 15.23
+        Duration^- = 3.67 * 92^{0.31476} = 15.23
 \end{displaymath}
 
 \begin{displaymath}
-        Upper-Duration = 3.67 * 115^{0.31476} = 16.34
+        Duration^+ = 3.67 * 115^{0.31476} = 16.34
 \end{displaymath}
-

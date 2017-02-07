@@ -23,7 +23,11 @@ In order to evaluate the approximated size through the function point method, th
 
 Considering instead the \textbf{SLOC} as a project's size estimator, we can exploit the \textbf{gearing factors} to translate the UFP value in the corresponding SLOC estimation.
 
-To give much flexibility as possible to the project, the gearing factors used to estimate the lower bound and the upper bound are calculated as the
+For each gearing factor exist different values, corresponding the minimum, maximum and average number of source code lines for a single function point. 
+
+In order to give a conservative estimation, we decide to assess the project's size using the average value and the maximum value to compute, respectively, its lower bound and the upper bound.
+
+To give as much flexibility as possible to the project's implementation, without depending on specific technologies, languages or platforms, the gearing factors used to estimate the lower bound and the upper bound are calculated as the
 arithmetical average between the gearing factors of J2EE and .NET, the two most widespread technologies.
 
 \begin{table}[h!]
@@ -45,11 +49,11 @@ arithmetical average between the gearing factors of J2EE and .NET, the two most 
 Lower bound in KSLOC
 
 \begin{displaymath}
-	SLOC =  52 * 196 = 10.192
+	KSLOC^- =  52 * 196 = 10.192
 \end{displaymath}
 
 Upper bound in KSLOC
 
 \begin{displaymath}
-	SLOC = 64 * 196 = 12.544
+	KSLOC^+ = 64 * 196 = 12.544
 \end{displaymath}

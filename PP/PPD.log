@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  3 FEB 2017 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.26)  7 FEB 2017 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,22 +561,26 @@ l.13
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.13 
-     ]) (./estimation/size-estimation/epilogue.tex [12pdfTeX warning (ext4): de
-stination with the same identifier (name{table.9}) has been already used, dupli
-cate ignored
+     ]) (./estimation/size-estimation/epilogue.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12pdfTeX warning (ext4): destination with the same identifier (name{table.9}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.55 \end{displaymath}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{table.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.55 \end{displaymath}
+l.59 \end{displaymath}
                       ])) (./estimation/effort-cost-estimation/main.tex
 (./estimation/effort-cost-estimation/intro.tex)
-(./estimation/effort-cost-estimation/scale-drivers.tex [13]
+(./estimation/effort-cost-estimation/scale-drivers.tex [13pdfTeX warning (ext4)
+: destination with the same identifier (name{table.10}) has been already used, 
+duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.21 
+     ]
 Underfull \hbox (badness 1783) in paragraph at lines 27--27
 []|\T1/cmr/bx/n/10 Scale Fac-
  []
@@ -755,19 +759,27 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 26--38
 Underfull \vbox (badness 10000) detected at line 38
  []
 
-) (./estimation/effort-cost-estimation/cost-drivers.tex [14pdfTeX warning (ext4
-): destination with the same identifier (name{table.12}) has been already used,
- duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \subsection
-               {Cost Drivers}]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./estimation/effort-cost-estimation/cost-drivers.tex [14]
 Overfull \hbox (22.094pt too wide) in paragraph at lines 21--34
  [][] 
  []
 
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.12})
+ has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.40 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.40 
+     ]
 Underfull \hbox (badness 10000) in paragraph at lines 45--45
 []|\T1/cmr/m/n/10 slightly
  []
@@ -811,13 +823,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 44--48
 Underfull \vbox (badness 10000) detected at line 48
  []
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{table.13})
- has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.48 \end{costdriverstable}
-                           ]
 Underfull \hbox (badness 10000) in paragraph at lines 57--57
 []|\T1/cmr/m/n/10 Testing
  []
@@ -1118,7 +1124,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 116--120
 Underfull \vbox (badness 10000) detected at line 120
  []
 
-
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 127--127
 []|\T1/cmr/m/n/10 15th per-
  []
@@ -1152,7 +1158,7 @@ Overfull \hbox (44.0pt too wide) in alignment at lines 126--130
 Underfull \vbox (badness 10000) detected at line 130
  []
 
-[18]
+
 Underfull \hbox (badness 10000) in paragraph at lines 137--137
 []|\T1/cmr/m/n/10 15th per-
  []
@@ -1514,9 +1520,8 @@ Underfull \vbox (badness 10000) detected at line 210
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.281 	\item E
-              : the total scale factor computed in the \textit{Scale Drivers...
-]))) [23]
+l.265 \end{displaymath}
+                       ]))) [23]
 \openout2 = `./tasks/main.aux'.
 
  (./tasks/main.tex
@@ -1525,7 +1530,7 @@ File: ../Datas/images/tasks-schedule-1.png Graphic file (type png)
 
 <use ../Datas/images/tasks-schedule-1.png>
 Package pdftex.def Info: ../Datas/images/tasks-schedule-1.png used on input lin
-e 25.
+e 36.
 (pdftex.def)             Requested size: 501.87683pt x 627.81422pt.
  [24
 
@@ -1539,21 +1544,21 @@ Overfull \vbox (101.7582pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.29 
+l.40 
       <../Datas/images/tasks-schedule-1.png>]
 <../Datas/images/tasks-schedule-2.png, id=327, 806.26219pt x 252.19218pt>
 File: ../Datas/images/tasks-schedule-2.png Graphic file (type png)
 
 <use ../Datas/images/tasks-schedule-2.png>
 Package pdftex.def Info: ../Datas/images/tasks-schedule-2.png used on input lin
-e 33.
+e 44.
 (pdftex.def)             Requested size: 501.87683pt x 156.98477pt.
  [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.38 \newpage
+l.49 \newpage
               <../Datas/images/tasks-schedule-2.png>]
 
 pdfTeX warning: pdflatex (file ../Datas/schedule-dates-1.pdf): PDF inclusion: f
@@ -1562,7 +1567,7 @@ ound PDF version <1.7>, but at most version <1.5> allowed
 File: ../Datas/schedule-dates-1.pdf Graphic file (type pdf)
 
 <use ../Datas/schedule-dates-1.pdf>
-Package pdftex.def Info: ../Datas/schedule-dates-1.pdf used on input line 45.
+Package pdftex.def Info: ../Datas/schedule-dates-1.pdf used on input line 56.
 (pdftex.def)             Requested size: 372.39261pt x 526.66328pt.
 
 
@@ -1572,7 +1577,7 @@ ound PDF version <1.7>, but at most version <1.5> allowed
 File: ../Datas/schedule-dates-2.pdf Graphic file (type pdf)
 
 <use ../Datas/schedule-dates-2.pdf>
-Package pdftex.def Info: ../Datas/schedule-dates-2.pdf used on input line 52.
+Package pdftex.def Info: ../Datas/schedule-dates-2.pdf used on input line 63.
 (pdftex.def)             Requested size: 401.50146pt x 567.82356pt.
 ) [27 <../Datas/schedule-dates-1.pdf>]
 Overfull \vbox (17.82356pt too high) has occurred while \output is active []
@@ -1721,10 +1726,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 6818 strings out of 493029
- 99420 string characters out of 6136233
- 203849 words of memory out of 5000000
- 10034 multiletter control sequences out of 15000+600000
+ 6819 strings out of 493029
+ 99440 string characters out of 6136233
+ 204912 words of memory out of 5000000
+ 10035 multiletter control sequences out of 15000+600000
  12828 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,8n,30p,527b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1742,7 +1747,7 @@ ype1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfti1000.pfb>
-Output written on PPD.pdf (39 pages, 966443 bytes).
+Output written on PPD.pdf (39 pages, 970393 bytes).
 PDF statistics:
  474 PDF objects out of 1000 (max. 8388607)
  403 compressed objects within 5 object streams

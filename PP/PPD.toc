@@ -18,7 +18,7 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Scale Drivers}{13}{subsubsection.2.2.1}
 \contentsline {subsection}{\numberline {2.3}Cost Drivers}{15}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Effort evaluation}{22}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Project's duration evaluation}{22}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2}Project's duration evaluation}{23}{subsubsection.2.3.2}
 \contentsline {section}{\numberline {3}Tasks schedule}{24}{section.3}
 \contentsline {section}{\numberline {4}Resources allocation}{29}{section.4}
 \contentsline {section}{\numberline {5}Risk Management}{34}{section.5}
